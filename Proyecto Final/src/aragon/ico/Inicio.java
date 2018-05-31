@@ -5,6 +5,11 @@
  */
 package aragon.ico;
 
+import java.awt.Color;
+import java.awt.Image;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author eduardo
@@ -16,6 +21,14 @@ public class Inicio extends javax.swing.JFrame {
      */
     public Inicio() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        
+        
+        
+        ImageIcon icono = new ImageIcon(System.getProperty("user.dir") + "/src/aragon/ico/imagenes/inicio/ICO.png");
+        Icon logo = new ImageIcon(icono.getImage().getScaledInstance(jLLogo.getWidth(), jLLogo.getHeight(), Image.SCALE_AREA_AVERAGING));
+        jLLogo.setIcon(logo);
+        this.repaint();
     }
 
     /**
@@ -27,21 +40,180 @@ public class Inicio extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jPanel1 = new javax.swing.JPanel();
+        jLLogo = new javax.swing.JLabel();
+        jBContacto = new javax.swing.JButton();
+        jBDAScrum = new javax.swing.JButton();
+        jBIngSoft = new javax.swing.JButton();
+        jBInicio = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jPanel2 = new javax.swing.JPanel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Inicio");
+        setBackground(new java.awt.Color(255, 255, 255));
+        setResizable(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLLogo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+
+        jBContacto.setBackground(new java.awt.Color(255, 255, 255));
+        jBContacto.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
+        jBContacto.setForeground(java.awt.Color.gray);
+        jBContacto.setText("Contacto");
+        jBContacto.setBorder(null);
+        jBContacto.setBorderPainted(false);
+        jBContacto.setContentAreaFilled(false);
+        jBContacto.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jBContacto.setFocusPainted(false);
+        jBContacto.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jBContactoMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jBContactoMouseExited(evt);
+            }
+        });
+
+        jBDAScrum.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
+        jBDAScrum.setForeground(java.awt.Color.gray);
+        jBDAScrum.setText("Desarrollo Ágil y Scrum");
+        jBDAScrum.setBorder(null);
+        jBDAScrum.setBorderPainted(false);
+        jBDAScrum.setContentAreaFilled(false);
+        jBDAScrum.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jBDAScrum.setFocusPainted(false);
+        jBDAScrum.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jBDAScrumMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jBDAScrumMouseExited(evt);
+            }
+        });
+
+        jBIngSoft.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
+        jBIngSoft.setForeground(java.awt.Color.gray);
+        jBIngSoft.setText("Ingenieria de Software");
+        jBIngSoft.setBorder(null);
+        jBIngSoft.setBorderPainted(false);
+        jBIngSoft.setContentAreaFilled(false);
+        jBIngSoft.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jBIngSoft.setFocusPainted(false);
+        jBIngSoft.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jBIngSoftMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jBIngSoftMouseExited(evt);
+            }
+        });
+
+        jBInicio.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
+        jBInicio.setForeground(java.awt.Color.gray);
+        jBInicio.setText("Inicio");
+        jBInicio.setBorder(null);
+        jBInicio.setBorderPainted(false);
+        jBInicio.setContentAreaFilled(false);
+        jBInicio.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jBInicio.setFocusPainted(false);
+        jBInicio.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jBInicioMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jBInicioMouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(43, 43, 43)
+                .addComponent(jLLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 307, Short.MAX_VALUE)
+                .addComponent(jBInicio)
+                .addGap(40, 40, 40)
+                .addComponent(jBIngSoft)
+                .addGap(40, 40, 40)
+                .addComponent(jBDAScrum)
+                .addGap(40, 40, 40)
+                .addComponent(jBContacto)
+                .addGap(60, 60, 60))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(jBInicio)
+                    .addComponent(jBIngSoft)
+                    .addComponent(jBDAScrum)
+                    .addComponent(jBContacto)
+                    .addComponent(jLLogo, javax.swing.GroupLayout.DEFAULT_SIZE, 78, Short.MAX_VALUE))
+                .addContainerGap())
         );
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1200, 100));
+
+        jScrollPane1.setBackground(new java.awt.Color(255, 255, 255));
+        jScrollPane1.setBorder(null);
+
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1200, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 620, Short.MAX_VALUE)
+        );
+
+        jScrollPane1.setViewportView(jPanel2);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 1200, 620));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jBContactoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBContactoMouseEntered
+        jBContacto.setForeground(Color.DARK_GRAY);
+    }//GEN-LAST:event_jBContactoMouseEntered
+
+    private void jBContactoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBContactoMouseExited
+        jBContacto.setForeground(Color.GRAY);
+    }//GEN-LAST:event_jBContactoMouseExited
+
+    private void jBDAScrumMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBDAScrumMouseEntered
+        jBDAScrum.setForeground(Color.DARK_GRAY);
+    }//GEN-LAST:event_jBDAScrumMouseEntered
+
+    private void jBDAScrumMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBDAScrumMouseExited
+        jBDAScrum.setForeground(Color.GRAY);
+    }//GEN-LAST:event_jBDAScrumMouseExited
+
+    private void jBIngSoftMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBIngSoftMouseEntered
+        jBIngSoft.setForeground(Color.DARK_GRAY);
+    }//GEN-LAST:event_jBIngSoftMouseEntered
+
+    private void jBIngSoftMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBIngSoftMouseExited
+        jBIngSoft.setForeground(Color.GRAY);
+    }//GEN-LAST:event_jBIngSoftMouseExited
+
+    private void jBInicioMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBInicioMouseEntered
+        jBInicio.setForeground(Color.DARK_GRAY);
+    }//GEN-LAST:event_jBInicioMouseEntered
+
+    private void jBInicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBInicioMouseExited
+        jBInicio.setForeground(Color.GRAY);
+    }//GEN-LAST:event_jBInicioMouseExited
 
     /**
      * @param args the command line arguments
@@ -54,7 +226,7 @@ public class Inicio extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -79,5 +251,13 @@ public class Inicio extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jBContacto;
+    private javax.swing.JButton jBDAScrum;
+    private javax.swing.JButton jBIngSoft;
+    private javax.swing.JButton jBInicio;
+    private javax.swing.JLabel jLLogo;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }
