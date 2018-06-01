@@ -1,11 +1,15 @@
 package aragon.ico.scrum;
 
+import aragon.ico.Salida;
 import java.awt.Color;
 import java.awt.Image;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 
 public class Agil extends javax.swing.JFrame {
+
+    private int valCambio;
+    private int valCambio2;
 
     public Agil() {
         initComponents();
@@ -30,6 +34,32 @@ public class Agil extends javax.swing.JFrame {
         Icon logo1 = new ImageIcon(icono1.getImage().getScaledInstance(lblIcono1.getWidth(), lblIcono1.getHeight(), Image.SCALE_AREA_AVERAGING));
         lblIcono1.setIcon(logo1);
         this.repaint();
+
+        //Código para colocar la imagen de entrada
+        ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/metoagil1.png"));
+        Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
+        lblCambioImagen.setIcon(ima1);
+        this.repaint();
+        valCambio = 2;
+        valCambio2 = 6;
+
+        //Código para colocar la imagen del texto
+        ImageIcon ima2 = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/metoagil8.png"));
+        Icon imatext1 = new ImageIcon(ima2.getImage().getScaledInstance(lblima2.getWidth(), lblima2.getHeight(), Image.SCALE_AREA_AVERAGING));
+        lblima2.setIcon(imatext1);
+        this.repaint();
+
+        //Código para colocar la imagen del texto
+        ImageIcon ima3 = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/metoagil9.png"));
+        Icon imatext2 = new ImageIcon(ima3.getImage().getScaledInstance(lblima3.getWidth(), lblima3.getHeight(), Image.SCALE_AREA_AVERAGING));
+        lblima3.setIcon(imatext2);
+        this.repaint();
+
+        //Código para colocar la imagen del texto
+        ImageIcon ima4 = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/metoagil98.png"));
+        Icon imatext3 = new ImageIcon(ima4.getImage().getScaledInstance(lblima4.getWidth(), lblima4.getHeight(), Image.SCALE_AREA_AVERAGING));
+        lblima4.setIcon(imatext3);
+        this.repaint();
     }
 
     /**
@@ -52,7 +82,6 @@ public class Agil extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jPanel4 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
@@ -71,6 +100,24 @@ public class Agil extends javax.swing.JFrame {
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
+        jPanel5 = new javax.swing.JPanel();
+        jPanel6 = new javax.swing.JPanel();
+        lblBotonIzq = new javax.swing.JLabel();
+        jPanel7 = new javax.swing.JPanel();
+        lblCambioImagen = new javax.swing.JLabel();
+        jPanel8 = new javax.swing.JPanel();
+        lblBotonDer = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jPanel9 = new javax.swing.JPanel();
+        jPanel10 = new javax.swing.JPanel();
+        lblima2 = new javax.swing.JLabel();
+        jPanel11 = new javax.swing.JPanel();
+        jPanel12 = new javax.swing.JPanel();
+        lblima3 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jPanel13 = new javax.swing.JPanel();
+        jPanel14 = new javax.swing.JPanel();
+        lblima4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -155,6 +202,9 @@ public class Agil extends javax.swing.JFrame {
         jLabel6.setText("Salir");
         jLabel6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel6MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jLabel6MouseEntered(evt);
             }
@@ -216,14 +266,11 @@ public class Agil extends javax.swing.JFrame {
         jScrollPane2.setBackground(new java.awt.Color(255, 255, 255));
         jScrollPane2.setBorder(null);
         jScrollPane2.setForeground(new java.awt.Color(255, 255, 255));
+        jScrollPane2.setAutoscrolls(true);
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel4.setPreferredSize(new java.awt.Dimension(900, 2000));
-
-        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel2.setFont(new java.awt.Font("Arial Black", 0, 48)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(17, 134, 198));
-        jLabel2.setText("Desarrollo Ágil");
+        jPanel4.setAutoscrolls(true);
+        jPanel4.setPreferredSize(new java.awt.Dimension(1000, 2700));
 
         jLabel7.setBackground(new java.awt.Color(204, 255, 102));
         jLabel7.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
@@ -291,29 +338,204 @@ public class Agil extends javax.swing.JFrame {
 
         jLabel23.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(59, 59, 59));
-        jLabel23.setText("<html>Asimismo, al optar por este tipo de metodologías, se requiere personal multidisciplinar capaz de adaptarse a distintas circunstancias y necesidades en poco tiempo. \nEste factor, junto a la reducción de burocracia y la validación constante, permite afrontar mejor la sobrecarga de trabajo y facilitar la marcha del proyecto en su conjunto. \nTodo ello, a su vez, redunda en una notable reducción de costes. Tipos de desarrollo ágil <p>");
+        jLabel23.setText("<html>Asimismo, al optar por este tipo de metodologías, se requiere personal multidisciplinar capaz de adaptarse a distintas circunstancias y necesidades en poco tiempo. \nEste factor, junto a la reducción de burocracia y la validación constante, permite afrontar mejor la sobrecarga de trabajo y facilitar la marcha del proyecto en su conjunto. \nTodo ello, a su vez, redunda en una notable reducción de costes. <p>");
 
         jLabel24.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(59, 59, 59));
         jLabel24.setText("<html>Aunque la metodología ágil de desarrollo de software se entiende como una tendencia global en sí misma, su ejecución concreta se materializa en distintas vertientes o filosofías de trabajo (englobadas en la Agile Alliance, en muchos de los casos) que expresan métodos y herramientas concretas para gestionar de manera ágil los proyectos.  <p>");
 
+        jPanel5.setBackground(new java.awt.Color(17, 134, 198));
+
+        jPanel6.setBackground(new java.awt.Color(17, 134, 198));
+
+        lblBotonIzq.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        lblBotonIzq.setForeground(java.awt.Color.lightGray);
+        lblBotonIzq.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblBotonIzq.setText("<");
+        lblBotonIzq.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblBotonIzqMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lblBotonIzqMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                lblBotonIzqMouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblBotonIzq, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblBotonIzq, javax.swing.GroupLayout.DEFAULT_SIZE, 450, Short.MAX_VALUE)
+        );
+
+        jPanel7.setBackground(new java.awt.Color(51, 51, 0));
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblCambioImagen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblCambioImagen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jPanel8.setBackground(new java.awt.Color(17, 134, 198));
+
+        lblBotonDer.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        lblBotonDer.setForeground(java.awt.Color.lightGray);
+        lblBotonDer.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblBotonDer.setText(">");
+        lblBotonDer.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblBotonDerMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lblBotonDerMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                lblBotonDerMouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
+        jPanel8.setLayout(jPanel8Layout);
+        jPanel8Layout.setHorizontalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblBotonDer, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        jPanel8Layout.setVerticalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblBotonDer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel2.setFont(new java.awt.Font("Arial Black", 0, 48)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(17, 134, 198));
+        jLabel2.setText("Desarrollo Ágil");
+
+        jPanel9.setBackground(new java.awt.Color(153, 255, 153));
+        jPanel9.setOpaque(false);
+
+        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
+        jPanel10.setLayout(jPanel10Layout);
+        jPanel10Layout.setHorizontalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblima2, javax.swing.GroupLayout.DEFAULT_SIZE, 741, Short.MAX_VALUE)
+        );
+        jPanel10Layout.setVerticalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblima2, javax.swing.GroupLayout.DEFAULT_SIZE, 350, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
+        jPanel9.setLayout(jPanel9Layout);
+        jPanel9Layout.setHorizontalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addGap(150, 150, 150)
+                .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel9Layout.setVerticalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jPanel11.setBackground(new java.awt.Color(153, 255, 153));
+        jPanel11.setOpaque(false);
+
+        javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
+        jPanel12.setLayout(jPanel12Layout);
+        jPanel12Layout.setHorizontalGroup(
+            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblima3, javax.swing.GroupLayout.DEFAULT_SIZE, 741, Short.MAX_VALUE)
+        );
+        jPanel12Layout.setVerticalGroup(
+            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblima3, javax.swing.GroupLayout.DEFAULT_SIZE, 350, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
+        jPanel11.setLayout(jPanel11Layout);
+        jPanel11Layout.setHorizontalGroup(
+            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel11Layout.createSequentialGroup()
+                .addGap(150, 150, 150)
+                .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(150, Short.MAX_VALUE))
+        );
+        jPanel11Layout.setVerticalGroup(
+            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jLabel25.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel25.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel25.setText("<html> Tipos de desarrollo ágil<p>");
+
+        jPanel13.setBackground(new java.awt.Color(153, 255, 153));
+        jPanel13.setOpaque(false);
+
+        javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
+        jPanel14.setLayout(jPanel14Layout);
+        jPanel14Layout.setHorizontalGroup(
+            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblima4, javax.swing.GroupLayout.DEFAULT_SIZE, 741, Short.MAX_VALUE)
+        );
+        jPanel14Layout.setVerticalGroup(
+            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblima4, javax.swing.GroupLayout.DEFAULT_SIZE, 350, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
+        jPanel13.setLayout(jPanel13Layout);
+        jPanel13Layout.setHorizontalGroup(
+            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel13Layout.createSequentialGroup()
+                .addGap(150, 150, 150)
+                .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(150, Short.MAX_VALUE))
+        );
+        jPanel13Layout.setVerticalGroup(
+            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel25, javax.swing.GroupLayout.DEFAULT_SIZE, 1120, Short.MAX_VALUE)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 542, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 1001, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                        .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                        .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, 987, Short.MAX_VALUE)
-                        .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, 987, Short.MAX_VALUE)
-                        .addComponent(jLabel21, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 987, Short.MAX_VALUE)
-                        .addComponent(jLabel22, javax.swing.GroupLayout.DEFAULT_SIZE, 987, Short.MAX_VALUE)
-                        .addComponent(jLabel23, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 987, Short.MAX_VALUE)
-                        .addComponent(jLabel24, javax.swing.GroupLayout.DEFAULT_SIZE, 987, Short.MAX_VALUE))
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(jLabel12)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -330,12 +552,27 @@ public class Agil extends javax.swing.JFrame {
                         .addComponent(jLabel15)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel19))
-                    .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 987, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 102, Short.MAX_VALUE))
+                    .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel7)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -346,8 +583,10 @@ public class Agil extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
+                .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(11, 11, 11)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel12)
                     .addComponent(jLabel16))
@@ -370,10 +609,16 @@ public class Agil extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
+                .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 882, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(25, Short.MAX_VALUE))
         );
 
         jScrollPane2.setViewportView(jPanel4);
@@ -389,9 +634,8 @@ public class Agil extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(128, 128, 128)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 1353, Short.MAX_VALUE)
-                .addContainerGap())
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane2))
         );
 
         pack();
@@ -436,6 +680,137 @@ public class Agil extends javax.swing.JFrame {
     private void jLabel6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseExited
         jLabel6.setForeground(Color.GRAY);
     }//GEN-LAST:event_jLabel6MouseExited
+
+    private void lblBotonDerMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBotonDerMouseEntered
+        lblBotonDer.setForeground(Color.DARK_GRAY);
+    }//GEN-LAST:event_lblBotonDerMouseEntered
+
+    private void lblBotonIzqMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBotonIzqMouseEntered
+        lblBotonIzq.setForeground(Color.DARK_GRAY);
+    }//GEN-LAST:event_lblBotonIzqMouseEntered
+
+    private void lblBotonIzqMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBotonIzqMouseExited
+        lblBotonIzq.setForeground(Color.LIGHT_GRAY);
+    }//GEN-LAST:event_lblBotonIzqMouseExited
+
+    private void lblBotonDerMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBotonDerMouseExited
+        lblBotonDer.setForeground(Color.LIGHT_GRAY);
+    }//GEN-LAST:event_lblBotonDerMouseExited
+
+    private void lblBotonDerMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBotonDerMouseClicked
+        if (valCambio == 1) {
+            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/metoagil1.png"));
+            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
+            lblCambioImagen.setIcon(ima1);
+            this.repaint();
+            valCambio = 2;
+            valCambio2 = 6;
+        } else if (valCambio == 2) {
+            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/metoagil2.png"));
+            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
+            lblCambioImagen.setIcon(ima1);
+            this.repaint();
+            valCambio = 3;
+            valCambio2 = 7;
+        } else if (valCambio == 3) {
+            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/metoagil3.png"));
+            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
+            lblCambioImagen.setIcon(ima1);
+            this.repaint();
+            valCambio = 4;
+            valCambio2 = 1;
+        } else if (valCambio == 4) {
+            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/metoagil4.png"));
+            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
+            lblCambioImagen.setIcon(ima1);
+            this.repaint();
+            valCambio = 5;
+            valCambio2 = 2;
+        } else if (valCambio == 5) {
+            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/metoagil5.png"));
+            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
+            lblCambioImagen.setIcon(ima1);
+            this.repaint();
+            valCambio = 6;
+            valCambio2 = 3;
+        } else if (valCambio == 6) {
+            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/metoagil6.png"));
+            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
+            lblCambioImagen.setIcon(ima1);
+            this.repaint();
+            valCambio = 7;
+            valCambio2 = 4;
+        } else if (valCambio == 7) {
+            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/metoagil7.png"));
+            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
+            lblCambioImagen.setIcon(ima1);
+            this.repaint();
+            valCambio = 1;
+            valCambio2 = 5;
+        }
+    }//GEN-LAST:event_lblBotonDerMouseClicked
+
+    private void lblBotonIzqMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBotonIzqMouseClicked
+
+        if (valCambio2 == 7) {
+            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/metoagil1.png"));
+            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
+            lblCambioImagen.setIcon(ima1);
+            this.repaint();
+            valCambio2 = 6;
+            valCambio = 2;
+        } else if (valCambio2 == 1) {
+            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/metoagil2.png"));
+            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
+            lblCambioImagen.setIcon(ima1);
+            this.repaint();
+            valCambio2 = 7;
+            valCambio = 3;
+        } else if (valCambio2 == 2) {
+            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/metoagil3.png"));
+            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
+            lblCambioImagen.setIcon(ima1);
+            this.repaint();
+            valCambio2 = 1;
+            valCambio = 4;
+        } else if (valCambio2 == 3) {
+            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/metoagil4.png"));
+            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
+            lblCambioImagen.setIcon(ima1);
+            this.repaint();
+            valCambio2 = 2;
+            valCambio = 5;
+        } else if (valCambio2 == 4) {
+            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/metoagil5.png"));
+            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
+            lblCambioImagen.setIcon(ima1);
+            this.repaint();
+            valCambio2 = 3;
+            valCambio = 6;
+        } else if (valCambio2 == 5) {
+            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/metoagil6.png"));
+            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
+            lblCambioImagen.setIcon(ima1);
+            this.repaint();
+            valCambio2 = 4;
+            valCambio = 7;
+        } else if (valCambio2 == 6) {
+            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/metoagil7.png"));
+            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
+            lblCambioImagen.setIcon(ima1);
+            this.repaint();
+            valCambio2 = 5;
+            valCambio = 1;
+        }
+
+
+    }//GEN-LAST:event_lblBotonIzqMouseClicked
+
+    private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
+        Salida obj3 = new Salida(); //Se crea un objeto de la clase Salida
+        obj3.setVisible(true); //Se habilita la vision de la ventana Salida
+        dispose(); //Se quita la ventana Juego
+    }//GEN-LAST:event_jLabel6MouseClicked
 
     /**
      * @param args the command line arguments
@@ -490,6 +865,7 @@ public class Agil extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -498,10 +874,26 @@ public class Agil extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel11;
+    private javax.swing.JPanel jPanel12;
+    private javax.swing.JPanel jPanel13;
+    private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JLabel lblBotonDer;
+    private javax.swing.JLabel lblBotonIzq;
+    private javax.swing.JLabel lblCambioImagen;
     private javax.swing.JLabel lblIcono1;
+    private javax.swing.JLabel lblima2;
+    private javax.swing.JLabel lblima3;
+    private javax.swing.JLabel lblima4;
     // End of variables declaration//GEN-END:variables
 }

@@ -21,19 +21,19 @@ public class Salida extends javax.swing.JFrame implements ActionListener {
         
         this.setLocationRelativeTo(null); //Codigo para que la ventana aparezca centrada
         setResizable(false); //Codigo para que no se pueda modificar el tamaño de la ventana
-        setTitle("Code Kata - Tennis"); //Codigo para colocar un titulo a la ventana
-        setIconImage(new ImageIcon(getClass().getResource("/imagenes/Bordado1.png")).getImage()); //Codigo para colocar un icono a la ventana
+        setTitle("Proyecto Final"); //Codigo para colocar un titulo a la ventana
+        setIconImage(new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/ICO.png")).getImage()); //Codigo para colocar un icono a la ventana
 
         //Codigo para colocar fondo a la ventana
         ((JPanel) getContentPane()).setOpaque(false);
-        ImageIcon uno = new ImageIcon(this.getClass().getResource("/imagenes/fondoSalida.jpg"));
+        ImageIcon uno = new ImageIcon(this.getClass().getResource("/aragon/ico/imagenes/salida/fondoSalida.jpg"));
         JLabel fondo = new JLabel();
         fondo.setIcon(uno);
         getLayeredPane().add(fondo, JLayeredPane.FRAME_CONTENT_LAYER);
         fondo.setBounds(0, 0, 600, 450);
 
         //Codigo para colocar imagen en una etiqueta
-        ImageIcon Salida = new ImageIcon(getClass().getResource("/imagenes/Salir.png")); //Aqui se obtiene la imagen
+        ImageIcon Salida = new ImageIcon(getClass().getResource("/aragon/ico/imagenes/salida/Salir.png")); //Aqui se obtiene la imagen
         ImageIcon icono1 = new ImageIcon(Salida.getImage().getScaledInstance(jLabel2.getWidth(), jLabel2.getHeight(), Image.SCALE_AREA_AVERAGING)); //Aqui se asignan sus propiedades
         jLabel2.setIcon(icono1); //Aqui se asigna la imagen al Label correspondiente
 
