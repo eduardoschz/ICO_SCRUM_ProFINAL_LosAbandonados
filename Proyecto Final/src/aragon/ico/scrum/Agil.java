@@ -5,11 +5,14 @@ import java.awt.Color;
 import java.awt.Image;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import java.awt.Cursor;
 
 public class Agil extends javax.swing.JFrame {
 
     private int valCambio;
     private int valCambio2;
+    private int valOcultar;
+    private int valOcultar2;
 
     public Agil() {
         initComponents();
@@ -60,6 +63,21 @@ public class Agil extends javax.swing.JFrame {
         Icon imatext3 = new ImageIcon(ima4.getImage().getScaledInstance(lblima4.getWidth(), lblima4.getHeight(), Image.SCALE_AREA_AVERAGING));
         lblima4.setIcon(imatext3);
         this.repaint();
+
+        lblDesAg.setVisible(false);
+        lblScru.setVisible(false);
+
+        jPanel15.setBackground(Color.white);
+        lblDesAg.setForeground(Color.white);
+        lblScru.setForeground(Color.white);
+        valOcultar = 0;
+
+        jPanel16.setBackground(Color.white);
+        lblContYo.setForeground(Color.white);
+        lblConEdu.setForeground(Color.white);
+        lblConMar.setForeground(Color.white);
+        lblConGeo.setForeground(Color.white);
+        valOcultar2 = 0;
     }
 
     /**
@@ -78,8 +96,8 @@ public class Agil extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jPanel4 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
@@ -107,7 +125,6 @@ public class Agil extends javax.swing.JFrame {
         lblCambioImagen = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         lblBotonDer = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
         jPanel10 = new javax.swing.JPanel();
         lblima2 = new javax.swing.JLabel();
@@ -118,6 +135,16 @@ public class Agil extends javax.swing.JFrame {
         jPanel13 = new javax.swing.JPanel();
         jPanel14 = new javax.swing.JPanel();
         lblima4 = new javax.swing.JLabel();
+        jPanel18 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jPanel15 = new javax.swing.JPanel();
+        lblDesAg = new javax.swing.JLabel();
+        lblScru = new javax.swing.JLabel();
+        jPanel16 = new javax.swing.JPanel();
+        lblContYo = new javax.swing.JLabel();
+        lblConMar = new javax.swing.JLabel();
+        lblConEdu = new javax.swing.JLabel();
+        lblConGeo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -133,13 +160,13 @@ public class Agil extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblIcono1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(lblIcono1, javax.swing.GroupLayout.DEFAULT_SIZE, 55, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(lblIcono1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addComponent(lblIcono1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         jPanel3.setBackground(new java.awt.Color(0, 102, 102));
@@ -176,24 +203,14 @@ public class Agil extends javax.swing.JFrame {
         jLabel4.setText("Desarrollo Ágil y Scrum");
         jLabel4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel4MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jLabel4MouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jLabel4MouseExited(evt);
-            }
-        });
-
-        jLabel5.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
-        jLabel5.setForeground(java.awt.Color.gray);
-        jLabel5.setText("Contacto");
-        jLabel5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel5MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel5MouseExited(evt);
             }
         });
 
@@ -213,6 +230,22 @@ public class Agil extends javax.swing.JFrame {
             }
         });
 
+        jLabel28.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
+        jLabel28.setForeground(java.awt.Color.gray);
+        jLabel28.setText("Contacto");
+        jLabel28.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel28.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel28MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel28MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel28MouseExited(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -224,9 +257,9 @@ public class Agil extends javax.swing.JFrame {
                 .addComponent(jLabel3)
                 .addGap(30, 30, 30)
                 .addComponent(jLabel4)
-                .addGap(30, 30, 30)
-                .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addComponent(jLabel28)
+                .addGap(30, 30, 30)
                 .addComponent(jLabel6))
         );
         jPanel3Layout.setVerticalGroup(
@@ -237,8 +270,8 @@ public class Agil extends javax.swing.JFrame {
                     .addComponent(jLabel1)
                     .addComponent(jLabel3)
                     .addComponent(jLabel4)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel6))
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel28))
                 .addGap(38, 38, 38))
         );
 
@@ -256,11 +289,11 @@ public class Agil extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(151, 151, 151))
         );
 
         jScrollPane2.setBackground(new java.awt.Color(255, 255, 255));
@@ -435,11 +468,6 @@ public class Agil extends javax.swing.JFrame {
             .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel2.setFont(new java.awt.Font("Arial Black", 0, 48)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(17, 134, 198));
-        jLabel2.setText("Desarrollo Ágil");
-
         jPanel9.setBackground(new java.awt.Color(153, 255, 153));
         jPanel9.setOpaque(false);
 
@@ -532,7 +560,7 @@ public class Agil extends javax.swing.JFrame {
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel25, javax.swing.GroupLayout.DEFAULT_SIZE, 1120, Short.MAX_VALUE)
+            .addComponent(jLabel25, javax.swing.GroupLayout.DEFAULT_SIZE, 1103, Short.MAX_VALUE)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -554,7 +582,6 @@ public class Agil extends javax.swing.JFrame {
                         .addComponent(jLabel19))
                     .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel7)
                     .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                     .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
@@ -572,9 +599,7 @@ public class Agil extends javax.swing.JFrame {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(30, 30, 30)
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -618,24 +643,183 @@ public class Agil extends javax.swing.JFrame {
                 .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(25, Short.MAX_VALUE))
+                .addContainerGap(97, Short.MAX_VALUE))
         );
 
         jScrollPane2.setViewportView(jPanel4);
+
+        jPanel18.setBackground(new java.awt.Color(51, 153, 0));
+        jPanel18.setOpaque(false);
+
+        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel2.setFont(new java.awt.Font("Arial Black", 0, 55)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(17, 134, 198));
+        jLabel2.setText("Desarrollo Ágil");
+
+        javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
+        jPanel18.setLayout(jPanel18Layout);
+        jPanel18Layout.setHorizontalGroup(
+            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel18Layout.createSequentialGroup()
+                .addGap(75, 75, 75)
+                .addComponent(jLabel2)
+                .addContainerGap(38, Short.MAX_VALUE))
+        );
+        jPanel18Layout.setVerticalGroup(
+            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel18Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 99, Short.MAX_VALUE))
+        );
+
+        jPanel15.setBackground(new java.awt.Color(245, 245, 245));
+
+        lblDesAg.setFont(new java.awt.Font("Berlin Sans FB", 0, 20)); // NOI18N
+        lblDesAg.setForeground(java.awt.Color.gray);
+        lblDesAg.setText("Desarrollo Ágil");
+        lblDesAg.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblDesAg.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lblDesAgMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                lblDesAgMouseExited(evt);
+            }
+        });
+
+        lblScru.setFont(new java.awt.Font("Berlin Sans FB", 0, 20)); // NOI18N
+        lblScru.setForeground(java.awt.Color.gray);
+        lblScru.setText("Scrum");
+        lblScru.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblScru.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lblScruMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                lblScruMouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
+        jPanel15.setLayout(jPanel15Layout);
+        jPanel15Layout.setHorizontalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblDesAg, javax.swing.GroupLayout.DEFAULT_SIZE, 233, Short.MAX_VALUE)
+            .addComponent(lblScru, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jPanel15Layout.setVerticalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
+                .addComponent(lblDesAg)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblScru))
+        );
+
+        jPanel16.setBackground(new java.awt.Color(245, 245, 245));
+
+        lblContYo.setFont(new java.awt.Font("Berlin Sans FB", 0, 20)); // NOI18N
+        lblContYo.setForeground(java.awt.Color.gray);
+        lblContYo.setText("Contacto Yovani");
+        lblContYo.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblContYo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lblContYoMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                lblContYoMouseExited(evt);
+            }
+        });
+
+        lblConMar.setFont(new java.awt.Font("Berlin Sans FB", 0, 20)); // NOI18N
+        lblConMar.setForeground(java.awt.Color.gray);
+        lblConMar.setText("Contacto Marco");
+        lblConMar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblConMar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lblConMarMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                lblConMarMouseExited(evt);
+            }
+        });
+
+        lblConEdu.setFont(new java.awt.Font("Berlin Sans FB", 0, 20)); // NOI18N
+        lblConEdu.setForeground(java.awt.Color.gray);
+        lblConEdu.setText("Contacto Eduardo");
+        lblConEdu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblConEdu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lblConEduMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                lblConEduMouseExited(evt);
+            }
+        });
+
+        lblConGeo.setFont(new java.awt.Font("Berlin Sans FB", 0, 20)); // NOI18N
+        lblConGeo.setForeground(java.awt.Color.gray);
+        lblConGeo.setText("Contacto Geovanni");
+        lblConGeo.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblConGeo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lblConGeoMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                lblConGeoMouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
+        jPanel16.setLayout(jPanel16Layout);
+        jPanel16Layout.setHorizontalGroup(
+            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblContYo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(lblConEdu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(lblConMar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(lblConGeo, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
+        );
+        jPanel16Layout.setVerticalGroup(
+            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel16Layout.createSequentialGroup()
+                .addComponent(lblContYo)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblConEdu)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblConMar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblConGeo))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 1120, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 1120, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
+                .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(58, 58, 58))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane2))
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, 0)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 372, Short.MAX_VALUE))
         );
 
         pack();
@@ -643,6 +827,7 @@ public class Agil extends javax.swing.JFrame {
 
     private void jLabel1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseEntered
         jLabel1.setForeground(Color.DARK_GRAY);
+
     }//GEN-LAST:event_jLabel1MouseEntered
 
     private void jLabel3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseEntered
@@ -653,9 +838,14 @@ public class Agil extends javax.swing.JFrame {
         jLabel4.setForeground(Color.DARK_GRAY);
     }//GEN-LAST:event_jLabel4MouseEntered
 
-    private void jLabel5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseEntered
-        jLabel5.setForeground(Color.DARK_GRAY);
-    }//GEN-LAST:event_jLabel5MouseEntered
+    private void lblContYoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblContYoMouseEntered
+        if (valOcultar2 == 1) {
+            lblContYo.setCursor(new Cursor(Cursor.HAND_CURSOR));
+            lblContYo.setForeground(Color.DARK_GRAY);
+        }else if (valOcultar2 == 0){
+            lblContYo.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
+        }
+    }//GEN-LAST:event_lblContYoMouseEntered
 
     private void jLabel6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseEntered
         jLabel6.setForeground(Color.DARK_GRAY);
@@ -673,9 +863,12 @@ public class Agil extends javax.swing.JFrame {
         jLabel4.setForeground(Color.GRAY);
     }//GEN-LAST:event_jLabel4MouseExited
 
-    private void jLabel5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseExited
-        jLabel5.setForeground(Color.GRAY);
-    }//GEN-LAST:event_jLabel5MouseExited
+    private void lblContYoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblContYoMouseExited
+        if (valOcultar2 == 1) {
+
+            lblContYo.setForeground(Color.GRAY);
+        }
+    }//GEN-LAST:event_lblContYoMouseExited
 
     private void jLabel6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseExited
         jLabel6.setForeground(Color.GRAY);
@@ -812,6 +1005,144 @@ public class Agil extends javax.swing.JFrame {
         dispose(); //Se quita la ventana Juego
     }//GEN-LAST:event_jLabel6MouseClicked
 
+    private void lblDesAgMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblDesAgMouseEntered
+
+        if (valOcultar == 1) {
+
+            lblDesAg.setForeground(Color.DARK_GRAY);
+        }
+    }//GEN-LAST:event_lblDesAgMouseEntered
+
+    private void lblDesAgMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblDesAgMouseExited
+        if (valOcultar == 1) {
+
+            lblDesAg.setForeground(Color.GRAY);
+        }
+    }//GEN-LAST:event_lblDesAgMouseExited
+
+    private void lblScruMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblScruMouseEntered
+        if (valOcultar == 1) {
+
+            lblScru.setForeground(Color.DARK_GRAY);
+        }
+    }//GEN-LAST:event_lblScruMouseEntered
+
+    private void lblScruMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblScruMouseExited
+        if (valOcultar == 1) {
+
+            lblScru.setForeground(Color.GRAY);
+        }
+    }//GEN-LAST:event_lblScruMouseExited
+
+    private void jLabel28MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel28MouseEntered
+        jLabel28.setForeground(Color.DARK_GRAY);
+    }//GEN-LAST:event_jLabel28MouseEntered
+
+    private void jLabel28MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel28MouseExited
+        jLabel28.setForeground(Color.GRAY);
+    }//GEN-LAST:event_jLabel28MouseExited
+
+    private void lblConMarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblConMarMouseEntered
+        if (valOcultar2 == 1) {
+            lblConMar.setCursor(new Cursor(Cursor.HAND_CURSOR));
+            lblConMar.setForeground(Color.DARK_GRAY);
+        }else if (valOcultar2 == 0){
+            lblConMar.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
+        }
+    }//GEN-LAST:event_lblConMarMouseEntered
+
+    private void lblConMarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblConMarMouseExited
+        if (valOcultar2 == 1) {
+            lblConMar.setForeground(Color.GRAY);
+        }
+    }//GEN-LAST:event_lblConMarMouseExited
+
+    private void lblConEduMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblConEduMouseEntered
+        if (valOcultar2 == 1) {
+            lblConEdu.setCursor(new Cursor(Cursor.HAND_CURSOR));
+            lblConEdu.setForeground(Color.DARK_GRAY);
+        }else if (valOcultar2 == 0){
+            lblConEdu.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
+        }
+    }//GEN-LAST:event_lblConEduMouseEntered
+
+    private void lblConEduMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblConEduMouseExited
+        if (valOcultar2 == 1) {
+            lblConEdu.setForeground(Color.GRAY);
+        }
+    }//GEN-LAST:event_lblConEduMouseExited
+
+    private void lblConGeoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblConGeoMouseEntered
+        if (valOcultar2 == 1) {
+            lblConGeo.setCursor(new Cursor(Cursor.HAND_CURSOR));
+            lblConGeo.setForeground(Color.DARK_GRAY);
+        }else if (valOcultar2 == 0){
+            lblConGeo.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
+        }
+    }//GEN-LAST:event_lblConGeoMouseEntered
+
+    private void lblConGeoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblConGeoMouseExited
+        if (valOcultar2 == 1) {
+            lblConGeo.setForeground(Color.GRAY);
+        }
+    }//GEN-LAST:event_lblConGeoMouseExited
+
+    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
+        Color myColor = new Color(245, 245, 245);
+
+        if (valOcultar == 0) {
+            jPanel15.setBackground(myColor);
+            lblDesAg.setForeground(Color.gray);
+            lblScru.setForeground(Color.gray);
+
+            lblDesAg.setVisible(true);
+            lblScru.setVisible(true);
+
+            jPanel16.setBackground(Color.white);
+            lblContYo.setForeground(Color.white);
+            lblConEdu.setForeground(Color.white);
+            lblConMar.setForeground(Color.white);
+            lblConGeo.setForeground(Color.white);
+            valOcultar2 = 0;
+
+            valOcultar = 1;
+        } else if (valOcultar == 1) {
+            jPanel15.setBackground(Color.white);
+            lblDesAg.setForeground(Color.white);
+            lblScru.setForeground(Color.white);
+
+            lblDesAg.setVisible(false);
+            lblScru.setVisible(false);
+
+            valOcultar = 0;
+        }
+    }//GEN-LAST:event_jLabel4MouseClicked
+
+    private void jLabel28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel28MouseClicked
+        Color myColor = new Color(245, 245, 245);
+        if (valOcultar2 == 0) {
+            jPanel16.setBackground(myColor);
+            lblContYo.setForeground(Color.gray);
+            lblConEdu.setForeground(Color.gray);
+            lblConMar.setForeground(Color.gray);
+            lblConGeo.setForeground(Color.gray);
+
+            lblDesAg.setVisible(false);
+            lblScru.setVisible(false);
+            valOcultar = 0;
+
+            valOcultar2 = 1;
+        } else if (valOcultar2 == 1) {
+            jPanel16.setBackground(Color.white);
+            lblContYo.setForeground(Color.white);
+            lblConEdu.setForeground(Color.white);
+            lblConMar.setForeground(Color.white);
+            lblConGeo.setForeground(Color.white);
+
+            valOcultar2 = 0;
+        }
+    }//GEN-LAST:event_jLabel28MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -866,9 +1197,9 @@ public class Agil extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -879,6 +1210,9 @@ public class Agil extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel14;
+    private javax.swing.JPanel jPanel15;
+    private javax.swing.JPanel jPanel16;
+    private javax.swing.JPanel jPanel18;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
@@ -891,7 +1225,13 @@ public class Agil extends javax.swing.JFrame {
     private javax.swing.JLabel lblBotonDer;
     private javax.swing.JLabel lblBotonIzq;
     private javax.swing.JLabel lblCambioImagen;
+    private javax.swing.JLabel lblConEdu;
+    private javax.swing.JLabel lblConGeo;
+    private javax.swing.JLabel lblConMar;
+    private javax.swing.JLabel lblContYo;
+    private javax.swing.JLabel lblDesAg;
     private javax.swing.JLabel lblIcono1;
+    private javax.swing.JLabel lblScru;
     private javax.swing.JLabel lblima2;
     private javax.swing.JLabel lblima3;
     private javax.swing.JLabel lblima4;
