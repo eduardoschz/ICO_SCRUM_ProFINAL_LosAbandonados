@@ -663,7 +663,10 @@ public class Inicio extends javax.swing.JFrame {
     }//GEN-LAST:event_jBSalirMouseExited
 
     private void jBSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBSalirActionPerformed
-        System.exit(0);
+        Salida salir = new Salida();
+        this.setVisible(false);
+        salir.setVisible(true);
+        dispose();
     }//GEN-LAST:event_jBSalirActionPerformed
 
     /**
