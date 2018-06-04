@@ -11,6 +11,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import Animacion.Animacion;
 
 /**
  *
@@ -18,52 +19,57 @@ import javax.swing.ImageIcon;
  */
 public class Inicio extends javax.swing.JFrame {
 
-    Timer timer;
-    TimerTask tarea;
+    Timer timerImagenes, timerControl;
+    TimerTask cambioDeImagen, controlmenu;
     ImageIcon imagenes;
     Icon slade;
     int indice = 1;
-    
+
     /**
      * Creates new form Inicio
      */
     public Inicio() {
         initComponents();
-        
+
         // La ventana se centrará en medio de la pantalla
         this.setLocationRelativeTo(null);
-        
+
+        // Configuracion de los menus desplegables
+        jPDesplegableScrum.setVisible(false);
+        jPDesplegableContacto.setVisible(false);
+
         // Logos de la UNAM FES Aragon y de ICO
         ImageIcon iconoUNAM = new ImageIcon(System.getProperty("user.dir") + "/src/aragon/ico/imagenes/inicio/Aragon.jpg");
         Icon logoUNAM = new ImageIcon(iconoUNAM.getImage().getScaledInstance(jLLogoUNAM.getWidth(), jLLogoUNAM.getHeight(), Image.SCALE_AREA_AVERAGING));
         jLLogoUNAM.setIcon(logoUNAM);
-        
+
         ImageIcon iconoICO = new ImageIcon(System.getProperty("user.dir") + "/src/aragon/ico/imagenes/inicio/ICO.png");
         Icon logoICO = new ImageIcon(iconoICO.getImage().getScaledInstance(jLLogoICO.getWidth(), jLLogoICO.getHeight(), Image.SCALE_AREA_AVERAGING));
         jLLogoICO.setIcon(logoICO);
-        
+
         // Imagen con el cual empezará el Slide
         imagenes = new ImageIcon(System.getProperty("user.dir") + "/src/aragon/ico/imagenes/inicio/ing_soft.png");
         slade = new ImageIcon(imagenes.getImage().getScaledInstance(jLSlide.getWidth(), jLSlide.getHeight(), Image.SCALE_AREA_AVERAGING));
         jLSlide.setIcon(slade);
-        
+
         // Imagen con los reloes de Sccrum
         ImageIcon iconoSCRUM = new ImageIcon(System.getProperty("user.dir") + "/src/aragon/ico/imagenes/inicio/Scrum-roles.jpg");
         Icon logoSCRUM = new ImageIcon(iconoSCRUM.getImage().getScaledInstance(jLSCRUM.getWidth(), jLSCRUM.getHeight(), Image.SCALE_AREA_AVERAGING));
         jLSCRUM.setIcon(logoSCRUM);
-        
+
         //Imagenes con los isotipos de Github y Trello
         ImageIcon iconoGithub = new ImageIcon(System.getProperty("user.dir") + "/src/aragon/ico/imagenes/inicio/github-logo.png");
         Icon logoGuthub = new ImageIcon(iconoGithub.getImage().getScaledInstance(jLGithub.getWidth(), jLGithub.getHeight(), Image.SCALE_AREA_AVERAGING));
         jLGithub.setIcon(logoGuthub);
-        
+
         ImageIcon iconoTrello = new ImageIcon(System.getProperty("user.dir") + "/src/aragon/ico/imagenes/inicio/trello.png");
         Icon logoTrello = new ImageIcon(iconoTrello.getImage().getScaledInstance(jLTrello.getWidth(), jLTrello.getHeight(), Image.SCALE_AREA_AVERAGING));
         jLTrello.setIcon(logoTrello);
-        
+
         this.repaint();
-        
+
         cambiarImagen();
+        controlDesplegable();
     }
 
     /**
@@ -82,9 +88,16 @@ public class Inicio extends javax.swing.JFrame {
         jLLogoICO = new javax.swing.JLabel();
         jLLogoUNAM = new javax.swing.JLabel();
         jPMenu = new javax.swing.JPanel();
-        jBScrum = new javax.swing.JButton();
+        jBDA_Scrum = new javax.swing.JButton();
         jBIngenieria = new javax.swing.JButton();
         jBContacto = new javax.swing.JButton();
+        jPDesplegableScrum = new javax.swing.JPanel();
+        jBAgil = new javax.swing.JButton();
+        jBScrum = new javax.swing.JButton();
+        jPDesplegableContacto = new javax.swing.JPanel();
+        jBProduct_Owner = new javax.swing.JButton();
+        jBScrum_Master = new javax.swing.JButton();
+        jBScrum_Team = new javax.swing.JButton();
         jPContenido = new javax.swing.JPanel();
         jLSlide = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -102,7 +115,6 @@ public class Inicio extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Inicio");
-        setPreferredSize(new java.awt.Dimension(1200, 720));
         setResizable(false);
 
         jScrollPane1.setBorder(null);
@@ -146,20 +158,25 @@ public class Inicio extends javax.swing.JFrame {
 
         jPMenu.setBackground(new java.awt.Color(245, 245, 245));
 
-        jBScrum.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
-        jBScrum.setForeground(java.awt.Color.gray);
-        jBScrum.setText("Desarrollo Ágil y Scrum");
-        jBScrum.setBorder(null);
-        jBScrum.setBorderPainted(false);
-        jBScrum.setContentAreaFilled(false);
-        jBScrum.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jBScrum.setFocusPainted(false);
-        jBScrum.addMouseListener(new java.awt.event.MouseAdapter() {
+        jBDA_Scrum.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
+        jBDA_Scrum.setForeground(java.awt.Color.gray);
+        jBDA_Scrum.setText("Desarrollo Ágil y Scrum");
+        jBDA_Scrum.setBorder(null);
+        jBDA_Scrum.setBorderPainted(false);
+        jBDA_Scrum.setContentAreaFilled(false);
+        jBDA_Scrum.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jBDA_Scrum.setFocusPainted(false);
+        jBDA_Scrum.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jBScrumMouseEntered(evt);
+                jBDA_ScrumMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jBScrumMouseExited(evt);
+                jBDA_ScrumMouseExited(evt);
+            }
+        });
+        jBDA_Scrum.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBDA_ScrumActionPerformed(evt);
             }
         });
 
@@ -196,6 +213,11 @@ public class Inicio extends javax.swing.JFrame {
                 jBContactoMouseExited(evt);
             }
         });
+        jBContacto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBContactoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPMenuLayout = new javax.swing.GroupLayout(jPMenu);
         jPMenu.setLayout(jPMenuLayout);
@@ -205,7 +227,7 @@ public class Inicio extends javax.swing.JFrame {
                 .addGap(299, 299, 299)
                 .addComponent(jBIngenieria)
                 .addGap(30, 30, 30)
-                .addComponent(jBScrum)
+                .addComponent(jBDA_Scrum)
                 .addGap(29, 29, 29)
                 .addComponent(jBContacto)
                 .addContainerGap(300, Short.MAX_VALUE))
@@ -216,12 +238,152 @@ public class Inicio extends javax.swing.JFrame {
                 .addContainerGap(24, Short.MAX_VALUE)
                 .addGroup(jPMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(jBIngenieria)
-                    .addComponent(jBScrum)
+                    .addComponent(jBDA_Scrum)
                     .addComponent(jBContacto))
                 .addGap(19, 19, 19))
         );
 
         jPanel1.add(jPMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 1200, 70));
+
+        jPDesplegableScrum.setBackground(new java.awt.Color(245, 245, 245));
+
+        jBAgil.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jBAgil.setForeground(java.awt.Color.gray);
+        jBAgil.setText("Desarrollo Ágil");
+        jBAgil.setBorder(null);
+        jBAgil.setBorderPainted(false);
+        jBAgil.setContentAreaFilled(false);
+        jBAgil.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jBAgil.setFocusPainted(false);
+        jBAgil.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jBAgil.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jBAgilMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jBAgilMouseExited(evt);
+            }
+        });
+
+        jBScrum.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jBScrum.setForeground(java.awt.Color.gray);
+        jBScrum.setText("Scrum");
+        jBScrum.setBorder(null);
+        jBScrum.setBorderPainted(false);
+        jBScrum.setContentAreaFilled(false);
+        jBScrum.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jBScrum.setFocusPainted(false);
+        jBScrum.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jBScrum.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jBScrumMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jBScrumMouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPDesplegableScrumLayout = new javax.swing.GroupLayout(jPDesplegableScrum);
+        jPDesplegableScrum.setLayout(jPDesplegableScrumLayout);
+        jPDesplegableScrumLayout.setHorizontalGroup(
+            jPDesplegableScrumLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPDesplegableScrumLayout.createSequentialGroup()
+                .addContainerGap(114, Short.MAX_VALUE)
+                .addGroup(jPDesplegableScrumLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jBAgil, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jBScrum, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
+        );
+        jPDesplegableScrumLayout.setVerticalGroup(
+            jPDesplegableScrumLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPDesplegableScrumLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jBAgil)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jBScrum)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(jPDesplegableScrum, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 200, 250, 70));
+
+        jPDesplegableContacto.setBackground(new java.awt.Color(245, 245, 245));
+
+        jBProduct_Owner.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jBProduct_Owner.setForeground(java.awt.Color.gray);
+        jBProduct_Owner.setText("Product Owner");
+        jBProduct_Owner.setBorder(null);
+        jBProduct_Owner.setBorderPainted(false);
+        jBProduct_Owner.setContentAreaFilled(false);
+        jBProduct_Owner.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jBProduct_Owner.setFocusPainted(false);
+        jBProduct_Owner.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jBProduct_OwnerMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jBProduct_OwnerMouseExited(evt);
+            }
+        });
+
+        jBScrum_Master.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jBScrum_Master.setForeground(java.awt.Color.gray);
+        jBScrum_Master.setText("Scrum Master");
+        jBScrum_Master.setBorder(null);
+        jBScrum_Master.setBorderPainted(false);
+        jBScrum_Master.setContentAreaFilled(false);
+        jBScrum_Master.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jBScrum_Master.setFocusPainted(false);
+        jBScrum_Master.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jBScrum_MasterMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jBScrum_MasterMouseExited(evt);
+            }
+        });
+
+        jBScrum_Team.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jBScrum_Team.setForeground(java.awt.Color.gray);
+        jBScrum_Team.setText("Scrum Team");
+        jBScrum_Team.setBorder(null);
+        jBScrum_Team.setBorderPainted(false);
+        jBScrum_Team.setContentAreaFilled(false);
+        jBScrum_Team.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jBScrum_Team.setFocusPainted(false);
+        jBScrum_Team.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jBScrum_TeamMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jBScrum_TeamMouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPDesplegableContactoLayout = new javax.swing.GroupLayout(jPDesplegableContacto);
+        jPDesplegableContacto.setLayout(jPDesplegableContactoLayout);
+        jPDesplegableContactoLayout.setHorizontalGroup(
+            jPDesplegableContactoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPDesplegableContactoLayout.createSequentialGroup()
+                .addContainerGap(16, Short.MAX_VALUE)
+                .addGroup(jPDesplegableContactoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jBProduct_Owner, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jBScrum_Master, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jBScrum_Team, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addContainerGap())
+        );
+        jPDesplegableContactoLayout.setVerticalGroup(
+            jPDesplegableContactoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPDesplegableContactoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jBProduct_Owner)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jBScrum_Master)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jBScrum_Team)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(jPDesplegableContacto, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 180, 140, 90));
 
         jPContenido.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -299,19 +461,16 @@ public class Inicio extends javax.swing.JFrame {
                     .addGroup(jPContenidoLayout.createSequentialGroup()
                         .addComponent(jLGithub, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(92, 92, 92)
-                        .addComponent(jLTrello, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jLTrello, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLSlide, javax.swing.GroupLayout.PREFERRED_SIZE, 800, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(10, 10, 10))
-            .addGroup(jPContenidoLayout.createSequentialGroup()
-                .addGap(200, 200, 200)
-                .addComponent(jLSlide, javax.swing.GroupLayout.PREFERRED_SIZE, 800, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPContenidoLayout.setVerticalGroup(
             jPContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPContenidoLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(37, 37, 37)
                 .addComponent(jLSlide, javax.swing.GroupLayout.PREFERRED_SIZE, 450, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(44, 44, 44)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel3)
@@ -325,7 +484,7 @@ public class Inicio extends javax.swing.JFrame {
                 .addComponent(jLabel6)
                 .addGap(18, 18, 18)
                 .addComponent(jLSCRUM, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
+                .addGap(27, 27, 27)
                 .addComponent(jLabel8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel9)
@@ -335,7 +494,7 @@ public class Inicio extends javax.swing.JFrame {
                 .addGroup(jPContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(jLGithub, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLTrello, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPContenido, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 1200, 1110));
@@ -356,13 +515,13 @@ public class Inicio extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jBScrumMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBScrumMouseEntered
-        jBScrum.setForeground(Color.DARK_GRAY);
-    }//GEN-LAST:event_jBScrumMouseEntered
+    private void jBDA_ScrumMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBDA_ScrumMouseEntered
+        jBDA_Scrum.setForeground(Color.DARK_GRAY);
+    }//GEN-LAST:event_jBDA_ScrumMouseEntered
 
-    private void jBScrumMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBScrumMouseExited
-        jBScrum.setForeground(Color.GRAY);
-    }//GEN-LAST:event_jBScrumMouseExited
+    private void jBDA_ScrumMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBDA_ScrumMouseExited
+        jBDA_Scrum.setForeground(Color.GRAY);
+    }//GEN-LAST:event_jBDA_ScrumMouseExited
 
     private void jBIngenieriaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBIngenieriaMouseEntered
         jBIngenieria.setForeground(Color.DARK_GRAY);
@@ -379,6 +538,94 @@ public class Inicio extends javax.swing.JFrame {
     private void jBContactoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBContactoMouseExited
         jBContacto.setForeground(Color.GRAY);
     }//GEN-LAST:event_jBContactoMouseExited
+
+    private void jBAgilMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBAgilMouseEntered
+        if (jPDesplegableScrum.isVisible()) {
+            jBAgil.setForeground(Color.DARK_GRAY);
+        }
+    }//GEN-LAST:event_jBAgilMouseEntered
+
+    private void jBAgilMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBAgilMouseExited
+        if (jPDesplegableScrum.isVisible()) {
+            jBAgil.setForeground(Color.GRAY);
+        }
+    }//GEN-LAST:event_jBAgilMouseExited
+
+    private void jBScrumMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBScrumMouseEntered
+        if (jPDesplegableScrum.isVisible()) {
+            jBScrum.setForeground(Color.DARK_GRAY);
+        }
+    }//GEN-LAST:event_jBScrumMouseEntered
+
+    private void jBScrumMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBScrumMouseExited
+        if (jPDesplegableScrum.isVisible()) {
+            jBScrum.setForeground(Color.GRAY);
+        }
+    }//GEN-LAST:event_jBScrumMouseExited
+
+    private void jBProduct_OwnerMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBProduct_OwnerMouseEntered
+        if (jPDesplegableContacto.isVisible()) {
+            jBProduct_Owner.setForeground(Color.DARK_GRAY);
+        }
+    }//GEN-LAST:event_jBProduct_OwnerMouseEntered
+
+    private void jBProduct_OwnerMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBProduct_OwnerMouseExited
+        if (jPDesplegableContacto.isVisible()) {
+            jBProduct_Owner.setForeground(Color.GRAY);
+        }
+    }//GEN-LAST:event_jBProduct_OwnerMouseExited
+
+    private void jBScrum_MasterMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBScrum_MasterMouseEntered
+        if (jPDesplegableContacto.isVisible()) {
+            jBScrum_Master.setForeground(Color.DARK_GRAY);
+        }
+    }//GEN-LAST:event_jBScrum_MasterMouseEntered
+
+    private void jBScrum_MasterMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBScrum_MasterMouseExited
+        if (jPDesplegableContacto.isVisible()) {
+            jBScrum_Master.setForeground(Color.GRAY);
+        }
+    }//GEN-LAST:event_jBScrum_MasterMouseExited
+
+    private void jBScrum_TeamMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBScrum_TeamMouseEntered
+        if (jPDesplegableContacto.isVisible()) {
+            jBScrum_Team.setForeground(Color.DARK_GRAY);
+        }
+    }//GEN-LAST:event_jBScrum_TeamMouseEntered
+
+    private void jBScrum_TeamMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBScrum_TeamMouseExited
+        if (jPDesplegableContacto.isVisible()) {
+            jBScrum_Team.setForeground(Color.GRAY);
+        }
+    }//GEN-LAST:event_jBScrum_TeamMouseExited
+
+    private void jBDA_ScrumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBDA_ScrumActionPerformed
+        int posicion = jPDesplegableScrum.getY();
+        if (posicion < 270) {
+            if (jPDesplegableContacto.isVisible()) {
+                jPDesplegableContacto.setVisible(false);
+            }
+            jPDesplegableScrum.setVisible(true);
+            Animacion.bajar(200, 270, 1, jPDesplegableScrum);
+        } else {
+            Animacion.subir(270, 200, 1, jPDesplegableScrum);
+            jPDesplegableScrum.setVisible(false);
+        }
+    }//GEN-LAST:event_jBDA_ScrumActionPerformed
+
+    private void jBContactoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBContactoActionPerformed
+        int posicion = jPDesplegableContacto.getY();
+        if (posicion < 270) {
+            if (jPDesplegableScrum.isVisible()) {
+                jPDesplegableScrum.setVisible(false);
+            }
+            jPDesplegableContacto.setVisible(true);
+            Animacion.bajar(180, 270, 1, jPDesplegableContacto);
+        } else {
+            Animacion.subir(270, 180, 1, jPDesplegableContacto);
+            jPDesplegableContacto.setVisible(false);
+        }
+    }//GEN-LAST:event_jBContactoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -416,9 +663,14 @@ public class Inicio extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jBAgil;
     private javax.swing.JButton jBContacto;
+    private javax.swing.JButton jBDA_Scrum;
     private javax.swing.JButton jBIngenieria;
+    private javax.swing.JButton jBProduct_Owner;
     private javax.swing.JButton jBScrum;
+    private javax.swing.JButton jBScrum_Master;
+    private javax.swing.JButton jBScrum_Team;
     private javax.swing.JLabel jLGithub;
     private javax.swing.JLabel jLLogoICO;
     private javax.swing.JLabel jLLogoUNAM;
@@ -436,54 +688,77 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPContenido;
+    private javax.swing.JPanel jPDesplegableContacto;
+    private javax.swing.JPanel jPDesplegableScrum;
     private javax.swing.JPanel jPMenu;
     private javax.swing.JPanel jPTitulo;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 
-    public void cambiarImagen(){
+    public void cambiarImagen() {
         int velocidad = 3;
         int valMil = velocidad * 1000;
-        
-        tarea = new TimerTask() {
+
+        cambioDeImagen = new TimerTask() {
             @Override
             public void run() {
-                switch(indice){
+                switch (indice) {
                     case 0:
                         indice = 1;
                         imagenes = new ImageIcon(System.getProperty("user.dir") + "/src/aragon/ico/imagenes/inicio/ing_soft.png");
                         slade = new ImageIcon(imagenes.getImage().getScaledInstance(jLSlide.getWidth(), jLSlide.getHeight(), Image.SCALE_AREA_AVERAGING));
                         jLSlide.setIcon(slade);
                         break;
-                        
-                    case 1: 
+
+                    case 1:
                         indice = 2;
                         imagenes = new ImageIcon(System.getProperty("user.dir") + "/src/aragon/ico/imagenes/inicio/dashboard.jpg");
                         slade = new ImageIcon(imagenes.getImage().getScaledInstance(jLSlide.getWidth(), jLSlide.getHeight(), Image.SCALE_AREA_AVERAGING));
                         jLSlide.setIcon(slade);
                         break;
-                        
-                    case 2: 
+
+                    case 2:
                         indice = 3;
                         imagenes = new ImageIcon(System.getProperty("user.dir") + "/src/aragon/ico/imagenes/inicio/desarrollo_ágil.jpg");
                         slade = new ImageIcon(imagenes.getImage().getScaledInstance(jLSlide.getWidth(), jLSlide.getHeight(), Image.SCALE_AREA_AVERAGING));
                         jLSlide.setIcon(slade);
                         break;
-                        
-                    case 3: 
+
+                    case 3:
                         indice = 0;
                         imagenes = new ImageIcon(System.getProperty("user.dir") + "/src/aragon/ico/imagenes/inicio/team.png");
                         slade = new ImageIcon(imagenes.getImage().getScaledInstance(jLSlide.getWidth(), jLSlide.getHeight(), Image.SCALE_AREA_AVERAGING));
                         jLSlide.setIcon(slade);
                         break;
                 }
+                
+                jPanel1.repaint();
+            }
+        };
+
+        timerImagenes = new Timer();
+        timerImagenes.scheduleAtFixedRate(cambioDeImagen, valMil, valMil);
+
+    }
+
+    public void controlDesplegable(){
+        int lapso = 1000;
+        
+        controlmenu = new TimerTask() {
+            @Override
+            public void run() {
+                if (jPDesplegableScrum.isVisible() && jPDesplegableScrum.getY() < 270) {
+                    jPDesplegableScrum.setVisible(false);
+                }
+                
+                if (jPDesplegableContacto.isVisible() && jPDesplegableContacto.getY() < 270) {
+                    jPDesplegableContacto.setVisible(false);
+                }
             }
         };
         
-        timer = new Timer();
-        timer.scheduleAtFixedRate(tarea, valMil, valMil);
-        
+        timerControl = new Timer();
+        timerControl.scheduleAtFixedRate(controlmenu, lapso, 1100);
     }
-    
 }
