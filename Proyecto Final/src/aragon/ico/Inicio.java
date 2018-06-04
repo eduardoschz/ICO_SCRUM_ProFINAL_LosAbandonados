@@ -91,6 +91,7 @@ public class Inicio extends javax.swing.JFrame {
         jBDA_Scrum = new javax.swing.JButton();
         jBIngenieria = new javax.swing.JButton();
         jBContacto = new javax.swing.JButton();
+        jBSalir = new javax.swing.JButton();
         jPDesplegableScrum = new javax.swing.JPanel();
         jBAgil = new javax.swing.JButton();
         jBScrum = new javax.swing.JButton();
@@ -115,6 +116,7 @@ public class Inicio extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Inicio");
+        setUndecorated(true);
         setResizable(false);
 
         jScrollPane1.setBorder(null);
@@ -219,18 +221,42 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
+        jBSalir.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
+        jBSalir.setForeground(java.awt.Color.gray);
+        jBSalir.setText("Salir");
+        jBSalir.setBorder(null);
+        jBSalir.setBorderPainted(false);
+        jBSalir.setContentAreaFilled(false);
+        jBSalir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jBSalir.setFocusPainted(false);
+        jBSalir.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jBSalirMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jBSalirMouseExited(evt);
+            }
+        });
+        jBSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBSalirActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPMenuLayout = new javax.swing.GroupLayout(jPMenu);
         jPMenu.setLayout(jPMenuLayout);
         jPMenuLayout.setHorizontalGroup(
             jPMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPMenuLayout.createSequentialGroup()
-                .addGap(299, 299, 299)
+                .addGap(263, 263, 263)
                 .addComponent(jBIngenieria)
                 .addGap(30, 30, 30)
                 .addComponent(jBDA_Scrum)
-                .addGap(29, 29, 29)
+                .addGap(30, 30, 30)
                 .addComponent(jBContacto)
-                .addContainerGap(300, Short.MAX_VALUE))
+                .addGap(30, 30, 30)
+                .addComponent(jBSalir)
+                .addContainerGap(263, Short.MAX_VALUE))
         );
         jPMenuLayout.setVerticalGroup(
             jPMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -239,7 +265,8 @@ public class Inicio extends javax.swing.JFrame {
                 .addGroup(jPMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(jBIngenieria)
                     .addComponent(jBDA_Scrum)
-                    .addComponent(jBContacto))
+                    .addComponent(jBContacto)
+                    .addComponent(jBSalir))
                 .addGap(19, 19, 19))
         );
 
@@ -288,7 +315,7 @@ public class Inicio extends javax.swing.JFrame {
         jPDesplegableScrumLayout.setHorizontalGroup(
             jPDesplegableScrumLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPDesplegableScrumLayout.createSequentialGroup()
-                .addContainerGap(114, Short.MAX_VALUE)
+                .addContainerGap(104, Short.MAX_VALUE)
                 .addGroup(jPDesplegableScrumLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jBAgil, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jBScrum, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -304,7 +331,7 @@ public class Inicio extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPDesplegableScrum, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 200, 250, 70));
+        jPanel1.add(jPDesplegableScrum, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 200, 240, 70));
 
         jPDesplegableContacto.setBackground(new java.awt.Color(245, 245, 245));
 
@@ -364,7 +391,7 @@ public class Inicio extends javax.swing.JFrame {
         jPDesplegableContactoLayout.setHorizontalGroup(
             jPDesplegableContactoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPDesplegableContactoLayout.createSequentialGroup()
-                .addContainerGap(16, Short.MAX_VALUE)
+                .addContainerGap(26, Short.MAX_VALUE)
                 .addGroup(jPDesplegableContactoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jBProduct_Owner, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jBScrum_Master, javax.swing.GroupLayout.Alignment.TRAILING)
@@ -383,7 +410,7 @@ public class Inicio extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPDesplegableContacto, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 180, 140, 90));
+        jPanel1.add(jPDesplegableContacto, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 180, 150, 90));
 
         jPContenido.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -627,6 +654,18 @@ public class Inicio extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jBContactoActionPerformed
 
+    private void jBSalirMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBSalirMouseEntered
+        jBSalir.setForeground(Color.DARK_GRAY);
+    }//GEN-LAST:event_jBSalirMouseEntered
+
+    private void jBSalirMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBSalirMouseExited
+        jBSalir.setForeground(Color.GRAY);
+    }//GEN-LAST:event_jBSalirMouseExited
+
+    private void jBSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBSalirActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_jBSalirActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -668,6 +707,7 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JButton jBDA_Scrum;
     private javax.swing.JButton jBIngenieria;
     private javax.swing.JButton jBProduct_Owner;
+    private javax.swing.JButton jBSalir;
     private javax.swing.JButton jBScrum;
     private javax.swing.JButton jBScrum_Master;
     private javax.swing.JButton jBScrum_Team;
