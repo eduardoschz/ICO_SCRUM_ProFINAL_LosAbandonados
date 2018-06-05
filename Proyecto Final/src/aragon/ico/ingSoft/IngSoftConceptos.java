@@ -42,8 +42,13 @@ public class IngSoftConceptos extends javax.swing.JFrame {
         // Logo de ICO
         ImageIcon iconoICO = new ImageIcon(System.getProperty("user.dir") + "/src/aragon/ico/imagenes/inicio/ICO.png");
         Icon logoICO = new ImageIcon(iconoICO.getImage().getScaledInstance(jLLogoICO.getWidth(), jLLogoICO.getHeight(), Image.SCALE_AREA_AVERAGING));
-        jLLogoICO.setIcon(logoICO);
+        jLLogoICO.setIcon(iconoICO);
 
+        ImageIcon infoIcon = new ImageIcon(getClass().getResource("/src/aragon/ico/ingSoft/imagenes/lblImagenes.png"));
+        Icon icoIngSoft = new ImageIcon(infoIcon.getImage().getScaledInstance(lblInfo.getWidth(), lblInfo.getHeight(), Image.SCALE_AREA_AVERAGING));
+        lblInfo.setIcon(icoIngSoft);
+        this.repaint();
+        
         // Iniciar el Timer
         controlDesplegable();
     }
@@ -205,17 +210,17 @@ public class IngSoftConceptos extends javax.swing.JFrame {
             jPBarraMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPBarraMenuLayout.createSequentialGroup()
                 .addGap(26, 26, 26)
-                .addComponent(jLLogoICO, javax.swing.GroupLayout.DEFAULT_SIZE, 106, Short.MAX_VALUE)
+                .addComponent(jLLogoICO, javax.swing.GroupLayout.DEFAULT_SIZE, 83, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jBInicio, javax.swing.GroupLayout.DEFAULT_SIZE, 86, Short.MAX_VALUE)
+                .addComponent(jBInicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(30, 30, 30)
-                .addComponent(jBIng_Soft, javax.swing.GroupLayout.DEFAULT_SIZE, 290, Short.MAX_VALUE)
+                .addComponent(jBIng_Soft, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(30, 30, 30)
-                .addComponent(jBDA_Scrum, javax.swing.GroupLayout.DEFAULT_SIZE, 301, Short.MAX_VALUE)
+                .addComponent(jBDA_Scrum, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(30, 30, 30)
-                .addComponent(jBContacto, javax.swing.GroupLayout.DEFAULT_SIZE, 128, Short.MAX_VALUE)
+                .addComponent(jBContacto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(30, 30, 30)
-                .addComponent(jBSalir, javax.swing.GroupLayout.DEFAULT_SIZE, 77, Short.MAX_VALUE)
+                .addComponent(jBSalir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(50, 50, 50))
         );
         jPBarraMenuLayout.setVerticalGroup(
@@ -399,8 +404,6 @@ public class IngSoftConceptos extends javax.swing.JFrame {
         lblInfo.setMaximumSize(new java.awt.Dimension(1200, 2600));
         lblInfo.setMinimumSize(new java.awt.Dimension(1100, 2600));
         lblInfo.setPreferredSize(new java.awt.Dimension(1100, 2600));
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/aragon/ico/ingSoft/imagenes/lblImagenes.jpg"))); // NOI18N
 
         javax.swing.GroupLayout jPInformacionISLayout = new javax.swing.GroupLayout(jPInformacionIS);
         jPInformacionIS.setLayout(jPInformacionISLayout);

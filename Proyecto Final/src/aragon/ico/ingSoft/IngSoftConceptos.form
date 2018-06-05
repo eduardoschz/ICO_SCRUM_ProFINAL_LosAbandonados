@@ -79,17 +79,17 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jLLogoICO" pref="106" max="32767" attributes="0"/>
+                          <Component id="jLLogoICO" pref="83" max="32767" attributes="0"/>
                           <EmptySpace min="-2" max="-2" attributes="0"/>
-                          <Component id="jBInicio" pref="86" max="32767" attributes="0"/>
+                          <Component id="jBInicio" max="32767" attributes="0"/>
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="jBIng_Soft" pref="290" max="32767" attributes="0"/>
+                          <Component id="jBIng_Soft" max="32767" attributes="0"/>
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="jBDA_Scrum" pref="301" max="32767" attributes="0"/>
+                          <Component id="jBDA_Scrum" max="32767" attributes="0"/>
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="jBContacto" pref="128" max="32767" attributes="0"/>
+                          <Component id="jBContacto" max="32767" attributes="0"/>
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="jBSalir" pref="77" max="32767" attributes="0"/>
+                          <Component id="jBSalir" max="32767" attributes="0"/>
                           <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -535,11 +535,6 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel3">
-                  <Properties>
-                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/aragon/ico/ingSoft/imagenes/lblImagenes.jpg"/>
-                    </Property>
-                  </Properties>
                 </Component>
               </SubComponents>
             </Container>
