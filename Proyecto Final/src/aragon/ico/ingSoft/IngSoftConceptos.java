@@ -76,12 +76,14 @@ public class IngSoftConceptos extends javax.swing.JFrame {
         jPInformacionIS = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         lblInfo = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Scrum Master");
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setMaximumSize(new java.awt.Dimension(1200, 720));
         setUndecorated(true);
-        setPreferredSize(new java.awt.Dimension(1200, 2600));
-        setResizable(false);
+        setPreferredSize(new java.awt.Dimension(1200, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
@@ -123,11 +125,11 @@ public class IngSoftConceptos extends javax.swing.JFrame {
         jBInicio.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jBInicio.setFocusPainted(false);
         jBInicio.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jBInicioMouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jBInicioMouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jBInicioMouseEntered(evt);
             }
         });
 
@@ -140,11 +142,11 @@ public class IngSoftConceptos extends javax.swing.JFrame {
         jBDA_Scrum.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jBDA_Scrum.setFocusPainted(false);
         jBDA_Scrum.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jBDA_ScrumMouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jBDA_ScrumMouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jBDA_ScrumMouseEntered(evt);
             }
         });
         jBDA_Scrum.addActionListener(new java.awt.event.ActionListener() {
@@ -162,11 +164,11 @@ public class IngSoftConceptos extends javax.swing.JFrame {
         jBContacto.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jBContacto.setFocusPainted(false);
         jBContacto.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jBContactoMouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jBContactoMouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jBContactoMouseEntered(evt);
             }
         });
         jBContacto.addActionListener(new java.awt.event.ActionListener() {
@@ -203,17 +205,17 @@ public class IngSoftConceptos extends javax.swing.JFrame {
             jPBarraMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPBarraMenuLayout.createSequentialGroup()
                 .addGap(26, 26, 26)
-                .addComponent(jLLogoICO, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jBInicio)
+                .addComponent(jLLogoICO, javax.swing.GroupLayout.DEFAULT_SIZE, 106, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jBInicio, javax.swing.GroupLayout.DEFAULT_SIZE, 86, Short.MAX_VALUE)
                 .addGap(30, 30, 30)
-                .addComponent(jBIng_Soft)
+                .addComponent(jBIng_Soft, javax.swing.GroupLayout.DEFAULT_SIZE, 290, Short.MAX_VALUE)
                 .addGap(30, 30, 30)
-                .addComponent(jBDA_Scrum)
+                .addComponent(jBDA_Scrum, javax.swing.GroupLayout.DEFAULT_SIZE, 301, Short.MAX_VALUE)
                 .addGap(30, 30, 30)
-                .addComponent(jBContacto)
+                .addComponent(jBContacto, javax.swing.GroupLayout.DEFAULT_SIZE, 128, Short.MAX_VALUE)
                 .addGap(30, 30, 30)
-                .addComponent(jBSalir)
+                .addComponent(jBSalir, javax.swing.GroupLayout.DEFAULT_SIZE, 77, Short.MAX_VALUE)
                 .addGap(50, 50, 50))
         );
         jPBarraMenuLayout.setVerticalGroup(
@@ -384,19 +386,21 @@ public class IngSoftConceptos extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Berlin Sans FB", 18, 24));
         jLabel1.setForeground(new java.awt.Color(17, 134, 198));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("<html><b> Ingeniería de Software </b>\n</html>");
+        jLabel1.setText("<html><b> Ingeniería de Software </b> </html>");
         jLabel1.setToolTipText("");
 
         lblInfo.setBackground(new java.awt.Color(255, 255, 255));
         lblInfo.setFont(new java.awt.Font("DejaVu Sans", 0, 14)); // NOI18N
         lblInfo.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        lblInfo.setText("<html>     <h3>   <font color=#1186C6 size=+2> ¿Qué es la ingenieria de software? </font></h3>     </font>     <p>       <ul>         <li type=\"square\">La ingeniería de software es el establecimiento y uso de principios robustos de la ingeniería a fin de obtener <br> económicamente software que sea fiable y que funcione eficientemente sobre máquinas reales.         </li>         <li type=\"square\">Es la aplicación de enfoque sistemático, disciplinado y cuantificable hacia el desarrollo, <br> operación y mantenimiento del software</li>         <li type=\"square\">Disciplina que establece el uso de principios de ingeniería robustos, orientados a obtener software económico, <br> que sea confiable y funcione de manera eficiente.</li>       </ul>     </p>       <h3><font color=#1186C6 size=+2>Ciclo de vida </font></h3>      <br> Método formal para producir algún resultado. Los métodos de la ingeniería del software indican \"cómo\" construir técnicamente el software. <br>      Dependen de un conjunto de principios básicos que gobiernan cada área de la tecnología e incluyen de modelado y otras técnicas descriptivas.     <ol>       <li>Análisis y definición de requerimientos.</li>       <li>Diseño del sistema</li>       <li>Codificación del sistema (Desarrollo)</li>       <li>Pruebas unitarias</li>       <li>Pruebas de integración</li>       <li>Pruebas del sistema</li>       <li>Implementación del sistema</li>       <li>Mantenimiento</li>       <li>Fin del ciclo de vida (post-mortem)</li>     </ol>      <h3>  <font color=#1186C6 size=+2> Analisis y definicion de requerimientos. </font> </h3>     <dfn>Entender el problema y capturar los requerimientos funcionales, entidades y actividades.</dfn>     <ul>       <li>Busca delimitar los alcances del sistema.</li>       <li>Realizada por el analista de sistemas.</li>       <li>Punto de partida para determinar el costo del proyecto.</li>     </ul>      <h3> <font color=#1186C6 size=+2> Diseño del sistema </font></h3>     <dfn>Es el proceso <b>creativo</b> de transformacion de un problema a una solución.</dfn>     <ul>       <li>Determina las tecnologias</li>       <li>El diseñador divide el sistema en paquetes (subsistemas)</li>       <li>Define la estructura del producto</li>     </ul>        <h3><font color=#1186C6 size=+2>Codificacion del sistema</font></h3>     <dfn>En base en el diseño se lleva la programación del sistema.</dfn>     <ul>       <li>Proceso ejecutado por el programador y de manera individual.</li>       <li>Criterio de entrada: Diseño.</li>       <li>Criterio de salida: Código ejecutable.</li>     </ul>        <h3><font color=#1186C6 size=+2>Pruebas unitarias</font></h3>     <dfn>Se examina el código y se compara con las especificaciones y el diseño.</dfn>     <ul>       <li>Se llevan a cabo casos de prueba.</li>       <li>Un programa es correcto si implementa las funciones y los datos correctamente como está indicado en el diseño.</li>     </ul>          <h3><font color=#1186C6 size=+2>Pruebas de integración </font></h3>       <dfn>Se realizan mediante la incorporación de los módulos.</dfn>       <ul>         <li>Las pruebas de integración sirven también para determinar qué tan eficiente es el diseño.</li>       </ul>        <h3><font color=#1186C6 size=+2>Pruebas del sistema </font> </h3>     <dfn>Se verifica que cumpla con las funciones propuestas al inicio.</dfn>     <ul>       <li>Involucra a veces al cliente para determinar que la solución que se le ofreció es la que se le va a entregar.</li>     </ul>        <h3><font color=#1186C6 size=+2>Implementación del sistema </font></h3>     <ul>       <li>Instalación</li>       <li>Capacitación</li>       <li>Plan de implantación</li>   </ul>      <h3><font color=#1186C6 size=+2>Mantenimiento </font> </h3>     <ul>       <li>Mantenimiento correctivo</li>       <li>Mantenimiento adaptativo</li>       <li>Mantenimiento perfectivo</li>     </ul>        <h3><font color=#1186C6 size=+2>Post-mortem</font></h3>     <dfn>Cierre del proyecto</dfn>     <ul>       <li>Se analiza la madurez en el proceso de desarrollo de software.</li>       <li>Se establecen áreas de oportunidad.</li>       <li>Lecciones aprendidas.</li>       <li>Mejora Continua</li>     </ul>       <h3><font color=#1186C6 size=+2>Herramientas para el desarrollo de software</font></h3>     <dfn>Instrumento o sistema automatizado para realizar de manera más exacta, eficiente y productiva una tarea.</dfn> <br>     <dd>Se establece un sistema de soporte para el desarrollo del software llamado ingeniería de <br> software asistido por computadora (<b>CASE</b>).</dd>     <ul>       <li>Lenguajes de programación</li>       <li>Paradigmas de programación</li>       <li>IDE's</li>       <li>SGBD</li>       <li>Herramientas de modelado</li>       <li>Herramientas de gestion de proyectos</li>       <li>Sistemas de control de versiones</li>       <li>Sistemas de control de cambios</li>       <li>API's para pruebas unitarias</li>       <li>Sistemas de integracion</li>       <li>Cloud computing</li>       <li>Software de ofimática</li>       <li>Software de prototipo y maquetado</li>       <li>CASE: Computer Aided Software Egnineering</li>       <li>Etc...</li>     </ul>       <h3><font color=#1186C6 size=+2>Proceso de desarrollo de software como instrumento <br> rector en la construcción de software de calidad.</font></h3>     <ul>       <li>El procedimiento es una receta para lograr el cometido.</li>       <li>Establece las actividades principales</li>       <li>Cada actividad tiene criterios de entrada y salida</li>       <li>Utiliza recursos y está sujeto a una serie de restricciones</li>     </ul>      <h3><font color=#1186C6 size=+2>Proceso de ingeniería software.</font></h3>     <dfn>Es la definición de un conjunto de actividades que permiten transformar los requisitos de  <br>un cliente/usuario en un sistema software.</dfn>     <ul>       Ejemplos:       <li>PSP, Personal Software Proccess.</li>       <li>TSP, Team Software Proccess.</li>       <li>Rational Unified Proccess</li>     </ul>        <h3><font color=#1186C6 size=+2>Centrado en la calidad</font></h3>     <dfn>Cualquier enfoque de ingeniería debe descansar sobre un empeño de organización de calidad.</dfn>     <ul>       <li>La gestión total de calidad y las filosofías similares fomentan una cultura continua de <br> mejoras de procesos.</li>       <li>Esta cultura la que conduce últimamente al desarrollo de enfoques cada vez más robustos para <br> la ingeniería de software.</li>       Abarca un conjunto de tres elementos claves:       <ul>         <li>Fases</li>         <li>Herramientas</li>         <li>Procesos</li>       </ul>       <li>Desarrolla estos tres elementos para asegurar la calidad del software</li>     </ul> </html> ");
+        lblInfo.setText("<html>     <h3>   <font color=#1186C6 size=+1> ¿Qué es la ingenieria de software? </font></h3>     </font>     <p>       <ul>         <li type=\"square\">La ingeniería de software es el establecimiento y uso de principios robustos de la ingeniería a fin de obtener <br> económicamente software que sea fiable y que funcione eficientemente sobre máquinas reales.         </li>         <li type=\"square\">Es la aplicación de enfoque sistemático, disciplinado y cuantificable hacia el desarrollo, <br> operación y mantenimiento del software</li>         <li type=\"square\">Disciplina que establece el uso de principios de ingeniería robustos, orientados a obtener software económico, <br> que sea confiable y funcione de manera eficiente.</li>       </ul>     </p>       <h3><font color=#1186C6 size=+1>Ciclo de vida </font></h3>      <br> Método formal para producir algún resultado. Los métodos de la ingeniería del software indican \"cómo\" construir técnicamente el software. <br>      Dependen de un conjunto de principios básicos que gobiernan cada área de la tecnología e incluyen de modelado y otras técnicas descriptivas.     <ol>       <li>Análisis y definición de requerimientos.</li>       <li>Diseño del sistema</li>       <li>Codificación del sistema (Desarrollo)</li>       <li>Pruebas unitarias</li>       <li>Pruebas de integración</li>       <li>Pruebas del sistema</li>       <li>Implementación del sistema</li>       <li>Mantenimiento</li>       <li>Fin del ciclo de vida (post-mortem)</li>     </ol>      <h3>  <font color=#1186C6 size=+1> Analisis y definicion de requerimientos. </font> </h3>     <dfn>Entender el problema y capturar los requerimientos funcionales, entidades y actividades.</dfn>     <ul>       <li>Busca delimitar los alcances del sistema.</li>       <li>Realizada por el analista de sistemas.</li>       <li>Punto de partida para determinar el costo del proyecto.</li>     </ul>      <h3> <font color=#1186C6 size=+1> Diseño del sistema </font></h3>     <dfn>Es el proceso <b>creativo</b> de transformacion de un problema a una solución.</dfn>     <ul>       <li>Determina las tecnologias</li>       <li>El diseñador divide el sistema en paquetes (subsistemas)</li>       <li>Define la estructura del producto</li>     </ul>        <h3><font color=#1186C6 size=+1>Codificacion del sistema</font></h3>     <dfn>En base en el diseño se lleva la programación del sistema.</dfn>     <ul>       <li>Proceso ejecutado por el programador y de manera individual.</li>       <li>Criterio de entrada: Diseño.</li>       <li>Criterio de salida: Código ejecutable.</li>     </ul>        <h3><font color=#1186C6 size=+1>Pruebas unitarias</font></h3>     <dfn>Se examina el código y se compara con las especificaciones y el diseño.</dfn>     <ul>       <li>Se llevan a cabo casos de prueba.</li>       <li>Un programa es correcto si implementa las funciones y los datos correctamente como está indicado en el diseño.</li>     </ul>          <h3><font color=#1186C6 size=+1>Pruebas de integración </font></h3>       <dfn>Se realizan mediante la incorporación de los módulos.</dfn>       <ul>         <li>Las pruebas de integración sirven también para determinar qué tan eficiente es el diseño.</li>       </ul>        <h3><font color=#1186C6 size=+1>Pruebas del sistema </font> </h3>     <dfn>Se verifica que cumpla con las funciones propuestas al inicio.</dfn>     <ul>       <li>Involucra a veces al cliente para determinar que la solución que se le ofreció es la que se le va a entregar.</li>     </ul>        <h3><font color=#1186C6 size=+1>Implementación del sistema </font></h3>     <ul>       <li>Instalación</li>       <li>Capacitación</li>       <li>Plan de implantación</li>   </ul>      <h3><font color=#1186C6 size=+1>Mantenimiento </font> </h3>     <ul>       <li>Mantenimiento correctivo</li>       <li>Mantenimiento adaptativo</li>       <li>Mantenimiento perfectivo</li>     </ul>        <h3><font color=#1186C6 size=+1>Post-mortem</font></h3>     <dfn>Cierre del proyecto</dfn>     <ul>       <li>Se analiza la madurez en el proceso de desarrollo de software.</li>       <li>Se establecen áreas de oportunidad.</li>       <li>Lecciones aprendidas.</li>       <li>Mejora Continua</li>     </ul>       <h3><font color=#1186C6 size=+1>Herramientas para el desarrollo de software</font></h3>     <dfn>Instrumento o sistema automatizado para realizar de manera más exacta, eficiente y productiva una tarea.</dfn> <br>     <dd>Se establece un sistema de soporte para el desarrollo del software llamado ingeniería de <br> software asistido por computadora (<b>CASE</b>).</dd>     <ul>       <li>Lenguajes de programación</li>       <li>Paradigmas de programación</li>       <li>IDE's</li>       <li>SGBD</li>       <li>Herramientas de modelado</li>       <li>Herramientas de gestion de proyectos</li>       <li>Sistemas de control de versiones</li>       <li>Sistemas de control de cambios</li>       <li>API's para pruebas unitarias</li>       <li>Sistemas de integracion</li>       <li>Cloud computing</li>       <li>Software de ofimática</li>       <li>Software de prototipo y maquetado</li>       <li>CASE: Computer Aided Software Egnineering</li>       <li>Etc...</li>     </ul>       <h3><font color=#1186C6 size=+1>Proceso de desarrollo de software como instrumento <br> rector en la construcción de software de calidad.</font></h3>     <ul>       <li>El procedimiento es una receta para lograr el cometido.</li>       <li>Establece las actividades principales</li>       <li>Cada actividad tiene criterios de entrada y salida</li>       <li>Utiliza recursos y está sujeto a una serie de restricciones</li>     </ul>      <h3><font color=#1186C6 size=+1>Proceso de ingeniería software.</font></h3> <dfn>Es la definición de un conjunto de actividades que permiten transformar los requisitos de  <br>un cliente/usuario en un sistema software.</dfn>     <ul>       Ejemplos:       <li>PSP, Personal Software Proccess.</li>       <li>TSP, Team Software Proccess.</li>       <li>Rational Unified Proccess</li>     </ul>        <h3><font color=#1186C6 size=+1>Centrado en la calidad</font></h3>     <dfn>Cualquier enfoque de ingeniería debe descansar sobre un empeño de organización de calidad.</dfn>     <ul>       <li>La gestión total de calidad y las filosofías similares fomentan una cultura continua de <br> mejoras de procesos.</li>       <li>Esta cultura la que conduce últimamente al desarrollo de enfoques cada vez más robustos para <br> la ingeniería de software.</li>       Abarca un conjunto de tres elementos claves:       <ul>         <li>Fases</li>         <li>Herramientas</li>         <li>Procesos</li>       </ul>       <li>Desarrolla estos tres elementos para asegurar la calidad del software</li>     </ul> </html> ");
         lblInfo.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         lblInfo.setAutoscrolls(true);
         lblInfo.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         lblInfo.setMaximumSize(new java.awt.Dimension(1200, 2600));
         lblInfo.setMinimumSize(new java.awt.Dimension(1100, 2600));
         lblInfo.setPreferredSize(new java.awt.Dimension(1100, 2600));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/aragon/ico/ingSoft/imagenes/lblImagenes.jpg"))); // NOI18N
 
         javax.swing.GroupLayout jPInformacionISLayout = new javax.swing.GroupLayout(jPInformacionIS);
         jPInformacionIS.setLayout(jPInformacionISLayout);
@@ -405,24 +409,28 @@ public class IngSoftConceptos extends javax.swing.JFrame {
             .addComponent(jLabel1)
             .addGroup(jPInformacionISLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lblInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 1165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addComponent(lblInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 853, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jPInformacionISLayout.setVerticalGroup(
             jPInformacionISLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPInformacionISLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 2750, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPInformacionISLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 2649, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 2660, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPInformacionIS, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 1190, 2600));
+        jPanel1.add(jPInformacionIS, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 1180, 2700));
 
         jScrollPane1.setViewportView(jPanel1);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1200, 710));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1200, 720));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -614,6 +622,7 @@ public class IngSoftConceptos extends javax.swing.JFrame {
     private javax.swing.JButton jBScrum_Team;
     private javax.swing.JLabel jLLogoICO;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPBarraMenu;
     private javax.swing.JPanel jPDesplegableContacto;
     private javax.swing.JPanel jPDesplegableDAScrum;
