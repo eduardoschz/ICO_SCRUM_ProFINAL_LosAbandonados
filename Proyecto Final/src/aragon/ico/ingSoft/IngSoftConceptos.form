@@ -5,6 +5,10 @@
     <Property name="defaultCloseOperation" type="int" value="3"/>
     <Property name="title" type="java.lang.String" value="Scrum Master"/>
     <Property name="undecorated" type="boolean" value="true"/>
+    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[1200, 2600]"/>
+    </Property>
+    <Property name="resizable" type="boolean" value="false"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -30,6 +34,9 @@
     <Container class="javax.swing.JScrollPane" name="jScrollPane1">
       <Properties>
         <Property name="horizontalScrollBarPolicy" type="int" value="31"/>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[1200, 720]"/>
+        </Property>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -40,6 +47,11 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
         <Container class="javax.swing.JPanel" name="jPanel1">
+          <Properties>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[1190, 2700]"/>
+            </Property>
+          </Properties>
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
             <Property name="useNullLayout" type="boolean" value="false"/>
@@ -61,8 +73,8 @@
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-                          <Component id="jLLogoICO" min="-2" pref="68" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="jLLogoICO" min="-2" pref="92" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                           <Component id="jBInicio" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
@@ -87,7 +99,7 @@
                               <Component id="jBDA_Scrum" alignment="2" min="-2" max="-2" attributes="0"/>
                               <Component id="jBContacto" alignment="2" min="-2" max="-2" attributes="0"/>
                               <Component id="jBSalir" alignment="2" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLLogoICO" alignment="2" pref="68" max="32767" attributes="0"/>
+                              <Component id="jLLogoICO" alignment="2" pref="78" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
@@ -239,7 +251,7 @@
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <EmptySpace pref="70" max="32767" attributes="0"/>
+                          <EmptySpace pref="74" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jBDAgil" alignment="1" min="-2" pref="160" max="-2" attributes="0"/>
                               <Component id="jBScrum" alignment="1" min="-2" pref="160" max="-2" attributes="0"/>
@@ -331,7 +343,7 @@
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <EmptySpace max="32767" attributes="0"/>
+                          <EmptySpace pref="14" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jBProduct_Owner" alignment="1" min="-2" pref="140" max="-2" attributes="0"/>
                               <Component id="jBScrum_Master" alignment="1" min="-2" pref="140" max="-2" attributes="0"/>
@@ -434,32 +446,38 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="jPInformacionIS">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1190, 2700]"/>
+                </Property>
+              </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="0" y="90" width="1190" height="610"/>
+                  <AbsoluteConstraints x="0" y="90" width="1190" height="2600"/>
                 </Constraint>
               </Constraints>
 
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="141" max="32767" attributes="0"/>
-                      </Group>
                       <Component id="jLabel1" alignment="0" max="32767" attributes="0"/>
-                      <Component id="jScrollPane2" alignment="0" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="lblInfo" min="-2" pref="1165" max="-2" attributes="0"/>
+                          <EmptySpace pref="19" max="32767" attributes="0"/>
+                      </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
-                          <Component id="jLabel1" min="-2" pref="100" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="jScrollPane2" min="-2" pref="452" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jLabel1" min="-2" pref="86" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="lblInfo" min="-2" pref="2750" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -468,63 +486,44 @@
               <SubComponents>
                 <Component class="javax.swing.JLabel" name="jLabel1">
                   <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="Color.WHITE" type="code"/>
+                    </Property>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                      <Connection code="new java.awt.Font(&quot;Berlin Sans FB&quot;, 0, 18)" type="code"/>
+                      <Connection code="new java.awt.Font(&quot;Berlin Sans FB&quot;, 18, 24)" type="code"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="c6" green="86" red="11" type="rgb"/>
                     </Property>
                     <Property name="horizontalAlignment" type="int" value="0"/>
-                    <Property name="text" type="java.lang.String" value="&lt;html&gt; &lt;font color=#1186C6 size=+2&gt;&lt;b&gt; Ingenier&#xed;a de Software &lt;/b&gt;&lt;/font&gt;&#xa;&lt;/html&gt;"/>
+                    <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;b&gt; Ingenier&#xed;a de Software &lt;/b&gt;&#xa;&lt;/html&gt;"/>
+                    <Property name="toolTipText" type="java.lang.String" value=""/>
                   </Properties>
                 </Component>
-                <Container class="javax.swing.JPanel" name="jPanel2">
-                  <Properties>
-                    <Property name="autoscrolls" type="boolean" value="true"/>
-                  </Properties>
-
-                  <Layout>
-                    <DimensionLayout dim="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="1049" max="32767" attributes="0"/>
-                      </Group>
-                    </DimensionLayout>
-                    <DimensionLayout dim="1">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="443" max="32767" attributes="0"/>
-                      </Group>
-                    </DimensionLayout>
-                  </Layout>
-                </Container>
-                <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+                <Component class="javax.swing.JLabel" name="lblInfo">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                      <Border info="null"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="DejaVu Sans" size="14" style="0"/>
+                    </Property>
+                    <Property name="horizontalAlignment" type="int" value="2"/>
+                    <Property name="text" type="java.lang.String" value="&lt;html&gt;     &lt;h3&gt;   &lt;font color=#1186C6 size=+2&gt; &#xbf;Qu&#xe9; es la ingenieria de software? &lt;/font&gt;&lt;/h3&gt;     &lt;/font&gt;     &lt;p&gt;       &lt;ul&gt;         &lt;li type=&quot;square&quot;&gt;La ingenier&#xed;a de software es el establecimiento y uso de principios robustos de la ingenier&#xed;a a fin de obtener &lt;br&gt; econ&#xf3;micamente software que sea fiable y que funcione eficientemente sobre m&#xe1;quinas reales.         &lt;/li&gt;         &lt;li type=&quot;square&quot;&gt;Es la aplicaci&#xf3;n de enfoque sistem&#xe1;tico, disciplinado y cuantificable hacia el desarrollo, &lt;br&gt; operaci&#xf3;n y mantenimiento del software&lt;/li&gt;         &lt;li type=&quot;square&quot;&gt;Disciplina que establece el uso de principios de ingenier&#xed;a robustos, orientados a obtener software econ&#xf3;mico, &lt;br&gt; que sea confiable y funcione de manera eficiente.&lt;/li&gt;       &lt;/ul&gt;     &lt;/p&gt;       &lt;h3&gt;&lt;font color=#1186C6 size=+2&gt;Ciclo de vida &lt;/font&gt;&lt;/h3&gt;      &lt;br&gt; M&#xe9;todo formal para producir alg&#xfa;n resultado. Los m&#xe9;todos de la ingenier&#xed;a del software indican &quot;c&#xf3;mo&quot; construir t&#xe9;cnicamente el software. &lt;br&gt;      Dependen de un conjunto de principios b&#xe1;sicos que gobiernan cada &#xe1;rea de la tecnolog&#xed;a e incluyen de modelado y otras t&#xe9;cnicas descriptivas.     &lt;ol&gt;       &lt;li&gt;An&#xe1;lisis y definici&#xf3;n de requerimientos.&lt;/li&gt;       &lt;li&gt;Dise&#xf1;o del sistema&lt;/li&gt;       &lt;li&gt;Codificaci&#xf3;n del sistema (Desarrollo)&lt;/li&gt;       &lt;li&gt;Pruebas unitarias&lt;/li&gt;       &lt;li&gt;Pruebas de integraci&#xf3;n&lt;/li&gt;       &lt;li&gt;Pruebas del sistema&lt;/li&gt;       &lt;li&gt;Implementaci&#xf3;n del sistema&lt;/li&gt;       &lt;li&gt;Mantenimiento&lt;/li&gt;       &lt;li&gt;Fin del ciclo de vida (post-mortem)&lt;/li&gt;     &lt;/ol&gt;      &lt;h3&gt;  &lt;font color=#1186C6 size=+2&gt; Analisis y definicion de requerimientos. &lt;/font&gt; &lt;/h3&gt;     &lt;dfn&gt;Entender el problema y capturar los requerimientos funcionales, entidades y actividades.&lt;/dfn&gt;     &lt;ul&gt;       &lt;li&gt;Busca delimitar los alcances del sistema.&lt;/li&gt;       &lt;li&gt;Realizada por el analista de sistemas.&lt;/li&gt;       &lt;li&gt;Punto de partida para determinar el costo del proyecto.&lt;/li&gt;     &lt;/ul&gt;      &lt;h3&gt; &lt;font color=#1186C6 size=+2&gt; Dise&#xf1;o del sistema &lt;/font&gt;&lt;/h3&gt;     &lt;dfn&gt;Es el proceso &lt;b&gt;creativo&lt;/b&gt; de transformacion de un problema a una soluci&#xf3;n.&lt;/dfn&gt;     &lt;ul&gt;       &lt;li&gt;Determina las tecnologias&lt;/li&gt;       &lt;li&gt;El dise&#xf1;ador divide el sistema en paquetes (subsistemas)&lt;/li&gt;       &lt;li&gt;Define la estructura del producto&lt;/li&gt;     &lt;/ul&gt;        &lt;h3&gt;&lt;font color=#1186C6 size=+2&gt;Codificacion del sistema&lt;/font&gt;&lt;/h3&gt;     &lt;dfn&gt;En base en el dise&#xf1;o se lleva la programaci&#xf3;n del sistema.&lt;/dfn&gt;     &lt;ul&gt;       &lt;li&gt;Proceso ejecutado por el programador y de manera individual.&lt;/li&gt;       &lt;li&gt;Criterio de entrada: Dise&#xf1;o.&lt;/li&gt;       &lt;li&gt;Criterio de salida: C&#xf3;digo ejecutable.&lt;/li&gt;     &lt;/ul&gt;        &lt;h3&gt;&lt;font color=#1186C6 size=+2&gt;Pruebas unitarias&lt;/font&gt;&lt;/h3&gt;     &lt;dfn&gt;Se examina el c&#xf3;digo y se compara con las especificaciones y el dise&#xf1;o.&lt;/dfn&gt;     &lt;ul&gt;       &lt;li&gt;Se llevan a cabo casos de prueba.&lt;/li&gt;       &lt;li&gt;Un programa es correcto si implementa las funciones y los datos correctamente como est&#xe1; indicado en el dise&#xf1;o.&lt;/li&gt;     &lt;/ul&gt;          &lt;h3&gt;&lt;font color=#1186C6 size=+2&gt;Pruebas de integraci&#xf3;n &lt;/font&gt;&lt;/h3&gt;       &lt;dfn&gt;Se realizan mediante la incorporaci&#xf3;n de los m&#xf3;dulos.&lt;/dfn&gt;       &lt;ul&gt;         &lt;li&gt;Las pruebas de integraci&#xf3;n sirven tambi&#xe9;n para determinar qu&#xe9; tan eficiente es el dise&#xf1;o.&lt;/li&gt;       &lt;/ul&gt;        &lt;h3&gt;&lt;font color=#1186C6 size=+2&gt;Pruebas del sistema &lt;/font&gt; &lt;/h3&gt;     &lt;dfn&gt;Se verifica que cumpla con las funciones propuestas al inicio.&lt;/dfn&gt;     &lt;ul&gt;       &lt;li&gt;Involucra a veces al cliente para determinar que la soluci&#xf3;n que se le ofreci&#xf3; es la que se le va a entregar.&lt;/li&gt;     &lt;/ul&gt;        &lt;h3&gt;&lt;font color=#1186C6 size=+2&gt;Implementaci&#xf3;n del sistema &lt;/font&gt;&lt;/h3&gt;     &lt;ul&gt;       &lt;li&gt;Instalaci&#xf3;n&lt;/li&gt;       &lt;li&gt;Capacitaci&#xf3;n&lt;/li&gt;       &lt;li&gt;Plan de implantaci&#xf3;n&lt;/li&gt;   &lt;/ul&gt;      &lt;h3&gt;&lt;font color=#1186C6 size=+2&gt;Mantenimiento &lt;/font&gt; &lt;/h3&gt;     &lt;ul&gt;       &lt;li&gt;Mantenimiento correctivo&lt;/li&gt;       &lt;li&gt;Mantenimiento adaptativo&lt;/li&gt;       &lt;li&gt;Mantenimiento perfectivo&lt;/li&gt;     &lt;/ul&gt;        &lt;h3&gt;&lt;font color=#1186C6 size=+2&gt;Post-mortem&lt;/font&gt;&lt;/h3&gt;     &lt;dfn&gt;Cierre del proyecto&lt;/dfn&gt;     &lt;ul&gt;       &lt;li&gt;Se analiza la madurez en el proceso de desarrollo de software.&lt;/li&gt;       &lt;li&gt;Se establecen &#xe1;reas de oportunidad.&lt;/li&gt;       &lt;li&gt;Lecciones aprendidas.&lt;/li&gt;       &lt;li&gt;Mejora Continua&lt;/li&gt;     &lt;/ul&gt;       &lt;h3&gt;&lt;font color=#1186C6 size=+2&gt;Herramientas para el desarrollo de software&lt;/font&gt;&lt;/h3&gt;     &lt;dfn&gt;Instrumento o sistema automatizado para realizar de manera m&#xe1;s exacta, eficiente y productiva una tarea.&lt;/dfn&gt; &lt;br&gt;     &lt;dd&gt;Se establece un sistema de soporte para el desarrollo del software llamado ingenier&#xed;a de &lt;br&gt; software asistido por computadora (&lt;b&gt;CASE&lt;/b&gt;).&lt;/dd&gt;     &lt;ul&gt;       &lt;li&gt;Lenguajes de programaci&#xf3;n&lt;/li&gt;       &lt;li&gt;Paradigmas de programaci&#xf3;n&lt;/li&gt;       &lt;li&gt;IDE&apos;s&lt;/li&gt;       &lt;li&gt;SGBD&lt;/li&gt;       &lt;li&gt;Herramientas de modelado&lt;/li&gt;       &lt;li&gt;Herramientas de gestion de proyectos&lt;/li&gt;       &lt;li&gt;Sistemas de control de versiones&lt;/li&gt;       &lt;li&gt;Sistemas de control de cambios&lt;/li&gt;       &lt;li&gt;API&apos;s para pruebas unitarias&lt;/li&gt;       &lt;li&gt;Sistemas de integracion&lt;/li&gt;       &lt;li&gt;Cloud computing&lt;/li&gt;       &lt;li&gt;Software de ofim&#xe1;tica&lt;/li&gt;       &lt;li&gt;Software de prototipo y maquetado&lt;/li&gt;       &lt;li&gt;CASE: Computer Aided Software Egnineering&lt;/li&gt;       &lt;li&gt;Etc...&lt;/li&gt;     &lt;/ul&gt;       &lt;h3&gt;&lt;font color=#1186C6 size=+2&gt;Proceso de desarrollo de software como instrumento &lt;br&gt; rector en la construcci&#xf3;n de software de calidad.&lt;/font&gt;&lt;/h3&gt;     &lt;ul&gt;       &lt;li&gt;El procedimiento es una receta para lograr el cometido.&lt;/li&gt;       &lt;li&gt;Establece las actividades principales&lt;/li&gt;       &lt;li&gt;Cada actividad tiene criterios de entrada y salida&lt;/li&gt;       &lt;li&gt;Utiliza recursos y est&#xe1; sujeto a una serie de restricciones&lt;/li&gt;     &lt;/ul&gt;      &lt;h3&gt;&lt;font color=#1186C6 size=+2&gt;Proceso de ingenier&#xed;a software.&lt;/font&gt;&lt;/h3&gt;     &lt;dfn&gt;Es la definici&#xf3;n de un conjunto de actividades que permiten transformar los requisitos de  &lt;br&gt;un cliente/usuario en un sistema software.&lt;/dfn&gt;     &lt;ul&gt;       Ejemplos:       &lt;li&gt;PSP, Personal Software Proccess.&lt;/li&gt;       &lt;li&gt;TSP, Team Software Proccess.&lt;/li&gt;       &lt;li&gt;Rational Unified Proccess&lt;/li&gt;     &lt;/ul&gt;        &lt;h3&gt;&lt;font color=#1186C6 size=+2&gt;Centrado en la calidad&lt;/font&gt;&lt;/h3&gt;     &lt;dfn&gt;Cualquier enfoque de ingenier&#xed;a debe descansar sobre un empe&#xf1;o de organizaci&#xf3;n de calidad.&lt;/dfn&gt;     &lt;ul&gt;       &lt;li&gt;La gesti&#xf3;n total de calidad y las filosof&#xed;as similares fomentan una cultura continua de &lt;br&gt; mejoras de procesos.&lt;/li&gt;       &lt;li&gt;Esta cultura la que conduce &#xfa;ltimamente al desarrollo de enfoques cada vez m&#xe1;s robustos para &lt;br&gt; la ingenier&#xed;a de software.&lt;/li&gt;       Abarca un conjunto de tres elementos claves:       &lt;ul&gt;         &lt;li&gt;Fases&lt;/li&gt;         &lt;li&gt;Herramientas&lt;/li&gt;         &lt;li&gt;Procesos&lt;/li&gt;       &lt;/ul&gt;       &lt;li&gt;Desarrolla estos tres elementos para asegurar la calidad del software&lt;/li&gt;     &lt;/ul&gt; &lt;/html&gt; "/>
+                    <Property name="verticalAlignment" type="int" value="1"/>
+                    <Property name="autoscrolls" type="boolean" value="true"/>
+                    <Property name="horizontalTextPosition" type="int" value="2"/>
+                    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[1200, 2600]"/>
+                    </Property>
+                    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[1100, 2600]"/>
+                    </Property>
+                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[1100, 2600]"/>
                     </Property>
                   </Properties>
-
-                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-                  <SubComponents>
-                    <Component class="javax.swing.JLabel" name="jLabel2">
-                      <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                        </Property>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="DejaVu Sans" size="14" style="0"/>
-                        </Property>
-                        <Property name="horizontalAlignment" type="int" value="2"/>
-                        <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;    &lt;h3&gt;   &lt;font color=#1186C6 size=+2&gt; &#xbf;Qu&#xe9; es la ingenieria de software? &lt;/font&gt;&lt;/h3&gt;&#xa;    &lt;/font&gt;&#xa;    &lt;p&gt;&#xa;      &lt;ul&gt;&#xa;        &lt;li type=&quot;square&quot;&gt;La ingenier&#xed;a de software es el establecimiento y uso de principios robustos de la ingenier&#xed;a a fin de obtener &lt;br&gt; econ&#xf3;micamente software que sea fiable y que funcione eficientemente sobre m&#xe1;quinas reales.&#xa;        &lt;/li&gt;&#xa;        &lt;li type=&quot;square&quot;&gt;Es la aplicaci&#xf3;n de enfoque sistem&#xe1;tico, disciplinado y cuantificable hacia el desarrollo, &lt;br&gt; operaci&#xf3;n y mantenimiento del software&lt;/li&gt;&#xa;        &lt;li type=&quot;square&quot;&gt;Disciplina que establece el uso de principios de ingenier&#xed;a robustos, orientados a obtener software econ&#xf3;mico, &lt;br&gt; que sea confiable y funcione de manera eficiente.&lt;/li&gt;&#xa;      &lt;/ul&gt;&#xa;    &lt;/p&gt;&#xa;&#xa;&#xa;    &lt;h3&gt;&lt;font color=#1186C6 size=+2&gt;Ciclo de vida &lt;/font&gt;&lt;/h3&gt;&#xa;&#xa;    &lt;br&gt; M&#xe9;todo formal para producir alg&#xfa;n resultado. Los m&#xe9;todos de la ingenier&#xed;a del software indican &quot;c&#xf3;mo&quot; construir t&#xe9;cnicamente el software. &lt;br&gt;&#xa;     Dependen de un conjunto de principios b&#xe1;sicos que gobiernan cada &#xe1;rea de la tecnolog&#xed;a e incluyen de modelado y otras t&#xe9;cnicas descriptivas.&#xa;    &lt;ol&gt;&#xa;      &lt;li&gt;An&#xe1;lisis y definici&#xf3;n de requerimientos.&lt;/li&gt;&#xa;      &lt;li&gt;Dise&#xf1;o del sistema&lt;/li&gt;&#xa;      &lt;li&gt;Codificaci&#xf3;n del sistema (Desarrollo)&lt;/li&gt;&#xa;      &lt;li&gt;Pruebas unitarias&lt;/li&gt;&#xa;      &lt;li&gt;Pruebas de integraci&#xf3;n&lt;/li&gt;&#xa;      &lt;li&gt;Pruebas del sistema&lt;/li&gt;&#xa;      &lt;li&gt;Implementaci&#xf3;n del sistema&lt;/li&gt;&#xa;      &lt;li&gt;Mantenimiento&lt;/li&gt;&#xa;      &lt;li&gt;Fin del ciclo de vida (post-mortem)&lt;/li&gt;&#xa;    &lt;/ol&gt;&#xa;&#xa;    &lt;h3&gt;  &lt;font color=#1186C6 size=+2&gt; Analisis y definicion de requerimientos. &lt;/font&gt; &lt;/h3&gt;&#xa;    &lt;dfn&gt;Entender el problema y capturar los requerimientos funcionales, entidades y actividades.&lt;/dfn&gt;&#xa;    &lt;ul&gt;&#xa;      &lt;li&gt;Busca delimitar los alcances del sistema.&lt;/li&gt;&#xa;      &lt;li&gt;Realizada por el analista de sistemas.&lt;/li&gt;&#xa;      &lt;li&gt;Punto de partida para determinar el costo del proyecto.&lt;/li&gt;&#xa;    &lt;/ul&gt;&#xa;&#xa;    &lt;h3&gt; &lt;font color=#1186C6 size=+2&gt; Dise&#xf1;o del sistema &lt;/font&gt;&lt;/h3&gt;&#xa;    &lt;dfn&gt;Es el proceso &lt;b&gt;creativo&lt;/b&gt; de transformacion de un problema a una soluci&#xf3;n.&lt;/dfn&gt;&#xa;    &lt;ul&gt;&#xa;      &lt;li&gt;Determina las tecnologias&lt;/li&gt;&#xa;      &lt;li&gt;El dise&#xf1;ador divide el sistema en paquetes (subsistemas)&lt;/li&gt;&#xa;      &lt;li&gt;Define la estructura del producto&lt;/li&gt;&#xa;    &lt;/ul&gt;&#xa;&#xa;&#xa;&#xa;    &lt;h3&gt;&lt;font color=#1186C6 size=+2&gt;Codificacion del sistema&lt;/font&gt;&lt;/h3&gt;&#xa;    &lt;dfn&gt;En base en el dise&#xf1;o se lleva la programaci&#xf3;n del sistema.&lt;/dfn&gt;&#xa;    &lt;ul&gt;&#xa;      &lt;li&gt;Proceso ejecutado por el programador y de manera individual.&lt;/li&gt;&#xa;      &lt;li&gt;Criterio de entrada: Dise&#xf1;o.&lt;/li&gt;&#xa;      &lt;li&gt;Criterio de salida: C&#xf3;digo ejecutable.&lt;/li&gt;&#xa;    &lt;/ul&gt;&#xa;&#xa;&#xa;&#xa;    &lt;h3&gt;&lt;font color=#1186C6 size=+2&gt;Pruebas unitarias&lt;/font&gt;&lt;/h3&gt;&#xa;    &lt;dfn&gt;Se examina el c&#xf3;digo y se compara con las especificaciones y el dise&#xf1;o.&lt;/dfn&gt;&#xa;    &lt;ul&gt;&#xa;      &lt;li&gt;Se llevan a cabo casos de prueba.&lt;/li&gt;&#xa;      &lt;li&gt;Un programa es correcto si implementa las funciones y los datos correctamente como est&#xe1; indicado en el dise&#xf1;o.&lt;/li&gt;&#xa;    &lt;/ul&gt;&#xa;&#xa;&#xa;&#xa;      &lt;h3&gt;&lt;font color=#1186C6 size=+2&gt;Pruebas de integraci&#xf3;n &lt;/font&gt;&lt;/h3&gt;&#xa;      &lt;dfn&gt;Se realizan mediante la incorporaci&#xf3;n de los m&#xf3;dulos.&lt;/dfn&gt;&#xa;      &lt;ul&gt;&#xa;        &lt;li&gt;Las pruebas de integraci&#xf3;n sirven tambi&#xe9;n para determinar qu&#xe9; tan eficiente es el dise&#xf1;o.&lt;/li&gt;&#xa;      &lt;/ul&gt;&#xa;&#xa;&#xa;&#xa;    &lt;h3&gt;&lt;font color=#1186C6 size=+2&gt;Pruebas del sistema &lt;/font&gt; &lt;/h3&gt;&#xa;    &lt;dfn&gt;Se verifica que cumpla con las funciones propuestas al inicio.&lt;/dfn&gt;&#xa;    &lt;ul&gt;&#xa;      &lt;li&gt;Involucra a veces al cliente para determinar que la soluci&#xf3;n que se le ofreci&#xf3; es la que se le va a entregar.&lt;/li&gt;&#xa;    &lt;/ul&gt;&#xa;&#xa;&#xa;&#xa;    &lt;h3&gt;&lt;font color=#1186C6 size=+2&gt;Implementaci&#xf3;n del sistema &lt;/font&gt;&lt;/h3&gt;&#xa;    &lt;ul&gt;&#xa;      &lt;li&gt;Instalaci&#xf3;n&lt;/li&gt;&#xa;      &lt;li&gt;Capacitaci&#xf3;n&lt;/li&gt;&#xa;      &lt;li&gt;Plan de implantaci&#xf3;n&lt;/li&gt;&#xa;  &lt;/ul&gt;&#xa;&#xa;    &lt;h3&gt;&lt;font color=#1186C6 size=+2&gt;Mantenimiento &lt;/font&gt; &lt;/h3&gt;&#xa;    &lt;ul&gt;&#xa;      &lt;li&gt;Mantenimiento correctivo&lt;/li&gt;&#xa;      &lt;li&gt;Mantenimiento adaptativo&lt;/li&gt;&#xa;      &lt;li&gt;Mantenimiento perfectivo&lt;/li&gt;&#xa;    &lt;/ul&gt;&#xa;&#xa;&#xa;&#xa;    &lt;h3&gt;&lt;font color=#1186C6 size=+2&gt;Post-mortem&lt;/font&gt;&lt;/h3&gt;&#xa;    &lt;dfn&gt;Cierre del proyecto&lt;/dfn&gt;&#xa;    &lt;ul&gt;&#xa;      &lt;li&gt;Se analiza la madurez en el proceso de desarrollo de software.&lt;/li&gt;&#xa;      &lt;li&gt;Se establecen &#xe1;reas de oportunidad.&lt;/li&gt;&#xa;      &lt;li&gt;Lecciones aprendidas.&lt;/li&gt;&#xa;      &lt;li&gt;Mejora Continua&lt;/li&gt;&#xa;    &lt;/ul&gt;&#xa;&#xa;&#xa;    &lt;h3&gt;&lt;font color=#1186C6 size=+2&gt;Herramientas para el desarrollo de software&lt;/font&gt;&lt;/h3&gt;&#xa;    &lt;dfn&gt;Instrumento o sistema automatizado para realizar de manera m&#xe1;s exacta, eficiente y productiva una tarea.&lt;/dfn&gt; &lt;br&gt;&#xa;    &lt;dd&gt;Se establece un sistema de soporte para el desarrollo del software llamado ingenier&#xed;a de &lt;br&gt; software asistido por computadora (&lt;b&gt;CASE&lt;/b&gt;).&lt;/dd&gt;&#xa;    &lt;ul&gt;&#xa;      &lt;li&gt;Lenguajes de programaci&#xf3;n&lt;/li&gt;&#xa;      &lt;li&gt;Paradigmas de programaci&#xf3;n&lt;/li&gt;&#xa;      &lt;li&gt;IDE&apos;s&lt;/li&gt;&#xa;      &lt;li&gt;SGBD&lt;/li&gt;&#xa;      &lt;li&gt;Herramientas de modelado&lt;/li&gt;&#xa;      &lt;li&gt;Herramientas de gestion de proyectos&lt;/li&gt;&#xa;      &lt;li&gt;Sistemas de control de versiones&lt;/li&gt;&#xa;      &lt;li&gt;Sistemas de control de cambios&lt;/li&gt;&#xa;      &lt;li&gt;API&apos;s para pruebas unitarias&lt;/li&gt;&#xa;      &lt;li&gt;Sistemas de integracion&lt;/li&gt;&#xa;      &lt;li&gt;Cloud computing&lt;/li&gt;&#xa;      &lt;li&gt;Software de ofim&#xe1;tica&lt;/li&gt;&#xa;      &lt;li&gt;Software de prototipo y maquetado&lt;/li&gt;&#xa;      &lt;li&gt;CASE: Computer Aided Software Egnineering&lt;/li&gt;&#xa;      &lt;li&gt;Etc...&lt;/li&gt;&#xa;    &lt;/ul&gt;&#xa;&#xa;&#xa;    &lt;h3&gt;&lt;font color=#1186C6 size=+2&gt;Proceso de desarrollo de software como instrumento &lt;br&gt; rector en la construcci&#xf3;n de software de calidad.&lt;/font&gt;&lt;/h3&gt;&#xa;    &lt;ul&gt;&#xa;      &lt;li&gt;El procedimiento es una receta para lograr el cometido.&lt;/li&gt;&#xa;      &lt;li&gt;Establece las actividades principales&lt;/li&gt;&#xa;      &lt;li&gt;Cada actividad tiene criterios de entrada y salida&lt;/li&gt;&#xa;      &lt;li&gt;Utiliza recursos y est&#xe1; sujeto a una serie de restricciones&lt;/li&gt;&#xa;    &lt;/ul&gt;&#xa;&#xa;    &lt;h3&gt;&lt;font color=#1186C6 size=+2&gt;Proceso de ingenier&#xed;a software.&lt;/font&gt;&lt;/h3&gt;&#xa;    &lt;dfn&gt;Es la definici&#xf3;n de un conjunto de actividades que permiten transformar los requisitos de  &lt;br&gt;un cliente/usuario en un sistema software.&lt;/dfn&gt;&#xa;    &lt;ul&gt;&#xa;      Ejemplos:&#xa;      &lt;li&gt;PSP, Personal Software Proccess.&lt;/li&gt;&#xa;      &lt;li&gt;TSP, Team Software Proccess.&lt;/li&gt;&#xa;      &lt;li&gt;Rational Unified Proccess&lt;/li&gt;&#xa;    &lt;/ul&gt;&#xa;&#xa;&#xa;&#xa;    &lt;h3&gt;&lt;font color=#1186C6 size=+2&gt;Centrado en la calidad&lt;/font&gt;&lt;/h3&gt;&#xa;    &lt;dfn&gt;Cualquier enfoque de ingenier&#xed;a debe descansar sobre un empe&#xf1;o de organizaci&#xf3;n de calidad.&lt;/dfn&gt;&#xa;    &lt;ul&gt;&#xa;      &lt;li&gt;La gesti&#xf3;n total de calidad y las filosof&#xed;as similares fomentan una cultura continua de &lt;br&gt; mejoras de procesos.&lt;/li&gt;&#xa;      &lt;li&gt;Esta cultura la que conduce &#xfa;ltimamente al desarrollo de enfoques cada vez m&#xe1;s robustos para &lt;br&gt; la ingenier&#xed;a de software.&lt;/li&gt;&#xa;      Abarca un conjunto de tres elementos claves:&#xa;      &lt;ul&gt;&#xa;        &lt;li&gt;Fases&lt;/li&gt;&#xa;        &lt;li&gt;Herramientas&lt;/li&gt;&#xa;        &lt;li&gt;Procesos&lt;/li&gt;&#xa;      &lt;/ul&gt;&#xa;      &lt;li&gt;Desarrolla estos tres elementos para asegurar la calidad del software&lt;/li&gt;&#xa;    &lt;/ul&gt;&#xa;&lt;/html&gt;&#xa;"/>
-                        <Property name="verticalAlignment" type="int" value="1"/>
-                        <Property name="autoscrolls" type="boolean" value="true"/>
-                        <Property name="horizontalTextPosition" type="int" value="2"/>
-                      </Properties>
-                      <AccessibilityProperties>
-                        <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
-                      </AccessibilityProperties>
-                    </Component>
-                  </SubComponents>
-                </Container>
+                </Component>
               </SubComponents>
             </Container>
           </SubComponents>
