@@ -393,7 +393,7 @@ public class IngSoftConceptos extends javax.swing.JFrame {
         jPInformacionIS.setPreferredSize(new java.awt.Dimension(1190, 2700));
 
         jLabel1.setBackground(Color.WHITE);
-        jLabel1.setFont(new java.awt.Font("Berlin Sans FB", 18, 24));
+        jLabel1.setFont(new java.awt.Font("Berlin Sans FB", 0, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(17, 134, 198));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("<html><b> Ingeniería de Software </b> </html>");
