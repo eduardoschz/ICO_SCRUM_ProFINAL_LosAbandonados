@@ -11,9 +11,6 @@
       <Dimension value="[1200, 720]"/>
     </Property>
     <Property name="undecorated" type="boolean" value="true"/>
-    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="[1200, 720]"/>
-    </Property>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -79,17 +76,17 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jLLogoICO" pref="83" max="32767" attributes="0"/>
-                          <EmptySpace min="-2" max="-2" attributes="0"/>
-                          <Component id="jBInicio" max="32767" attributes="0"/>
+                          <Component id="jLLogoICO" min="-2" pref="83" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="jBInicio" pref="95" max="32767" attributes="0"/>
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="jBIng_Soft" max="32767" attributes="0"/>
+                          <Component id="jBIng_Soft" pref="269" max="32767" attributes="0"/>
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="jBDA_Scrum" max="32767" attributes="0"/>
+                          <Component id="jBDA_Scrum" pref="273" max="32767" attributes="0"/>
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="jBContacto" max="32767" attributes="0"/>
+                          <Component id="jBContacto" pref="135" max="32767" attributes="0"/>
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="jBSalir" max="32767" attributes="0"/>
+                          <Component id="jBSalir" pref="89" max="32767" attributes="0"/>
                           <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -98,13 +95,18 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="2" attributes="0">
-                              <Component id="jBInicio" alignment="2" min="-2" max="-2" attributes="0"/>
-                              <Component id="jBIng_Soft" alignment="2" min="-2" max="-2" attributes="0"/>
-                              <Component id="jBDA_Scrum" alignment="2" min="-2" max="-2" attributes="0"/>
-                              <Component id="jBContacto" alignment="2" min="-2" max="-2" attributes="0"/>
-                              <Component id="jBSalir" alignment="2" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLLogoICO" alignment="2" pref="78" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="2" attributes="0">
+                                      <Component id="jBInicio" alignment="2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jBIng_Soft" alignment="2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jBDA_Scrum" alignment="2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jBContacto" alignment="2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jBSalir" alignment="2" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="0" pref="43" max="32767" attributes="0"/>
+                              </Group>
+                              <Component id="jLLogoICO" alignment="0" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
@@ -113,6 +115,14 @@
               </Layout>
               <SubComponents>
                 <Component class="javax.swing.JLabel" name="jLLogoICO">
+                  <Properties>
+                    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[80, 80]"/>
+                    </Property>
+                    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[70, 70]"/>
+                    </Property>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JButton" name="jBIng_Soft">
                   <Properties>
@@ -348,7 +358,7 @@
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <EmptySpace pref="14" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jBProduct_Owner" alignment="1" min="-2" pref="140" max="-2" attributes="0"/>
                               <Component id="jBScrum_Master" alignment="1" min="-2" pref="140" max="-2" attributes="0"/>

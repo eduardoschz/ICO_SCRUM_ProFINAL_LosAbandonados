@@ -42,12 +42,12 @@ public class IngSoftConceptos extends javax.swing.JFrame {
         // Logo de ICO
         ImageIcon iconoICO = new ImageIcon(System.getProperty("user.dir") + "/src/aragon/ico/imagenes/inicio/ICO.png");
         Icon logoICO = new ImageIcon(iconoICO.getImage().getScaledInstance(jLLogoICO.getWidth(), jLLogoICO.getHeight(), Image.SCALE_AREA_AVERAGING));
-        jLLogoICO.setIcon(iconoICO);
+        jLLogoICO.setIcon(logoICO);
 
-        ImageIcon infoIcon = new ImageIcon(getClass().getResource("/src/aragon/ico/ingSoft/imagenes/lblImagenes.png"));
-        Icon icoIngSoft = new ImageIcon(infoIcon.getImage().getScaledInstance(lblInfo.getWidth(), lblInfo.getHeight(), Image.SCALE_AREA_AVERAGING));
-        lblInfo.setIcon(icoIngSoft);
-        this.repaint();
+        ImageIcon infoIcon = new ImageIcon(System.getProperty("user.dir") + "/src/aragon/ico/imagenes/ingSoft/lblImagenes.png");
+        //Icon icoIngSoft = new ImageIcon(infoIcon.getImage().getScaledInstance(lblInfo.getWidth(), lblInfo.getHeight(), Image.SCALE_AREA_AVERAGING));
+        jLabel3.setIcon(infoIcon);
+       // this.repaint();
         
         // Iniciar el Timer
         controlDesplegable();
@@ -88,7 +88,6 @@ public class IngSoftConceptos extends javax.swing.JFrame {
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setMaximumSize(new java.awt.Dimension(1200, 720));
         setUndecorated(true);
-        setPreferredSize(new java.awt.Dimension(1200, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
@@ -98,6 +97,9 @@ public class IngSoftConceptos extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPBarraMenu.setBackground(new java.awt.Color(245, 245, 245));
+
+        jLLogoICO.setMaximumSize(new java.awt.Dimension(80, 80));
+        jLLogoICO.setMinimumSize(new java.awt.Dimension(70, 70));
 
         jBIng_Soft.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jBIng_Soft.setForeground(java.awt.Color.gray);
@@ -210,30 +212,33 @@ public class IngSoftConceptos extends javax.swing.JFrame {
             jPBarraMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPBarraMenuLayout.createSequentialGroup()
                 .addGap(26, 26, 26)
-                .addComponent(jLLogoICO, javax.swing.GroupLayout.DEFAULT_SIZE, 83, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jBInicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLLogoICO, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50)
+                .addComponent(jBInicio, javax.swing.GroupLayout.DEFAULT_SIZE, 95, Short.MAX_VALUE)
                 .addGap(30, 30, 30)
-                .addComponent(jBIng_Soft, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jBIng_Soft, javax.swing.GroupLayout.DEFAULT_SIZE, 269, Short.MAX_VALUE)
                 .addGap(30, 30, 30)
-                .addComponent(jBDA_Scrum, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jBDA_Scrum, javax.swing.GroupLayout.DEFAULT_SIZE, 273, Short.MAX_VALUE)
                 .addGap(30, 30, 30)
-                .addComponent(jBContacto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jBContacto, javax.swing.GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE)
                 .addGap(30, 30, 30)
-                .addComponent(jBSalir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jBSalir, javax.swing.GroupLayout.DEFAULT_SIZE, 89, Short.MAX_VALUE)
                 .addGap(50, 50, 50))
         );
         jPBarraMenuLayout.setVerticalGroup(
             jPBarraMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPBarraMenuLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPBarraMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jBInicio)
-                    .addComponent(jBIng_Soft)
-                    .addComponent(jBDA_Scrum)
-                    .addComponent(jBContacto)
-                    .addComponent(jBSalir)
-                    .addComponent(jLLogoICO, javax.swing.GroupLayout.DEFAULT_SIZE, 78, Short.MAX_VALUE))
+                .addGroup(jPBarraMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPBarraMenuLayout.createSequentialGroup()
+                        .addGroup(jPBarraMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                            .addComponent(jBInicio)
+                            .addComponent(jBIng_Soft)
+                            .addComponent(jBDA_Scrum)
+                            .addComponent(jBContacto)
+                            .addComponent(jBSalir))
+                        .addGap(0, 43, Short.MAX_VALUE))
+                    .addComponent(jLLogoICO, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -363,7 +368,7 @@ public class IngSoftConceptos extends javax.swing.JFrame {
         jPDesplegableContactoLayout.setHorizontalGroup(
             jPDesplegableContactoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPDesplegableContactoLayout.createSequentialGroup()
-                .addContainerGap(14, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPDesplegableContactoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jBProduct_Owner, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jBScrum_Master, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
