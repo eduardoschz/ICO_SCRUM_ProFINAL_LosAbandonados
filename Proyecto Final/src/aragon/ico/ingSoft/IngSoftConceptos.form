@@ -3,6 +3,8 @@
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" value="Scrum Master"/>
+    <Property name="undecorated" type="boolean" value="true"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -18,18 +20,516 @@
     <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,-48,0,0,4,-80"/>
   </AuxValues>
 
-  <Layout>
-    <DimensionLayout dim="0">
-      <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="400" max="32767" attributes="0"/>
-      </Group>
-    </DimensionLayout>
-    <DimensionLayout dim="1">
-      <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="300" max="32767" attributes="0"/>
-      </Group>
-    </DimensionLayout>
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+    <Property name="useNullLayout" type="boolean" value="false"/>
   </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <Properties>
+        <Property name="horizontalScrollBarPolicy" type="int" value="31"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="0" y="0" width="1200" height="710"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="jPanel1">
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+            <Property name="useNullLayout" type="boolean" value="false"/>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JPanel" name="jPBarraMenu">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="f5" green="f5" red="f5" type="rgb"/>
+                </Property>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="0" y="0" width="1190" height="90"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="jLLogoICO" min="-2" pref="68" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="jBInicio" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="jBIng_Soft" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="jBDA_Scrum" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="jBContacto" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="jBSalir" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="2" attributes="0">
+                              <Component id="jBInicio" alignment="2" min="-2" max="-2" attributes="0"/>
+                              <Component id="jBIng_Soft" alignment="2" min="-2" max="-2" attributes="0"/>
+                              <Component id="jBDA_Scrum" alignment="2" min="-2" max="-2" attributes="0"/>
+                              <Component id="jBContacto" alignment="2" min="-2" max="-2" attributes="0"/>
+                              <Component id="jBSalir" alignment="2" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLLogoICO" alignment="2" pref="68" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="jLLogoICO">
+                </Component>
+                <Component class="javax.swing.JButton" name="jBIng_Soft">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Berlin Sans FB" size="24" style="0"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="80" green="80" id="gray" palette="1" red="80" type="palette"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Ingenier&#xed;a de Software"/>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="null"/>
+                    </Property>
+                    <Property name="borderPainted" type="boolean" value="false"/>
+                    <Property name="contentAreaFilled" type="boolean" value="false"/>
+                    <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                      <Color id="Cursor de Mano"/>
+                    </Property>
+                    <Property name="focusPainted" type="boolean" value="false"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jBIng_SoftMouseExited"/>
+                    <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jBIng_SoftMouseEntered"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBIng_SoftActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JButton" name="jBInicio">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Berlin Sans FB" size="24" style="0"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="80" green="80" id="gray" palette="1" red="80" type="palette"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Inicio"/>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="null"/>
+                    </Property>
+                    <Property name="borderPainted" type="boolean" value="false"/>
+                    <Property name="contentAreaFilled" type="boolean" value="false"/>
+                    <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                      <Color id="Cursor de Mano"/>
+                    </Property>
+                    <Property name="focusPainted" type="boolean" value="false"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jBInicioMouseEntered"/>
+                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jBInicioMouseExited"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JButton" name="jBDA_Scrum">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Berlin Sans FB" size="24" style="0"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="80" green="80" id="gray" palette="1" red="80" type="palette"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Desarrollo &#xc1;gil y Scrum"/>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="null"/>
+                    </Property>
+                    <Property name="borderPainted" type="boolean" value="false"/>
+                    <Property name="contentAreaFilled" type="boolean" value="false"/>
+                    <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                      <Color id="Cursor de Mano"/>
+                    </Property>
+                    <Property name="focusPainted" type="boolean" value="false"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jBDA_ScrumMouseEntered"/>
+                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jBDA_ScrumMouseExited"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBDA_ScrumActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JButton" name="jBContacto">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Berlin Sans FB" size="24" style="0"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="80" green="80" id="gray" palette="1" red="80" type="palette"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Contacto"/>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="null"/>
+                    </Property>
+                    <Property name="borderPainted" type="boolean" value="false"/>
+                    <Property name="contentAreaFilled" type="boolean" value="false"/>
+                    <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                      <Color id="Cursor de Mano"/>
+                    </Property>
+                    <Property name="focusPainted" type="boolean" value="false"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jBContactoMouseEntered"/>
+                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jBContactoMouseExited"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBContactoActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JButton" name="jBSalir">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Berlin Sans FB" size="24" style="0"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="80" green="80" id="gray" palette="1" red="80" type="palette"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Salir"/>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="null"/>
+                    </Property>
+                    <Property name="borderPainted" type="boolean" value="false"/>
+                    <Property name="contentAreaFilled" type="boolean" value="false"/>
+                    <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                      <Color id="Cursor de Mano"/>
+                    </Property>
+                    <Property name="focusPainted" type="boolean" value="false"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jBSalirMouseExited"/>
+                    <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jBSalirMouseEntered"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBSalirActionPerformed"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="jPDesplegableDAScrum">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="f5" green="f5" red="f5" type="rgb"/>
+                </Property>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="720" y="20" width="240" height="70"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace pref="70" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jBDAgil" alignment="1" min="-2" pref="160" max="-2" attributes="0"/>
+                              <Component id="jBScrum" alignment="1" min="-2" pref="160" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jBDAgil" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jBScrum" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JButton" name="jBDAgil">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Berlin Sans FB" size="18" style="0"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="80" green="80" id="gray" palette="1" red="80" type="palette"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Desarrollo &#xc1;gil"/>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="null"/>
+                    </Property>
+                    <Property name="borderPainted" type="boolean" value="false"/>
+                    <Property name="contentAreaFilled" type="boolean" value="false"/>
+                    <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                      <Color id="Cursor de Mano"/>
+                    </Property>
+                    <Property name="focusPainted" type="boolean" value="false"/>
+                    <Property name="horizontalAlignment" type="int" value="4"/>
+                    <Property name="horizontalTextPosition" type="int" value="0"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jBDAgilMouseEntered"/>
+                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jBDAgilMouseExited"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JButton" name="jBScrum">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Berlin Sans FB" size="18" style="0"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="80" green="80" id="gray" palette="1" red="80" type="palette"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Scrum"/>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="null"/>
+                    </Property>
+                    <Property name="borderPainted" type="boolean" value="false"/>
+                    <Property name="contentAreaFilled" type="boolean" value="false"/>
+                    <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                      <Color id="Cursor de Mano"/>
+                    </Property>
+                    <Property name="focusPainted" type="boolean" value="false"/>
+                    <Property name="horizontalAlignment" type="int" value="4"/>
+                    <Property name="horizontalTextPosition" type="int" value="0"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jBScrumMouseEntered"/>
+                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jBScrumMouseExited"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="jPDesplegableContacto">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="f5" green="f5" red="f5" type="rgb"/>
+                </Property>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="930" y="0" width="160" height="90"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jBProduct_Owner" alignment="1" min="-2" pref="140" max="-2" attributes="0"/>
+                              <Component id="jBScrum_Master" alignment="1" min="-2" pref="140" max="-2" attributes="0"/>
+                              <Component id="jBScrum_Team" alignment="1" min="-2" pref="140" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                          <Component id="jBProduct_Owner" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jBScrum_Master" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jBScrum_Team" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JButton" name="jBProduct_Owner">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Berlin Sans FB" size="18" style="0"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="80" green="80" id="gray" palette="1" red="80" type="palette"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Product Owner"/>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="null"/>
+                    </Property>
+                    <Property name="borderPainted" type="boolean" value="false"/>
+                    <Property name="contentAreaFilled" type="boolean" value="false"/>
+                    <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                      <Color id="Cursor de Mano"/>
+                    </Property>
+                    <Property name="focusPainted" type="boolean" value="false"/>
+                    <Property name="horizontalAlignment" type="int" value="4"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jBProduct_OwnerMouseEntered"/>
+                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jBProduct_OwnerMouseExited"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JButton" name="jBScrum_Master">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Berlin Sans FB" size="18" style="0"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="80" green="80" id="gray" palette="1" red="80" type="palette"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Scrum Master"/>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="null"/>
+                    </Property>
+                    <Property name="borderPainted" type="boolean" value="false"/>
+                    <Property name="contentAreaFilled" type="boolean" value="false"/>
+                    <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                      <Color id="Cursor de Mano"/>
+                    </Property>
+                    <Property name="focusPainted" type="boolean" value="false"/>
+                    <Property name="horizontalAlignment" type="int" value="4"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jBScrum_MasterMouseEntered"/>
+                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jBScrum_MasterMouseExited"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JButton" name="jBScrum_Team">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Berlin Sans FB" size="18" style="0"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="80" green="80" id="gray" palette="1" red="80" type="palette"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Scrum Team"/>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="null"/>
+                    </Property>
+                    <Property name="borderPainted" type="boolean" value="false"/>
+                    <Property name="contentAreaFilled" type="boolean" value="false"/>
+                    <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                      <Color id="Cursor de Mano"/>
+                    </Property>
+                    <Property name="focusPainted" type="boolean" value="false"/>
+                    <Property name="horizontalAlignment" type="int" value="4"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jBScrum_TeamMouseEntered"/>
+                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jBScrum_TeamMouseExited"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="jPInformacionIS">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="0" y="90" width="1190" height="610"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="141" max="32767" attributes="0"/>
+                      </Group>
+                      <Component id="jLabel1" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jScrollPane2" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                          <Component id="jLabel1" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jScrollPane2" min="-2" pref="452" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="jLabel1">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="new java.awt.Font(&quot;Berlin Sans FB&quot;, 0, 18)" type="code"/>
+                    </Property>
+                    <Property name="horizontalAlignment" type="int" value="0"/>
+                    <Property name="text" type="java.lang.String" value="&lt;html&gt; &lt;b&gt; Ingenier&#xed;a de Software &lt;/b&gt;&lt;/html&gt;"/>
+                  </Properties>
+                </Component>
+                <Container class="javax.swing.JPanel" name="jPanel2">
+                  <Properties>
+                    <Property name="autoscrolls" type="boolean" value="true"/>
+                  </Properties>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <EmptySpace min="0" pref="1049" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <EmptySpace min="0" pref="443" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                </Container>
+                <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="null"/>
+                    </Property>
+                  </Properties>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JLabel" name="jLabel2">
+                      <Properties>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="DejaVu Sans" size="14" style="0"/>
+                        </Property>
+                        <Property name="horizontalAlignment" type="int" value="2"/>
+                        <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;font size=+2&gt;&#xa;    &lt;font color=#1186C6&gt;&#xa;    &lt;h3&gt;&#xbf;Qu&#xe9; es la ingenieria de software?&lt;/h3&gt;&#xa;    &lt;/font&gt;&#xa;    &lt;p&gt;&#xa;      &lt;ul&gt;&#xa;        &lt;li type=&quot;square&quot;&gt;La ingenier&#xed;a de software es el establecimiento y uso de principios robustos de la ingenier&#xed;a a fin de obtener &lt;br&gt; econ&#xf3;micamente software que sea fiable y que funcione eficientemente sobre m&#xe1;quinas reales.&#xa;        &lt;/li&gt;&#xa;        &lt;li type=&quot;square&quot;&gt;Es la aplicaci&#xf3;n de enfoque sistem&#xe1;tico, disciplinado y cuantificable hacia el desarrollo, &lt;br&gt; operaci&#xf3;n y mantenimiento del software&lt;/li&gt;&#xa;        &lt;li type=&quot;square&quot;&gt;Disciplina que establece el uso de principios de ingenier&#xed;a robustos, orientados a obtener software econ&#xf3;mico, &lt;br&gt; que sea confiable y funcione de manera eficiente.&lt;/li&gt;&#xa;      &lt;/ul&gt;&#xa;    &lt;/p&gt;&#xa;&#xa;&#xa;    &lt;h3&gt;Ciclo de vida&lt;/h3&gt;&#xa;&#xa;    &lt;br&gt; M&#xe9;todo formal para producir alg&#xfa;n resultado. Los m&#xe9;todos de la ingenier&#xed;a del software indican &quot;c&#xf3;mo&quot; construir t&#xe9;cnicamente el software. &lt;br&gt;&#xa;     Dependen de un conjunto de principios b&#xe1;sicos que gobiernan cada &#xe1;rea de la tecnolog&#xed;a e incluyen de modelado y otras t&#xe9;cnicas descriptivas.&#xa;    &lt;ol&gt;&#xa;      &lt;li&gt;An&#xe1;lisis y definici&#xf3;n de requerimientos.&lt;/li&gt;&#xa;      &lt;li&gt;Dise&#xf1;o del sistema&lt;/li&gt;&#xa;      &lt;li&gt;Codificaci&#xf3;n del sistema (Desarrollo)&lt;/li&gt;&#xa;      &lt;li&gt;Pruebas unitarias&lt;/li&gt;&#xa;      &lt;li&gt;Pruebas de integraci&#xf3;n&lt;/li&gt;&#xa;      &lt;li&gt;Pruebas del sistema&lt;/li&gt;&#xa;      &lt;li&gt;Implementaci&#xf3;n del sistema&lt;/li&gt;&#xa;      &lt;li&gt;Mantenimiento&lt;/li&gt;&#xa;      &lt;li&gt;Fin del ciclo de vida (post-mortem)&lt;/li&gt;&#xa;    &lt;/ol&gt;&#xa;&#xa;    &lt;h3&gt;  Analisis y definicion de requerimientos.&lt;/h3&gt;&#xa;    &lt;dfn&gt;Entender el problema y capturar los requerimientos funcionales, entidades y actividades.&lt;/dfn&gt;&#xa;    &lt;ul&gt;&#xa;      &lt;li&gt;Busca delimitar los alcances del sistema.&lt;/li&gt;&#xa;      &lt;li&gt;Realizada por el analista de sistemas.&lt;/li&gt;&#xa;      &lt;li&gt;Punto de partida para determinar el costo del proyecto.&lt;/li&gt;&#xa;    &lt;/ul&gt;&#xa;&#xa;    &lt;h3&gt;Dise&#xf1;o del sistema&lt;/h3&gt;&#xa;    &lt;dfn&gt;Es el proceso &lt;b&gt;creativo&lt;/b&gt; de transformacion de un problema a una soluci&#xf3;n.&lt;/dfn&gt;&#xa;    &lt;ul&gt;&#xa;      &lt;li&gt;Determina las tecnologias&lt;/li&gt;&#xa;      &lt;li&gt;El dise&#xf1;ador divide el sistema en paquetes (subsistemas)&lt;/li&gt;&#xa;      &lt;li&gt;Define la estructura del producto&lt;/li&gt;&#xa;    &lt;/ul&gt;&#xa;&#xa;&#xa;&#xa;    &lt;h3&gt;Codificacion del sistema&lt;/h3&gt;&#xa;    &lt;dfn&gt;En base en el dise&#xf1;o se lleva la programaci&#xf3;n del sistema.&lt;/dfn&gt;&#xa;    &lt;ul&gt;&#xa;      &lt;li&gt;Proceso ejecutado por el programador y de manera individual.&lt;/li&gt;&#xa;      &lt;li&gt;Criterio de entrada: Dise&#xf1;o.&lt;/li&gt;&#xa;      &lt;li&gt;Criterio de salida: C&#xf3;digo ejecutable.&lt;/li&gt;&#xa;    &lt;/ul&gt;&#xa;&#xa;&#xa;&#xa;    &lt;h3&gt;Pruebas unitarias&lt;/h3&gt;&#xa;    &lt;dfn&gt;Se examina el c&#xf3;digo y se compara con las especificaciones y el dise&#xf1;o.&lt;/dfn&gt;&#xa;    &lt;ul&gt;&#xa;      &lt;li&gt;Se llevan a cabo casos de prueba.&lt;/li&gt;&#xa;      &lt;li&gt;Un programa es correcto si implementa las funciones y los datos correctamente como est&#xe1; indicado en el dise&#xf1;o.&lt;/li&gt;&#xa;    &lt;/ul&gt;&#xa;&#xa;&#xa;&#xa;      &lt;h3&gt;Pruebas de integracion&lt;/h3&gt;&#xa;      &lt;dfn&gt;Se realizan mediante la incorporaci&#xf3;n de los m&#xf3;dulos.&lt;/dfn&gt;&#xa;      &lt;ul&gt;&#xa;        &lt;li&gt;Las pruebas de integraci&#xf3;n sirven tambi&#xe9;n para determinar qu&#xe9; tan eficiente es el dise&#xf1;o.&lt;/li&gt;&#xa;      &lt;/ul&gt;&#xa;&#xa;&#xa;&#xa;    &lt;h3&gt;Pruebas del sistema&lt;/h3&gt;&#xa;    &lt;dfn&gt;Se verifica que cumpla con las funciones propuestas al inicio.&lt;/dfn&gt;&#xa;    &lt;ul&gt;&#xa;      &lt;li&gt;Involucra a veces al cliente para determinar que la soluci&#xf3;n que se le ofreci&#xf3; es la que se le va a entregar.&lt;/li&gt;&#xa;    &lt;/ul&gt;&#xa;&#xa;&#xa;&#xa;    &lt;h3&gt;Implementaci&#xf3;n del sistema&lt;/h3&gt;&#xa;    &lt;ul&gt;&#xa;      &lt;li&gt;Instalaci&#xf3;n&lt;/li&gt;&#xa;      &lt;li&gt;Capacitaci&#xf3;n&lt;/li&gt;&#xa;      &lt;li&gt;Plan de implantaci&#xf3;n&lt;/li&gt;&#xa;  &lt;/ul&gt;&#xa;&#xa;    &lt;h3&gt;Mantenimiento&lt;/h3&gt;&#xa;    &lt;ul&gt;&#xa;      &lt;li&gt;Mantenimiento correctivo&lt;/li&gt;&#xa;      &lt;li&gt;Mantenimiento adaptativo&lt;/li&gt;&#xa;      &lt;li&gt;Mantenimiento perfectivo&lt;/li&gt;&#xa;    &lt;/ul&gt;&#xa;&#xa;&#xa;&#xa;    &lt;h3&gt;Post-mortem&lt;/h3&gt;&#xa;    &lt;dfn&gt;Cierre del proyecto&lt;/dfn&gt;&#xa;    &lt;ul&gt;&#xa;      &lt;li&gt;Se analiza la madurez en el proceso de desarrollo de software.&lt;/li&gt;&#xa;      &lt;li&gt;Se establecen &#xe1;reas de oportunidad.&lt;/li&gt;&#xa;      &lt;li&gt;Lecciones aprendidas.&lt;/li&gt;&#xa;      &lt;li&gt;Mejora Continua&lt;/li&gt;&#xa;    &lt;/ul&gt;&#xa;&#xa;&#xa;    &lt;h3&gt;Herramientas para el desarrollo de software&lt;/h3&gt;&#xa;    &lt;dfn&gt;Instrumento o sistema automatizado para realizar de manera m&#xe1;s exacta, eficiente y productiva una tarea.&lt;/dfn&gt; &lt;br&gt;&#xa;    &lt;dd&gt;Se establece un sistema de soporte para el desarrollo del software llamado ingenier&#xed;a de &lt;br&gt; software asistido por computadora (&lt;b&gt;CASE&lt;/b&gt;).&lt;/dd&gt;&#xa;    &lt;ul&gt;&#xa;      &lt;li&gt;Lenguajes de programaci&#xf3;n&lt;/li&gt;&#xa;      &lt;li&gt;Paradigmas de programaci&#xf3;n&lt;/li&gt;&#xa;      &lt;li&gt;IDE&apos;s&lt;/li&gt;&#xa;      &lt;li&gt;SGBD&lt;/li&gt;&#xa;      &lt;li&gt;Herramientas de modelado&lt;/li&gt;&#xa;      &lt;li&gt;Herramientas de gestion de proyectos&lt;/li&gt;&#xa;      &lt;li&gt;Sistemas de control de versiones&lt;/li&gt;&#xa;      &lt;li&gt;Sistemas de control de cambios&lt;/li&gt;&#xa;      &lt;li&gt;API&apos;s para pruebas unitarias&lt;/li&gt;&#xa;      &lt;li&gt;Sistemas de integracion&lt;/li&gt;&#xa;      &lt;li&gt;Cloud computing&lt;/li&gt;&#xa;      &lt;li&gt;Software de ofim&#xe1;tica&lt;/li&gt;&#xa;      &lt;li&gt;Software de prototipo y maquetado&lt;/li&gt;&#xa;      &lt;li&gt;CASE: Computer Aided Software Egnineering&lt;/li&gt;&#xa;      &lt;li&gt;Etc...&lt;/li&gt;&#xa;    &lt;/ul&gt;&#xa;&#xa;&#xa;    &lt;h3&gt;Proceso de desarrollo de software como instrumento rector en la construcci&#xf3;n de software de calidad.&lt;/h3&gt;&#xa;    &lt;ul&gt;&#xa;      &lt;li&gt;El procedimiento es una receta para lograr el cometido.&lt;/li&gt;&#xa;      &lt;li&gt;Establece las actividades principales&lt;/li&gt;&#xa;      &lt;li&gt;Cada actividad tiene criterios de entrada y salida&lt;/li&gt;&#xa;      &lt;li&gt;Utiliza recursos y est&#xe1; sujeto a una serie de restricciones&lt;/li&gt;&#xa;    &lt;/ul&gt;&#xa;&#xa;    &lt;h3&gt;Proceso de ingenier&#xed;a software&lt;/h3&gt;&#xa;    &lt;dfn&gt;Es la definici&#xf3;n de un conjunto de actividades que permiten transformar los requisitos de  &lt;br&gt;un cliente/usuario en un sistema software.&lt;/dfn&gt;&#xa;    &lt;ul&gt;&#xa;      Ejemplos:&#xa;      &lt;li&gt;PSP, Personal Software Proccess.&lt;/li&gt;&#xa;      &lt;li&gt;TSP, Team Software Proccess.&lt;/li&gt;&#xa;      &lt;li&gt;Rational Unified Proccess&lt;/li&gt;&#xa;    &lt;/ul&gt;&#xa;&#xa;&#xa;&#xa;    &lt;h3&gt;Centrado en la calidad&lt;/h3&gt;&#xa;    &lt;dfn&gt;Cualquier enfoque de ingenier&#xed;a debe descansar sobre un empe&#xf1;o de organizaci&#xf3;n de calidad.&lt;/dfn&gt;&#xa;    &lt;ul&gt;&#xa;      &lt;li&gt;La gesti&#xf3;n total de calidad y las filosof&#xed;as similares fomentan una cultura continua de &lt;br&gt; mejoras de procesos.&lt;/li&gt;&#xa;      &lt;li&gt;Esta cultura la que conduce &#xfa;ltimamente al desarrollo de enfoques cada vez m&#xe1;s robustos para &lt;br&gt; la ingenier&#xed;a de software.&lt;/li&gt;&#xa;      Abarca un conjunto de tres elementos claves:&#xa;      &lt;ul&gt;&#xa;        &lt;li&gt;Fases&lt;/li&gt;&#xa;        &lt;li&gt;Herramientas&lt;/li&gt;&#xa;        &lt;li&gt;Procesos&lt;/li&gt;&#xa;      &lt;/ul&gt;&#xa;      &lt;li&gt;Desarrolla estos tres elementos para asegurar la calidad del software&lt;/li&gt;&#xa;    &lt;/ul&gt;&#xa;    &lt;/font&gt;&#xa;&lt;/html&gt;&#xa;"/>
+                        <Property name="verticalAlignment" type="int" value="1"/>
+                        <Property name="autoscrolls" type="boolean" value="true"/>
+                        <Property name="horizontalTextPosition" type="int" value="2"/>
+                      </Properties>
+                      <AccessibilityProperties>
+                        <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
+                      </AccessibilityProperties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
 </Form>
