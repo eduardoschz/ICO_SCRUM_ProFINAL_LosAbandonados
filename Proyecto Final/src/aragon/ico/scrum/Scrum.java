@@ -1,6 +1,7 @@
 package aragon.ico.scrum;
 
 import aragon.ico.Salida;
+import aragon.ico.Inicio;
 import java.awt.Color;
 import java.awt.Image;
 import javax.swing.Icon;
@@ -47,21 +48,27 @@ public class Scrum extends javax.swing.JFrame {
         valCambio2 = 7;
 
         //Código para colocar la imagen del texto
-        ImageIcon ima2 = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum8.png"));
+        ImageIcon ima2 = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum9.png"));
         Icon imatext1 = new ImageIcon(ima2.getImage().getScaledInstance(lblima2.getWidth(), lblima2.getHeight(), Image.SCALE_AREA_AVERAGING));
         lblima2.setIcon(imatext1);
         this.repaint();
 
         //Código para colocar la imagen del texto
-        ImageIcon ima3 = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/metoagil9.png"));
+        ImageIcon ima3 = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum91.png"));
         Icon imatext2 = new ImageIcon(ima3.getImage().getScaledInstance(lblima3.getWidth(), lblima3.getHeight(), Image.SCALE_AREA_AVERAGING));
         lblima3.setIcon(imatext2);
         this.repaint();
 
         //Código para colocar la imagen del texto
-        ImageIcon ima4 = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/metoagil98.png"));
+        ImageIcon ima4 = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum92.png"));
         Icon imatext3 = new ImageIcon(ima4.getImage().getScaledInstance(lblima4.getWidth(), lblima4.getHeight(), Image.SCALE_AREA_AVERAGING));
         lblima4.setIcon(imatext3);
+        this.repaint();
+
+        //Código para colocar la imagen del texto
+        ImageIcon ima5 = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum93.png"));
+        Icon imatext4 = new ImageIcon(ima5.getImage().getScaledInstance(jLabel5.getWidth(), jLabel5.getHeight(), Image.SCALE_AREA_AVERAGING));
+        jLabel5.setIcon(imatext4);
         this.repaint();
 
         lblDesAg.setVisible(false);
@@ -76,7 +83,7 @@ public class Scrum extends javax.swing.JFrame {
         lblContYo.setForeground(Color.white);
         lblConEdu.setForeground(Color.white);
         lblConMar.setForeground(Color.white);
-        lblConGeo.setForeground(Color.white);
+
         valOcultar2 = 0;
     }
 
@@ -210,7 +217,6 @@ public class Scrum extends javax.swing.JFrame {
         lblContYo = new javax.swing.JLabel();
         lblConMar = new javax.swing.JLabel();
         lblConEdu = new javax.swing.JLabel();
-        lblConGeo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -243,6 +249,9 @@ public class Scrum extends javax.swing.JFrame {
         jLabel1.setText("Inicio");
         jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel1MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jLabel1MouseEntered(evt);
             }
@@ -795,8 +804,10 @@ public class Scrum extends javax.swing.JFrame {
         jLabel71.setText("<html> Product backlog<p>\n");
 
         jPanel17.setBackground(new java.awt.Color(102, 102, 255));
+        jPanel17.setOpaque(false);
 
         jPanel19.setBackground(new java.awt.Color(51, 204, 0));
+        jPanel19.setOpaque(false);
 
         javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
         jPanel19.setLayout(jPanel19Layout);
@@ -911,15 +922,15 @@ public class Scrum extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addComponent(jLabel78, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel83, javax.swing.GroupLayout.DEFAULT_SIZE, 1106, Short.MAX_VALUE))
+                .addComponent(jLabel83, javax.swing.GroupLayout.DEFAULT_SIZE, 1089, Short.MAX_VALUE))
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addComponent(jLabel79, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel84, javax.swing.GroupLayout.DEFAULT_SIZE, 1106, Short.MAX_VALUE))
+                .addComponent(jLabel84, javax.swing.GroupLayout.DEFAULT_SIZE, 1089, Short.MAX_VALUE))
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addComponent(jLabel80, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel82, javax.swing.GroupLayout.DEFAULT_SIZE, 1106, Short.MAX_VALUE))
+                .addComponent(jLabel82, javax.swing.GroupLayout.DEFAULT_SIZE, 1089, Short.MAX_VALUE))
             .addComponent(jLabel85)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -936,19 +947,18 @@ public class Scrum extends javax.swing.JFrame {
                         .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                         .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel4Layout.createSequentialGroup()
-                                .addComponent(jLabel14)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 899, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel4Layout.createSequentialGroup()
-                                .addComponent(jLabel13)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 899, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel4Layout.createSequentialGroup()
-                                .addComponent(jLabel12)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 899, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(jPanel4Layout.createSequentialGroup()
+                            .addComponent(jLabel14)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 899, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel4Layout.createSequentialGroup()
+                            .addComponent(jLabel13)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 899, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel4Layout.createSequentialGroup()
+                            .addComponent(jLabel12)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 899, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addComponent(jLabel15)
                         .addComponent(jLabel32)
                         .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
@@ -1190,8 +1200,8 @@ public class Scrum extends javax.swing.JFrame {
                     .addComponent(jLabel77, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel87, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel80, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel80, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel82, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -1239,18 +1249,23 @@ public class Scrum extends javax.swing.JFrame {
         );
         jPanel18Layout.setVerticalGroup(
             jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel18Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 99, Short.MAX_VALUE))
+            .addGroup(jPanel18Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel2))
         );
 
         jPanel15.setBackground(new java.awt.Color(245, 245, 245));
 
         lblDesAg.setFont(new java.awt.Font("Berlin Sans FB", 0, 20)); // NOI18N
         lblDesAg.setForeground(java.awt.Color.gray);
+        lblDesAg.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblDesAg.setText("Desarrollo Ágil");
         lblDesAg.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblDesAg.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         lblDesAg.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblDesAgMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 lblDesAgMouseEntered(evt);
             }
@@ -1261,8 +1276,10 @@ public class Scrum extends javax.swing.JFrame {
 
         lblScru.setFont(new java.awt.Font("Berlin Sans FB", 0, 20)); // NOI18N
         lblScru.setForeground(java.awt.Color.gray);
+        lblScru.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblScru.setText("Scrum");
         lblScru.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblScru.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         lblScru.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 lblScruMouseEntered(evt);
@@ -1291,7 +1308,8 @@ public class Scrum extends javax.swing.JFrame {
 
         lblContYo.setFont(new java.awt.Font("Berlin Sans FB", 0, 20)); // NOI18N
         lblContYo.setForeground(java.awt.Color.gray);
-        lblContYo.setText("Contacto Yovani");
+        lblContYo.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lblContYo.setText("Product Owner");
         lblContYo.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblContYo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -1304,7 +1322,8 @@ public class Scrum extends javax.swing.JFrame {
 
         lblConMar.setFont(new java.awt.Font("Berlin Sans FB", 0, 20)); // NOI18N
         lblConMar.setForeground(java.awt.Color.gray);
-        lblConMar.setText("Contacto Marco");
+        lblConMar.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lblConMar.setText("Scrum Team");
         lblConMar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblConMar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -1317,7 +1336,8 @@ public class Scrum extends javax.swing.JFrame {
 
         lblConEdu.setFont(new java.awt.Font("Berlin Sans FB", 0, 20)); // NOI18N
         lblConEdu.setForeground(java.awt.Color.gray);
-        lblConEdu.setText("Contacto Eduardo");
+        lblConEdu.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lblConEdu.setText("Scrum Master");
         lblConEdu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblConEdu.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -1328,27 +1348,16 @@ public class Scrum extends javax.swing.JFrame {
             }
         });
 
-        lblConGeo.setFont(new java.awt.Font("Berlin Sans FB", 0, 20)); // NOI18N
-        lblConGeo.setForeground(java.awt.Color.gray);
-        lblConGeo.setText("Contacto Geovanni");
-        lblConGeo.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        lblConGeo.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                lblConGeoMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                lblConGeoMouseExited(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
         jPanel16.setLayout(jPanel16Layout);
         jPanel16Layout.setHorizontalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblContYo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(lblConEdu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(lblConMar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(lblConGeo, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel16Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(lblConMar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblConEdu, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblContYo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 145, Short.MAX_VALUE)))
         );
         jPanel16Layout.setVerticalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1358,8 +1367,7 @@ public class Scrum extends javax.swing.JFrame {
                 .addComponent(lblConEdu)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblConMar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblConGeo))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -1378,20 +1386,19 @@ public class Scrum extends javax.swing.JFrame {
                 .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(26, 26, 26)
                 .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(58, 58, 58))
+                .addGap(97, 97, 97))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 58, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane2))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 541, Short.MAX_VALUE))
         );
 
         pack();
@@ -1414,7 +1421,7 @@ public class Scrum extends javax.swing.JFrame {
         if (valOcultar2 == 1) {
             lblContYo.setCursor(new Cursor(Cursor.HAND_CURSOR));
             lblContYo.setForeground(Color.DARK_GRAY);
-        }else if (valOcultar2 == 0){
+        } else if (valOcultar2 == 0) {
             lblContYo.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
         }
     }//GEN-LAST:event_lblContYoMouseEntered
@@ -1493,7 +1500,7 @@ public class Scrum extends javax.swing.JFrame {
         if (valOcultar2 == 1) {
             lblConMar.setCursor(new Cursor(Cursor.HAND_CURSOR));
             lblConMar.setForeground(Color.DARK_GRAY);
-        }else if (valOcultar2 == 0){
+        } else if (valOcultar2 == 0) {
             lblConMar.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
         }
     }//GEN-LAST:event_lblConMarMouseEntered
@@ -1508,7 +1515,7 @@ public class Scrum extends javax.swing.JFrame {
         if (valOcultar2 == 1) {
             lblConEdu.setCursor(new Cursor(Cursor.HAND_CURSOR));
             lblConEdu.setForeground(Color.DARK_GRAY);
-        }else if (valOcultar2 == 0){
+        } else if (valOcultar2 == 0) {
             lblConEdu.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
         }
     }//GEN-LAST:event_lblConEduMouseEntered
@@ -1518,21 +1525,6 @@ public class Scrum extends javax.swing.JFrame {
             lblConEdu.setForeground(Color.GRAY);
         }
     }//GEN-LAST:event_lblConEduMouseExited
-
-    private void lblConGeoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblConGeoMouseEntered
-        if (valOcultar2 == 1) {
-            lblConGeo.setCursor(new Cursor(Cursor.HAND_CURSOR));
-            lblConGeo.setForeground(Color.DARK_GRAY);
-        }else if (valOcultar2 == 0){
-            lblConGeo.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
-        }
-    }//GEN-LAST:event_lblConGeoMouseEntered
-
-    private void lblConGeoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblConGeoMouseExited
-        if (valOcultar2 == 1) {
-            lblConGeo.setForeground(Color.GRAY);
-        }
-    }//GEN-LAST:event_lblConGeoMouseExited
 
     private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
         Color myColor = new Color(245, 245, 245);
@@ -1549,7 +1541,7 @@ public class Scrum extends javax.swing.JFrame {
             lblContYo.setForeground(Color.white);
             lblConEdu.setForeground(Color.white);
             lblConMar.setForeground(Color.white);
-            lblConGeo.setForeground(Color.white);
+
             valOcultar2 = 0;
 
             valOcultar = 1;
@@ -1572,7 +1564,6 @@ public class Scrum extends javax.swing.JFrame {
             lblContYo.setForeground(Color.gray);
             lblConEdu.setForeground(Color.gray);
             lblConMar.setForeground(Color.gray);
-            lblConGeo.setForeground(Color.gray);
 
             lblDesAg.setVisible(false);
             lblScru.setVisible(false);
@@ -1584,7 +1575,6 @@ public class Scrum extends javax.swing.JFrame {
             lblContYo.setForeground(Color.white);
             lblConEdu.setForeground(Color.white);
             lblConMar.setForeground(Color.white);
-            lblConGeo.setForeground(Color.white);
 
             valOcultar2 = 0;
         }
@@ -1648,7 +1638,7 @@ public class Scrum extends javax.swing.JFrame {
             this.repaint();
             valCambio = 8;
             valCambio2 = 5;
-        }else if (valCambio == 8) {
+        } else if (valCambio == 8) {
             ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum8.png"));
             Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
             lblCambioImagen.setIcon(ima1);
@@ -1717,8 +1707,7 @@ public class Scrum extends javax.swing.JFrame {
             this.repaint();
             valCambio2 = 5;
             valCambio = 8;
-        }
-        else if (valCambio2 == 7) {
+        } else if (valCambio2 == 7) {
             ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum8.png"));
             Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
             lblCambioImagen.setIcon(ima1);
@@ -1728,6 +1717,18 @@ public class Scrum extends javax.swing.JFrame {
         }
 
     }//GEN-LAST:event_lblBotonIzqMouseClicked
+
+    private void lblDesAgMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblDesAgMouseClicked
+        Agil cambioAgil = new Agil(); 
+        cambioAgil.setVisible(true); 
+        dispose(); 
+    }//GEN-LAST:event_lblDesAgMouseClicked
+
+    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+        Inicio cambioInicio = new Inicio();
+        cambioInicio.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jLabel1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -1879,7 +1880,6 @@ public class Scrum extends javax.swing.JFrame {
     private javax.swing.JLabel lblBotonIzq;
     private javax.swing.JLabel lblCambioImagen;
     private javax.swing.JLabel lblConEdu;
-    private javax.swing.JLabel lblConGeo;
     private javax.swing.JLabel lblConMar;
     private javax.swing.JLabel lblContYo;
     private javax.swing.JLabel lblDesAg;

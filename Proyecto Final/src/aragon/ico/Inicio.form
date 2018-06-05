@@ -205,6 +205,7 @@
                   <Events>
                     <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jBIngenieriaMouseEntered"/>
                     <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jBIngenieriaMouseExited"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBIngenieriaActionPerformed"/>
                   </Events>
                 </Component>
                 <Component class="javax.swing.JButton" name="jBContacto">
@@ -315,7 +316,7 @@
                       <Color id="Cursor de Mano"/>
                     </Property>
                     <Property name="focusPainted" type="boolean" value="false"/>
-                    <Property name="horizontalAlignment" type="int" value="4"/>
+                    <Property name="horizontalAlignment" type="int" value="2"/>
                   </Properties>
                   <Events>
                     <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jBAgilMouseEntered"/>
@@ -340,7 +341,7 @@
                       <Color id="Cursor de Mano"/>
                     </Property>
                     <Property name="focusPainted" type="boolean" value="false"/>
-                    <Property name="horizontalAlignment" type="int" value="4"/>
+                    <Property name="horizontalAlignment" type="int" value="2"/>
                   </Properties>
                   <Events>
                     <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jBScrumMouseEntered"/>
@@ -408,6 +409,7 @@
                       <Color id="Cursor de Mano"/>
                     </Property>
                     <Property name="focusPainted" type="boolean" value="false"/>
+                    <Property name="horizontalAlignment" type="int" value="2"/>
                   </Properties>
                   <Events>
                     <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jBProduct_OwnerMouseEntered"/>
@@ -432,6 +434,7 @@
                       <Color id="Cursor de Mano"/>
                     </Property>
                     <Property name="focusPainted" type="boolean" value="false"/>
+                    <Property name="horizontalAlignment" type="int" value="2"/>
                   </Properties>
                   <Events>
                     <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jBScrum_MasterMouseEntered"/>
@@ -456,6 +459,7 @@
                       <Color id="Cursor de Mano"/>
                     </Property>
                     <Property name="focusPainted" type="boolean" value="false"/>
+                    <Property name="horizontalAlignment" type="int" value="2"/>
                   </Properties>
                   <Events>
                     <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jBScrum_TeamMouseEntered"/>

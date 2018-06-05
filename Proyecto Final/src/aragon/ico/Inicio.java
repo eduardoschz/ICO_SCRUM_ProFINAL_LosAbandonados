@@ -31,6 +31,8 @@ public class Inicio extends javax.swing.JFrame {
     public Inicio() {
         initComponents();
 
+        setIconImage(new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/ICO.png")).getImage());
+
         // La ventana se centrará en medio de la pantalla
         this.setLocationRelativeTo(null);
 
@@ -198,6 +200,11 @@ public class Inicio extends javax.swing.JFrame {
                 jBIngenieriaMouseExited(evt);
             }
         });
+        jBIngenieria.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBIngenieriaActionPerformed(evt);
+            }
+        });
 
         jBContacto.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         jBContacto.setForeground(java.awt.Color.gray);
@@ -282,7 +289,7 @@ public class Inicio extends javax.swing.JFrame {
         jBAgil.setContentAreaFilled(false);
         jBAgil.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jBAgil.setFocusPainted(false);
-        jBAgil.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jBAgil.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jBAgil.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jBAgilMouseEntered(evt);
@@ -300,7 +307,7 @@ public class Inicio extends javax.swing.JFrame {
         jBScrum.setContentAreaFilled(false);
         jBScrum.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jBScrum.setFocusPainted(false);
-        jBScrum.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jBScrum.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jBScrum.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jBScrumMouseEntered(evt);
@@ -343,6 +350,7 @@ public class Inicio extends javax.swing.JFrame {
         jBProduct_Owner.setContentAreaFilled(false);
         jBProduct_Owner.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jBProduct_Owner.setFocusPainted(false);
+        jBProduct_Owner.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jBProduct_Owner.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jBProduct_OwnerMouseEntered(evt);
@@ -360,6 +368,7 @@ public class Inicio extends javax.swing.JFrame {
         jBScrum_Master.setContentAreaFilled(false);
         jBScrum_Master.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jBScrum_Master.setFocusPainted(false);
+        jBScrum_Master.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jBScrum_Master.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jBScrum_MasterMouseEntered(evt);
@@ -377,6 +386,7 @@ public class Inicio extends javax.swing.JFrame {
         jBScrum_Team.setContentAreaFilled(false);
         jBScrum_Team.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jBScrum_Team.setFocusPainted(false);
+        jBScrum_Team.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jBScrum_Team.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jBScrum_TeamMouseEntered(evt);
@@ -669,6 +679,10 @@ public class Inicio extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_jBSalirActionPerformed
 
+    private void jBIngenieriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBIngenieriaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBIngenieriaActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -775,7 +789,7 @@ public class Inicio extends javax.swing.JFrame {
                         jLSlide.setIcon(slade);
                         break;
                 }
-                
+
                 jPanel1.repaint();
             }
         };
@@ -785,22 +799,22 @@ public class Inicio extends javax.swing.JFrame {
 
     }
 
-    public void controlDesplegable(){
+    public void controlDesplegable() {
         int lapso = 1000;
-        
+
         controlmenu = new TimerTask() {
             @Override
             public void run() {
                 if (jPDesplegableScrum.isVisible() && jPDesplegableScrum.getY() < 270) {
                     jPDesplegableScrum.setVisible(false);
                 }
-                
+
                 if (jPDesplegableContacto.isVisible() && jPDesplegableContacto.getY() < 270) {
                     jPDesplegableContacto.setVisible(false);
                 }
             }
         };
-        
+
         timerControl = new Timer();
         timerControl.scheduleAtFixedRate(controlmenu, lapso, 1100);
     }
