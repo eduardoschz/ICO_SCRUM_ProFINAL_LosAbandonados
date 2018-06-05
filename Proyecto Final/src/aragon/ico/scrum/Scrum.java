@@ -47,7 +47,7 @@ public class Scrum extends javax.swing.JFrame {
         valCambio2 = 7;
 
         //Código para colocar la imagen del texto
-        ImageIcon ima2 = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/metoagil8.png"));
+        ImageIcon ima2 = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum8.png"));
         Icon imatext1 = new ImageIcon(ima2.getImage().getScaledInstance(lblima2.getWidth(), lblima2.getHeight(), Image.SCALE_AREA_AVERAGING));
         lblima2.setIcon(imatext1);
         this.repaint();
@@ -108,13 +108,7 @@ public class Scrum extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
@@ -135,6 +129,78 @@ public class Scrum extends javax.swing.JFrame {
         jPanel13 = new javax.swing.JPanel();
         jPanel14 = new javax.swing.JPanel();
         lblima4 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        jLabel48 = new javax.swing.JLabel();
+        jLabel49 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        jLabel55 = new javax.swing.JLabel();
+        jLabel56 = new javax.swing.JLabel();
+        jLabel57 = new javax.swing.JLabel();
+        jLabel58 = new javax.swing.JLabel();
+        jLabel59 = new javax.swing.JLabel();
+        jLabel60 = new javax.swing.JLabel();
+        jLabel61 = new javax.swing.JLabel();
+        jLabel62 = new javax.swing.JLabel();
+        jLabel63 = new javax.swing.JLabel();
+        jLabel64 = new javax.swing.JLabel();
+        jLabel65 = new javax.swing.JLabel();
+        jLabel66 = new javax.swing.JLabel();
+        jLabel67 = new javax.swing.JLabel();
+        jLabel68 = new javax.swing.JLabel();
+        jLabel69 = new javax.swing.JLabel();
+        jLabel70 = new javax.swing.JLabel();
+        jLabel71 = new javax.swing.JLabel();
+        jPanel17 = new javax.swing.JPanel();
+        jPanel19 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel72 = new javax.swing.JLabel();
+        jLabel73 = new javax.swing.JLabel();
+        jLabel74 = new javax.swing.JLabel();
+        jLabel75 = new javax.swing.JLabel();
+        jLabel76 = new javax.swing.JLabel();
+        jLabel77 = new javax.swing.JLabel();
+        jLabel78 = new javax.swing.JLabel();
+        jLabel79 = new javax.swing.JLabel();
+        jLabel80 = new javax.swing.JLabel();
+        jLabel81 = new javax.swing.JLabel();
+        jLabel82 = new javax.swing.JLabel();
+        jLabel83 = new javax.swing.JLabel();
+        jLabel84 = new javax.swing.JLabel();
+        jLabel85 = new javax.swing.JLabel();
+        jLabel86 = new javax.swing.JLabel();
+        jLabel87 = new javax.swing.JLabel();
+        jLabel88 = new javax.swing.JLabel();
+        jLabel89 = new javax.swing.JLabel();
+        jLabel90 = new javax.swing.JLabel();
+        jLabel91 = new javax.swing.JLabel();
         jPanel18 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jPanel15 = new javax.swing.JPanel();
@@ -303,7 +369,7 @@ public class Scrum extends javax.swing.JFrame {
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
         jPanel4.setAutoscrolls(true);
-        jPanel4.setPreferredSize(new java.awt.Dimension(1000, 2700));
+        jPanel4.setPreferredSize(new java.awt.Dimension(1000, 5228));
 
         jLabel7.setBackground(new java.awt.Color(204, 255, 102));
         jLabel7.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
@@ -314,68 +380,44 @@ public class Scrum extends javax.swing.JFrame {
         jLabel8.setText("<html>A la hora de poner en marcha un proyecto, toda empresa debe asegurar que el equipo implicado conoce sus tareas y plazos de tiempo de entrega. Scrum es una metodología de trabajo que nos ayuda a conseguirlo y que, además, permite agilizar la entrega de valor al cliente en iteraciones cortas de tiempo. <p>\n");
 
         jLabel9.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(59, 59, 59));
-        jLabel9.setText("<html>Frente a los pasos del tradicional método en cascada, el desarrollo ágil de software se basa en seis pasos comunes dentro del ciclo de vida del software: planificación, análisis de requisitos, diseño, codificación, test y documentación. En cada interacción, el equipo de desarrollo no entrega todo el programa, sino que se van añadiendo pequeños elementos totalmente probados, sin errores, con el fin de que la solución final esté completamente operativa desde el minuto uno. En los métodos de desarrollo ágil de software, la comunicación entre todos los miembros del equipo es clave, ya que se busca eliminar las trabas habituales de reuniones, validaciones y revisiones formales por encuentros más informales y en fases tempranas e intermedias del proceso, no sólo en la última etapa del trabajo. <p>\n");
+        jLabel9.setForeground(new java.awt.Color(17, 134, 198));
+        jLabel9.setText("<html>¿En qué se basa?<p>\n");
 
         jLabel10.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(59, 59, 59));
-        jLabel10.setText("<html>Scrum es un proceso, marco de trabajo o framework, usado en equipos que trabajan en proyectos complejos; una metodología de trabajo ágil que tiene como finalidad \nla entrega de valor en períodos cortos de tiempo, basada tres pilares: la transparencia, inspección y adaptación. <p> ");
+        jLabel10.setText("<html>Scrum se basa en aspectos como la flexibilidad en la adopción de cambios y nuevos requisitos durante un proyecto complejo, el factor humano, la colaboración e interacción con el cliente y el desarrollo iterativo como formas de asegurar buenos resultados. <p> ");
 
         jLabel11.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(59, 59, 59));
-        jLabel11.setText("<html>En definitiva, se trata de eliminar todos los pasos o tareas innecesarias, además de impulsar una mayor eficiencia de todo el equipo involucrado en el desarrollo. \nVentajas del desarrollo ágil  <p>\n");
+        jLabel11.setText("<html>El proceso, los eventos de Scrum<p>\n");
 
         jLabel12.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(17, 134, 198));
-        jLabel12.setText("•");
+        jLabel12.setText("• Transparencia: ");
 
         jLabel13.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(17, 134, 198));
-        jLabel13.setText("•");
+        jLabel13.setText("• Inspección: ");
 
         jLabel14.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(17, 134, 198));
-        jLabel14.setText("•");
-
-        jLabel15.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(17, 134, 198));
-        jLabel15.setText("•");
-
-        jLabel16.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(59, 59, 59));
-        jLabel16.setText("Los individuos e interacciones, por encima de los procesos y las herramientas. ");
-
-        jLabel17.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(59, 59, 59));
-        jLabel17.setText("Software en funcionamiento, frente a la documentación exhaustiva. ");
-
-        jLabel18.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(59, 59, 59));
-        jLabel18.setText("La colaboración con el cliente sobre la negociación contractual. ");
-
-        jLabel19.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(59, 59, 59));
-        jLabel19.setText("Respuesta al cambio, mejor que el seguimiento de un plan. ");
+        jLabel14.setText("• Adaptación: ");
 
         jLabel20.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel20.setForeground(new java.awt.Color(59, 59, 59));
-        jLabel20.setText("<html>Para que una metodología de desarrollo de software se pueda considerar como ágil debe cumplir con cuatro valores fundamentales, recogidos en el Manifiesto Ágil: <p> ");
-
-        jLabel21.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
-        jLabel21.setForeground(new java.awt.Color(59, 59, 59));
-        jLabel21.setText("<html>Entre estas metodologías ágiles destacan Scrum (creada en 1986, siendo una de las precursoras de este camino), eXtreme Programming (XP, creado en 1996 y que fomenta el trabajo en \nequipo y la comunicación entre los distintos miembros implicados en el desarrollo de software) o el Dynamic Systems Developement Method \n(DSDM, por sus siglas en inglés, que data de 1995). <p>");
+        jLabel20.setText("<html>Todos los implicados tienen conocimiento de qué ocurre y en el proyecto y cómo ocurre. Esto hace que haya un entendimiento “común” del proyecto, una visión global.<p> ");
 
         jLabel22.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(59, 59, 59));
-        jLabel22.setText("<html>A la hora de diseñar un software por el método clásico de cascada, lo normal es que se complete un proceso antes de arrancar con el siguiente; lo cual obliga a acelerar los trabajos (y reducir la calidad) a fin de cumplir con los plazos impuestos por los clientes. Sin embargo, al optar por una metodología ágil en la que se trabajan distintos elementos en paralelo, el equipo puede ir validando pequeñas partes del proyecto antes de realizar la entrega final perfecta. <p>\n");
+        jLabel22.setText("<html>La gráfica describe los eventos de Scrum. El desarrollo iterativo se realiza en un Sprint, que contiene los siguientes eventos: Sprint planning, daily meeting, Sprint review y Sprint retrospective.<p>\n");
 
         jLabel23.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(59, 59, 59));
-        jLabel23.setText("<html>Asimismo, al optar por este tipo de metodologías, se requiere personal multidisciplinar capaz de adaptarse a distintas circunstancias y necesidades en poco tiempo. \nEste factor, junto a la reducción de burocracia y la validación constante, permite afrontar mejor la sobrecarga de trabajo y facilitar la marcha del proyecto en su conjunto. \nTodo ello, a su vez, redunda en una notable reducción de costes. <p>");
+        jLabel23.setText("<html>Básicamente, el Product Backlog es el listado tareas que engloba todo un proyecto. Cualquier cosa que debamos hacer debe estar en el Product Backlog, estimado por el equipo de desarrollo. <p>");
 
         jLabel24.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(59, 59, 59));
-        jLabel24.setText("<html>Aunque la metodología ágil de desarrollo de software se entiende como una tendencia global en sí misma, su ejecución concreta se materializa en distintas vertientes o filosofías de trabajo (englobadas en la Agile Alliance, en muchos de los casos) que expresan métodos y herramientas concretas para gestionar de manera ágil los proyectos.  <p>");
+        jLabel24.setText("<html>Es el grupo de tareas del Product Backlog que el equipo de desarrollo elige en el Sprint Planning junto con el plan para poder desarrollarlas.\nDebe ser conocido por todo el equipo, para asegurarse que el foco debe estar en este grupo de tareas. <p>");
 
         jPanel5.setBackground(new java.awt.Color(17, 134, 198));
 
@@ -517,7 +559,7 @@ public class Scrum extends javax.swing.JFrame {
             .addGroup(jPanel11Layout.createSequentialGroup()
                 .addGap(150, 150, 150)
                 .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(150, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -525,8 +567,8 @@ public class Scrum extends javax.swing.JFrame {
         );
 
         jLabel25.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(59, 59, 59));
-        jLabel25.setText("<html> Tipos de desarrollo ágil<p>");
+        jLabel25.setForeground(new java.awt.Color(17, 134, 198));
+        jLabel25.setText("<html>Sprint Backlog<p>");
 
         jPanel13.setBackground(new java.awt.Color(153, 255, 153));
         jPanel13.setOpaque(false);
@@ -556,43 +598,445 @@ public class Scrum extends javax.swing.JFrame {
             .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        jLabel26.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel26.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel26.setText("<html>Scrum es un proceso, marco de trabajo o framework, usado en equipos que trabajan en proyectos complejos; una metodología de trabajo ágil que tiene como finalidad \nla entrega de valor en períodos cortos de tiempo, basada tres pilares: la transparencia, inspección y adaptación. <p> ");
+
+        jLabel27.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel27.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel27.setText("<html>Como hemos dicho anteriormente, se basa en 3 pilares:<p>\n");
+
+        jLabel29.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel29.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel29.setText("<html> Es el responsable de maximizar el valor del trabajo del equipo de desarrollo. La maximización del valor del trabajo viene de la mano de una buena gestión del Product Backlog, el cual explicaremos más adelante. <p> ");
+
+        jLabel30.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel30.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel30.setText("<html> Los miembros del equipo Scrum frecuentemente inspeccionan el progreso para detectar posibles problemas. La inspección no es un examen diario, sino una forma de saber que el trabajo fluye y que el equipo funciona de manera auto-organizada.<p> ");
+
+        jLabel31.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel31.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel31.setText("<html> Cuando hay algo que cambiar, el equipo se ajusta para conseguir el objetivo del sprint. Esta es la clave para conseguir éxito en proyectos complejos, donde los requisitos son cambiantes o poco definidos y en donde la adaptación, la innovación, la complejidad y flexibilidad son fundamentales.<p>");
+
+        jLabel15.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(17, 134, 198));
+        jLabel15.setText("Roles de Scrum");
+
+        jLabel32.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel32.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel32.setText("<html>En Scrum, el equipo tiene como foco entregar valor al cliente, de calidad. <p>");
+
+        jLabel34.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel34.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel34.setText("<html>Los equipos de Scrum son auto-organizados y multi-funcionales, esto garantiza la responsabilidad de la entrega de valor al equipo completo, sin necesidad de ayuda de otros miembros de la organización. <p> ");
+
+        jLabel33.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel33.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel33.setText("<html>En Scrum existen 3 roles: Product Owner, Scrum Master y Equipo de desarrollo. <p>");
+
+        jLabel16.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(17, 134, 198));
+        jLabel16.setText("1.- Product owner:");
+
+        jLabel35.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel35.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel35.setText("<html> Es el único rol que habla constantemente con el cliente, lo que le obliga a tener muchos conocimientos sobre negocio. <p> ");
+
+        jLabel36.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel36.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel36.setText("<html> Para finalizar, un equipo Scrum debe tener solo 1 Product Owner, y este además puede ser parte del equipo de desarrollo. <p> ");
+
+        jLabel17.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(17, 134, 198));
+        jLabel17.setText("2.- Scrum Master:");
+
+        jLabel37.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel37.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel37.setText("<html> Es el responsable de que Scrum sea comprendido y aplicado en la organización. Es el manager de Scrum, pero en ningún momento se le puede considerar un jefe. Líder servil que se encarga de eliminar impedimentos o inconvenientes que tenga el equipo dentro de un sprint (que ya revisaremos en detalle más adelante). <p> ");
+
+        jLabel38.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel38.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel38.setText("<html> Dentro de la organización, el Scrum Master tiene la labor de ayudar en la adopción de esta metodología en todos los equipos.<p>\n");
+
+        jLabel18.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(17, 134, 198));
+        jLabel18.setText("3.- Scrum Team:");
+
+        jLabel39.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel39.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel39.setText("<html>Son los encargados de realizar las tareas priorizadas por el Product Owner. Es un equipo multifuncional y auto-organizado. Son los únicos que estiman las tareas del product backlog, \nsin dejarse influenciar por nadie. <p>");
+
+        jLabel40.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel40.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel40.setText("<html>Los equipos de desarrollo no tienen sub-equipos, o especialistas. La finalidad de esto es transmitir la responsabilidad compartida si no se llegan a realizar todas las tareas de un sprint. <p>");
+
+        jLabel41.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel41.setForeground(new java.awt.Color(17, 134, 198));
+        jLabel41.setText("<html>Sprint<p>\n");
+
+        jLabel42.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel42.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel42.setText("<html>La primera reunión que se hace en el sprint, tiene una duración de 8 horas para Sprints de 1 mes. En esta reunión todo el equipo Scrum define qué tareas se van a abordar, \ny cuál será el objetivo del sprint.<p> \n");
+
+        jLabel43.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel43.setForeground(new java.awt.Color(17, 134, 198));
+        jLabel43.setText("<html>Sprint planning<p>\n");
+
+        jLabel44.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel44.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel44.setText("<html>El corazón de Scrum, es el contenedor de los demás eventos. Todo lo que ocurre en una iteración para entregar valor está dentro de un Sprint. La duración máxima es de 1 mes, el tiempo se determina en base al nivel de comunicación que el cliente quiere tener con nosotros. Sprints largos pueden hacer que perdamos feedback valioso del cliente, y poner en peligro nuestro proyecto.<p>\n");
+
+        jLabel45.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel45.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel45.setText("<html>El equipo se hace las siguientes preguntas:<p> \n");
+
+        jLabel46.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel46.setForeground(new java.awt.Color(17, 134, 198));
+        jLabel46.setText("<html>•<p>\n");
+
+        jLabel47.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel47.setForeground(new java.awt.Color(17, 134, 198));
+        jLabel47.setText("<html>•<p>\n");
+
+        jLabel48.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel48.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel48.setText("<html>¿Qué se va a hacer en el sprint? (Se eligen tareas del Product backlog).<p> \n");
+
+        jLabel49.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel49.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel49.setText("<html>¿Cómo lo vamos a hacer? (El equipo de desarrollo define las tareas necesarias para completar cada item elegido del Product Backlog). <p> \n");
+
+        jLabel50.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel50.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel50.setText("<html>Esta reunión es la más oportuna para poder inspeccionar al equipo, y poder adaptarse en caso de que haya cambio de tareas dentro de un Sprint.<p> \n");
+
+        jLabel51.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel51.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel51.setText("<html>El resultado de esta reunión es el Sprint Goal y un Sprint Backlog (que revisaremos más adelante). <p> \n");
+
+        jLabel52.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel52.setForeground(new java.awt.Color(17, 134, 198));
+        jLabel52.setText("<html>Daily meeting<p>\n");
+
+        jLabel53.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel53.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel53.setText("<html>La definición de qué se va a hacer hace que el equipo tenga un objetivo, y se encuentre comprometido con la entrega de valor que se hará al cliente en el Sprint. A esto se le llama Sprint Goal. <p> \n");
+
+        jLabel54.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel54.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel54.setText("<html>En esta reunión diaria el equipo de desarrollo hace las siguientes 3 preguntas: <p> \n");
+
+        jLabel55.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel55.setForeground(new java.awt.Color(17, 134, 198));
+        jLabel55.setText("<html>•<p>\n");
+
+        jLabel56.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel56.setForeground(new java.awt.Color(17, 134, 198));
+        jLabel56.setText("<html>•<p>\n");
+
+        jLabel57.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel57.setForeground(new java.awt.Color(17, 134, 198));
+        jLabel57.setText("<html>•<p>\n");
+
+        jLabel58.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel58.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel58.setText("<html>¿Qué hice ayer?<p> \n");
+
+        jLabel59.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel59.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel59.setText("<html>¿Qué voy a hacer hoy?<p> \n");
+
+        jLabel60.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel60.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel60.setText("<html>¿Tengo algún impedimento que necesito que me solucionen? <p> \n");
+
+        jLabel61.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel61.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel61.setText("<html>Es una reunión diaria dentro del Sprint, que tiene como máximo 15 minutos de duración. En ella debe participar, si o si, el equipo de desarrollo, el Scrum Master y el Product Owner no tienen necesidad de estar. <p> \n");
+
+        jLabel62.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel62.setForeground(new java.awt.Color(17, 134, 198));
+        jLabel62.setText("<html>Sprint review<p>\n");
+
+        jLabel63.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel63.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel63.setText("<html>La review del valor que vamos a entregar al cliente se hace en esta reunión, al final de cada Sprint. Su duración es de 4 horas para Sprints de 1 mes, y es la única reunión de Scrum a la que puede asistir el cliente. En ella el Product Owner presenta lo desarrollado al cliente, y el equipo de desarrollo muestra su funcionamiento. El cliente valida los cambios realizados, y además nos brinda feedback sobre nuevas tareas que el Product Owner tendrá que agregar al Product backlog. <p> \n");
+
+        jLabel64.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel64.setForeground(new java.awt.Color(17, 134, 198));
+        jLabel64.setText("<html>Artefactos de Scrum<p>\n");
+
+        jLabel65.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel65.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel65.setText("<html>Los artefactos de Scrum están definidos para maximizar la transparencia dentro del equipo, es decir, que todos tengan una misma visión de lo que hay en el proyecto.<p> \n");
+
+        jLabel66.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel66.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel66.setText("<html>Es una gran oportunidad para el equipo Scrum de inspeccionarse a si mismo, proponiendo mejoras para el siguiente Sprint.  <p>\n");
+
+        jLabel67.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel67.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel67.setText("<html>La retrospectiva es el último evento de Scrum, tiene una duración de 3 horas para Sprints de 1 mes, y es la reunión del equipo en la que se hace una evaluación de cómo se ha implementado \nScrum en el finalizado Sprint. <p>\n");
+
+        jLabel68.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel68.setForeground(new java.awt.Color(17, 134, 198));
+        jLabel68.setText("<html>Sprint retrospective<p>\n");
+
+        jLabel69.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel69.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel69.setText("<html>El resultado: una lista de mejoras que debe aplicar el siguiente día, ya que al finalizar la retrospectiva, inmediatamente comienza un nuevo Sprint, que incluye el Sprint Planning, Daily Meeting, Sprint review y la ya mencionada Sprint Retrospective.<p>\n");
+
+        jLabel70.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel70.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel70.setText("<html>Los artefactos de Scrum son: Product backlog y Sprint backlog.<p> \n");
+
+        jLabel71.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel71.setForeground(new java.awt.Color(17, 134, 198));
+        jLabel71.setText("<html> Product backlog<p>\n");
+
+        jPanel17.setBackground(new java.awt.Color(102, 102, 255));
+
+        jPanel19.setBackground(new java.awt.Color(51, 204, 0));
+
+        javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
+        jPanel19.setLayout(jPanel19Layout);
+        jPanel19Layout.setHorizontalGroup(
+            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 519, Short.MAX_VALUE)
+        );
+        jPanel19Layout.setVerticalGroup(
+            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 603, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
+        jPanel17.setLayout(jPanel17Layout);
+        jPanel17Layout.setHorizontalGroup(
+            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel17Layout.createSequentialGroup()
+                .addGap(261, 261, 261)
+                .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel17Layout.setVerticalGroup(
+            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jLabel72.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel72.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel72.setText("<html>La responsabilidad exclusiva de ordenar el Product Backlog es del Product Owner, que se encuentra en constante comunicación con el cliente para asegurarse de que las prioridades están bien establecidas. <p>");
+
+        jLabel73.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel73.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel73.setText("<html>La ordenación también es 100% responsabilidad del Product Owner, donde las tareas que están más arriba son las de mayor prioridad.\nEl equipo de desarrollo elige tareas del Product Backlog en el Sprint Planning para generar tanto el Sprint Backlog como el Sprint Goal.\n<p>");
+
+        jLabel74.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel74.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel74.setText("<html>El Sprint Planning no cambia durante el sprint, solo se permite cambiar el plan para poder desarrollarlas.<p>");
+
+        jLabel75.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel75.setForeground(new java.awt.Color(17, 134, 198));
+        jLabel75.setText("<html>Ventajas y desventajas de Scrum <p>");
+
+        jLabel76.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel76.setForeground(new java.awt.Color(17, 134, 198));
+        jLabel76.setText("<html>Ventajas: <p>");
+
+        jLabel77.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel77.setForeground(new java.awt.Color(17, 134, 198));
+        jLabel77.setText("<html>•<p>");
+
+        jLabel78.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel78.setForeground(new java.awt.Color(17, 134, 198));
+        jLabel78.setText("<html>•<p>");
+
+        jLabel79.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel79.setForeground(new java.awt.Color(17, 134, 198));
+        jLabel79.setText("<html>•<p>");
+
+        jLabel80.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel80.setForeground(new java.awt.Color(17, 134, 198));
+        jLabel80.setText("<html>•<p>");
+
+        jLabel81.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel81.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel81.setText("<html>Aunque Scrum sea fácil de aprender, es muy difícil poder implementarlo. Esto supone una predisposición y un cambio de cultura de la organización que debe ir desde los altos mandos hasta los clientes.<p>");
+
+        jLabel82.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel82.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel82.setText("<html>El cliente puede comenzar a usar su producto rápidamente.<p>");
+
+        jLabel83.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel83.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel83.setText("<html> Se agiliza el proceso, ya que la entrega de valor es muy frecuente.<p>");
+
+        jLabel84.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel84.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel84.setText("<html>Menor probabilidad de sorpresas o imprevistos, porque el cliente está viendo frecuentemente el proyecto. <p>");
+
+        jLabel85.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel85.setForeground(new java.awt.Color(17, 134, 198));
+        jLabel85.setText("<html>Desventajas: <p>");
+
+        jLabel86.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel86.setForeground(new java.awt.Color(17, 134, 198));
+        jLabel86.setText("<html>•<p>");
+
+        jLabel87.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel87.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel87.setText("<html>Scrum es muy fácil de aprender, los roles, eventos y artefactos son claros y tienen un objetivo muy relacionado a nuestra manera diaria de trabajar.<p>");
+
+        jLabel88.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel88.setForeground(new java.awt.Color(17, 134, 198));
+        jLabel88.setText("<html>•<p>");
+
+        jLabel89.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel89.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel89.setText("<html>La necesidad de tener equipos multi-disciplinares puede ser un problema, ya que es difícil encontrar personas que sean capaces de hacer todo el trabajo de un equipo.<p>");
+
+        jLabel90.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel90.setForeground(new java.awt.Color(17, 134, 198));
+        jLabel90.setText("<html>•<p>");
+
+        jLabel91.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel91.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel91.setText("<html>El equipo puede tender a realizar el camino más corto para conseguir el objetivo de un Sprint, el cual no siempre es el de mayor calidad.<p>");
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel25, javax.swing.GroupLayout.DEFAULT_SIZE, 1103, Short.MAX_VALUE)
+            .addComponent(jLabel25)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jLabel12)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel16))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jLabel13)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel17))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jLabel14)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel18))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
+                .addComponent(jLabel78, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel83, javax.swing.GroupLayout.DEFAULT_SIZE, 1106, Short.MAX_VALUE))
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addComponent(jLabel79, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel84, javax.swing.GroupLayout.DEFAULT_SIZE, 1106, Short.MAX_VALUE))
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addComponent(jLabel80, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel82, javax.swing.GroupLayout.DEFAULT_SIZE, 1106, Short.MAX_VALUE))
+            .addComponent(jLabel85)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel7)
+                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel4Layout.createSequentialGroup()
+                                .addComponent(jLabel14)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 899, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel4Layout.createSequentialGroup()
+                                .addComponent(jLabel13)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 899, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel4Layout.createSequentialGroup()
+                                .addComponent(jLabel12)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 899, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addComponent(jLabel15)
+                        .addComponent(jLabel32)
+                        .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel33)
+                        .addComponent(jLabel41, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel42, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel43, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addGroup(jPanel4Layout.createSequentialGroup()
+                            .addComponent(jLabel46, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jLabel48, javax.swing.GroupLayout.PREFERRED_SIZE, 816, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jLabel44, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel45, javax.swing.GroupLayout.PREFERRED_SIZE, 453, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel23, javax.swing.GroupLayout.DEFAULT_SIZE, 1041, Short.MAX_VALUE)
+                        .addGroup(jPanel4Layout.createSequentialGroup()
+                            .addComponent(jLabel16)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 887, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 887, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, 887, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(jPanel4Layout.createSequentialGroup()
+                            .addComponent(jLabel17)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel38, javax.swing.GroupLayout.PREFERRED_SIZE, 887, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 887, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(jPanel4Layout.createSequentialGroup()
+                            .addComponent(jLabel18)
+                            .addGap(18, 18, 18)
+                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel40, javax.swing.GroupLayout.PREFERRED_SIZE, 887, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, 887, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel4Layout.createSequentialGroup()
+                            .addComponent(jLabel47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jLabel49))
+                        .addComponent(jLabel50, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel51, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel52, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel53, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel54, javax.swing.GroupLayout.PREFERRED_SIZE, 655, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel62, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel63, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel64, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel65, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel66, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel67, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel70, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel69, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel68, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel61, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel71, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addGroup(jPanel4Layout.createSequentialGroup()
+                            .addComponent(jLabel55, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jLabel58, javax.swing.GroupLayout.PREFERRED_SIZE, 655, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel4Layout.createSequentialGroup()
+                            .addComponent(jLabel56, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jLabel59, javax.swing.GroupLayout.PREFERRED_SIZE, 655, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel4Layout.createSequentialGroup()
+                            .addComponent(jLabel57, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jLabel60, javax.swing.GroupLayout.PREFERRED_SIZE, 655, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jPanel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel72, javax.swing.GroupLayout.DEFAULT_SIZE, 1041, Short.MAX_VALUE)
+                        .addComponent(jLabel73, javax.swing.GroupLayout.DEFAULT_SIZE, 1041, Short.MAX_VALUE)
+                        .addComponent(jLabel74, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel75)
+                        .addComponent(jLabel76)
+                        .addGroup(jPanel4Layout.createSequentialGroup()
+                            .addComponent(jLabel77, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jLabel87, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(jLabel86, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel19))
-                    .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jLabel81, javax.swing.GroupLayout.PREFERRED_SIZE, 1027, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(jLabel88, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel89, javax.swing.GroupLayout.PREFERRED_SIZE, 1027, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(jLabel90, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel91, javax.swing.GroupLayout.PREFERRED_SIZE, 1027, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
@@ -604,46 +1048,174 @@ public class Scrum extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
+                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel12)
-                    .addComponent(jLabel16))
+                    .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel13)
-                    .addComponent(jLabel17))
+                    .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel14)
-                    .addComponent(jLabel18))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel15)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel15)
-                    .addComponent(jLabel19))
+                    .addComponent(jLabel16)
+                    .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(19, 19, 19)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel17)
+                    .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel18)
+                    .addComponent(jLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
+                .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel44, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel45, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel46, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel48, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel49, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel53, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel51, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel52, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel61, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel54, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel55, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel58, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel56, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel59, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel57, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel60, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel62, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel63, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel68, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel67, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel66, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel69, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel64, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel65, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel70, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel71, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel72, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel73, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel74, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel75, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(218, Short.MAX_VALUE))
+                .addComponent(jLabel76, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel77, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel87, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel80, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel82, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel78, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel83, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel79, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel84, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel85, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel86, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel81, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel88, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel89, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel90, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel91, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         jScrollPane2.setViewportView(jPanel4);
@@ -811,15 +1383,15 @@ public class Scrum extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 58, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(1, 1, 1)
                         .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 0, 0)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 1028, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane2))
         );
 
         pack();
@@ -873,146 +1445,6 @@ public class Scrum extends javax.swing.JFrame {
     private void jLabel6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseExited
         jLabel6.setForeground(Color.GRAY);
     }//GEN-LAST:event_jLabel6MouseExited
-
-    private void lblBotonDerMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBotonDerMouseEntered
-        lblBotonDer.setForeground(Color.DARK_GRAY);
-    }//GEN-LAST:event_lblBotonDerMouseEntered
-
-    private void lblBotonIzqMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBotonIzqMouseEntered
-        lblBotonIzq.setForeground(Color.DARK_GRAY);
-    }//GEN-LAST:event_lblBotonIzqMouseEntered
-
-    private void lblBotonIzqMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBotonIzqMouseExited
-        lblBotonIzq.setForeground(Color.LIGHT_GRAY);
-    }//GEN-LAST:event_lblBotonIzqMouseExited
-
-    private void lblBotonDerMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBotonDerMouseExited
-        lblBotonDer.setForeground(Color.LIGHT_GRAY);
-    }//GEN-LAST:event_lblBotonDerMouseExited
-
-    private void lblBotonDerMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBotonDerMouseClicked
-        if (valCambio == 1) {
-            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum1.png"));
-            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
-            lblCambioImagen.setIcon(ima1);
-            this.repaint();
-            valCambio = 2;
-            valCambio2 = 7;
-        } else if (valCambio == 2) {
-            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum2.png"));
-            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
-            lblCambioImagen.setIcon(ima1);
-            this.repaint();
-            valCambio = 3;
-            valCambio2 = 8;
-        } else if (valCambio == 3) {
-            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum3.png"));
-            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
-            lblCambioImagen.setIcon(ima1);
-            this.repaint();
-            valCambio = 4;
-            valCambio2 = 1;
-        } else if (valCambio == 4) {
-            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum4.png"));
-            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
-            lblCambioImagen.setIcon(ima1);
-            this.repaint();
-            valCambio = 5;
-            valCambio2 = 2;
-        } else if (valCambio == 5) {
-            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum5.png"));
-            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
-            lblCambioImagen.setIcon(ima1);
-            this.repaint();
-            valCambio = 6;
-            valCambio2 = 3;
-        } else if (valCambio == 6) {
-            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum6.png"));
-            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
-            lblCambioImagen.setIcon(ima1);
-            this.repaint();
-            valCambio = 7;
-            valCambio2 = 4;
-        } else if (valCambio == 7) {
-            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum7.png"));
-            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
-            lblCambioImagen.setIcon(ima1);
-            this.repaint();
-            valCambio = 8;
-            valCambio2 = 5;
-        }else if (valCambio == 8) {
-            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum8.png"));
-            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
-            lblCambioImagen.setIcon(ima1);
-            this.repaint();
-            valCambio = 1;
-            valCambio2 = 6;
-        }
-    }//GEN-LAST:event_lblBotonDerMouseClicked
-
-    private void lblBotonIzqMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBotonIzqMouseClicked
-
-        if (valCambio2 == 8) {
-            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum1.png"));
-            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
-            lblCambioImagen.setIcon(ima1);
-            this.repaint();
-            valCambio2 = 7;
-            valCambio = 2;
-        } else if (valCambio2 == 1) {
-            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum2.png"));
-            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
-            lblCambioImagen.setIcon(ima1);
-            this.repaint();
-            valCambio2 = 8;
-            valCambio = 3;
-        } else if (valCambio2 == 2) {
-            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum3.png"));
-            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
-            lblCambioImagen.setIcon(ima1);
-            this.repaint();
-            valCambio2 = 1;
-            valCambio = 4;
-        } else if (valCambio2 == 3) {
-            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum4.png"));
-            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
-            lblCambioImagen.setIcon(ima1);
-            this.repaint();
-            valCambio2 = 2;
-            valCambio = 5;
-        } else if (valCambio2 == 4) {
-            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum5.png"));
-            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
-            lblCambioImagen.setIcon(ima1);
-            this.repaint();
-            valCambio2 = 3;
-            valCambio = 6;
-        } else if (valCambio2 == 5) {
-            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum6.png"));
-            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
-            lblCambioImagen.setIcon(ima1);
-            this.repaint();
-            valCambio2 = 4;
-            valCambio = 7;
-        } else if (valCambio2 == 6) {
-            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum7.png"));
-            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
-            lblCambioImagen.setIcon(ima1);
-            this.repaint();
-            valCambio2 = 5;
-            valCambio = 8;
-        }
-        else if (valCambio2 == 7) {
-            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum8.png"));
-            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
-            lblCambioImagen.setIcon(ima1);
-            this.repaint();
-            valCambio2 = 6;
-            valCambio = 1;
-        }
-
-
-    }//GEN-LAST:event_lblBotonIzqMouseClicked
 
     private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
         Salida obj3 = new Salida(); //Se crea un objeto de la clase Salida
@@ -1158,6 +1590,145 @@ public class Scrum extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jLabel28MouseClicked
 
+    private void lblBotonDerMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBotonDerMouseExited
+        lblBotonDer.setForeground(Color.LIGHT_GRAY);
+    }//GEN-LAST:event_lblBotonDerMouseExited
+
+    private void lblBotonDerMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBotonDerMouseEntered
+        lblBotonDer.setForeground(Color.DARK_GRAY);
+    }//GEN-LAST:event_lblBotonDerMouseEntered
+
+    private void lblBotonDerMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBotonDerMouseClicked
+        if (valCambio == 1) {
+            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum1.png"));
+            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
+            lblCambioImagen.setIcon(ima1);
+            this.repaint();
+            valCambio = 2;
+            valCambio2 = 7;
+        } else if (valCambio == 2) {
+            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum2.png"));
+            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
+            lblCambioImagen.setIcon(ima1);
+            this.repaint();
+            valCambio = 3;
+            valCambio2 = 8;
+        } else if (valCambio == 3) {
+            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum3.png"));
+            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
+            lblCambioImagen.setIcon(ima1);
+            this.repaint();
+            valCambio = 4;
+            valCambio2 = 1;
+        } else if (valCambio == 4) {
+            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum4.png"));
+            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
+            lblCambioImagen.setIcon(ima1);
+            this.repaint();
+            valCambio = 5;
+            valCambio2 = 2;
+        } else if (valCambio == 5) {
+            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum5.png"));
+            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
+            lblCambioImagen.setIcon(ima1);
+            this.repaint();
+            valCambio = 6;
+            valCambio2 = 3;
+        } else if (valCambio == 6) {
+            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum6.png"));
+            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
+            lblCambioImagen.setIcon(ima1);
+            this.repaint();
+            valCambio = 7;
+            valCambio2 = 4;
+        } else if (valCambio == 7) {
+            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum7.png"));
+            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
+            lblCambioImagen.setIcon(ima1);
+            this.repaint();
+            valCambio = 8;
+            valCambio2 = 5;
+        }else if (valCambio == 8) {
+            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum8.png"));
+            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
+            lblCambioImagen.setIcon(ima1);
+            this.repaint();
+            valCambio = 1;
+            valCambio2 = 6;
+        }
+    }//GEN-LAST:event_lblBotonDerMouseClicked
+
+    private void lblBotonIzqMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBotonIzqMouseExited
+        lblBotonIzq.setForeground(Color.LIGHT_GRAY);
+    }//GEN-LAST:event_lblBotonIzqMouseExited
+
+    private void lblBotonIzqMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBotonIzqMouseEntered
+        lblBotonIzq.setForeground(Color.DARK_GRAY);
+    }//GEN-LAST:event_lblBotonIzqMouseEntered
+
+    private void lblBotonIzqMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBotonIzqMouseClicked
+
+        if (valCambio2 == 8) {
+            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum1.png"));
+            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
+            lblCambioImagen.setIcon(ima1);
+            this.repaint();
+            valCambio2 = 7;
+            valCambio = 2;
+        } else if (valCambio2 == 1) {
+            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum2.png"));
+            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
+            lblCambioImagen.setIcon(ima1);
+            this.repaint();
+            valCambio2 = 8;
+            valCambio = 3;
+        } else if (valCambio2 == 2) {
+            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum3.png"));
+            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
+            lblCambioImagen.setIcon(ima1);
+            this.repaint();
+            valCambio2 = 1;
+            valCambio = 4;
+        } else if (valCambio2 == 3) {
+            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum4.png"));
+            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
+            lblCambioImagen.setIcon(ima1);
+            this.repaint();
+            valCambio2 = 2;
+            valCambio = 5;
+        } else if (valCambio2 == 4) {
+            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum5.png"));
+            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
+            lblCambioImagen.setIcon(ima1);
+            this.repaint();
+            valCambio2 = 3;
+            valCambio = 6;
+        } else if (valCambio2 == 5) {
+            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum6.png"));
+            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
+            lblCambioImagen.setIcon(ima1);
+            this.repaint();
+            valCambio2 = 4;
+            valCambio = 7;
+        } else if (valCambio2 == 6) {
+            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum7.png"));
+            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
+            lblCambioImagen.setIcon(ima1);
+            this.repaint();
+            valCambio2 = 5;
+            valCambio = 8;
+        }
+        else if (valCambio2 == 7) {
+            ImageIcon portada = new ImageIcon(getClass().getResource("/aragon/ico/scrum/imagenes/Scrum8.png"));
+            Icon ima1 = new ImageIcon(portada.getImage().getScaledInstance(lblCambioImagen.getWidth(), lblCambioImagen.getHeight(), Image.SCALE_AREA_AVERAGING));
+            lblCambioImagen.setIcon(ima1);
+            this.repaint();
+            valCambio2 = 6;
+            valCambio = 1;
+        }
+
+    }//GEN-LAST:event_lblBotonIzqMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -1205,21 +1776,85 @@ public class Scrum extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel63;
+    private javax.swing.JLabel jLabel64;
+    private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel66;
+    private javax.swing.JLabel jLabel67;
+    private javax.swing.JLabel jLabel68;
+    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel70;
+    private javax.swing.JLabel jLabel71;
+    private javax.swing.JLabel jLabel72;
+    private javax.swing.JLabel jLabel73;
+    private javax.swing.JLabel jLabel74;
+    private javax.swing.JLabel jLabel75;
+    private javax.swing.JLabel jLabel76;
+    private javax.swing.JLabel jLabel77;
+    private javax.swing.JLabel jLabel78;
+    private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel80;
+    private javax.swing.JLabel jLabel81;
+    private javax.swing.JLabel jLabel82;
+    private javax.swing.JLabel jLabel83;
+    private javax.swing.JLabel jLabel84;
+    private javax.swing.JLabel jLabel85;
+    private javax.swing.JLabel jLabel86;
+    private javax.swing.JLabel jLabel87;
+    private javax.swing.JLabel jLabel88;
+    private javax.swing.JLabel jLabel89;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabel90;
+    private javax.swing.JLabel jLabel91;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
@@ -1228,7 +1863,9 @@ public class Scrum extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel15;
     private javax.swing.JPanel jPanel16;
+    private javax.swing.JPanel jPanel17;
     private javax.swing.JPanel jPanel18;
+    private javax.swing.JPanel jPanel19;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
