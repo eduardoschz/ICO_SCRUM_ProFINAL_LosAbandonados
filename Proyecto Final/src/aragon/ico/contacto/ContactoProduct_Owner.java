@@ -10,6 +10,10 @@ import java.awt.Image;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import Animacion.Animacion;
+import aragon.ico.Inicio;
+import aragon.ico.Salida;
+import java.awt.Desktop;
+import java.net.URI;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -35,13 +39,7 @@ public class ContactoProduct_Owner extends javax.swing.JFrame {
         jPDesplegableDAScrum.setVisible(false);
         jPDesplegableContacto.setVisible(false);
         
-        // Logo de ICO
-        ImageIcon iconoICO = new ImageIcon(System.getProperty("user.dir") + "/src/aragon/ico/imagenes/inicio/ICO.png");
-        Icon logoICO = new ImageIcon(iconoICO.getImage().getScaledInstance(jLLogoICO.getWidth(), jLLogoICO.getHeight(), Image.SCALE_AREA_AVERAGING));
-        jLLogoICO.setIcon(logoICO);
-        
-        // Iniciar el Timer
-        controlDesplegable();
+        ponerImagenes();
     }
 
     /**
@@ -70,6 +68,28 @@ public class ContactoProduct_Owner extends javax.swing.JFrame {
         jBScrum_Master = new javax.swing.JButton();
         jBScrum_Team = new javax.swing.JButton();
         jPInformacionProduct_Owner = new javax.swing.JPanel();
+        jLHeader = new javax.swing.JLabel();
+        jLMiembro_Equipo = new javax.swing.JLabel();
+        jPerfil = new javax.swing.JPanel();
+        jLFoto = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jPInformacion = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLAsada = new javax.swing.JLabel();
+        jLPlaya = new javax.swing.JLabel();
+        jLLibros = new javax.swing.JLabel();
+        jLPeliculas = new javax.swing.JLabel();
+        jLChocolate = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLFacebook = new javax.swing.JLabel();
+        jLTwitter = new javax.swing.JLabel();
+        jLInstagram = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Scrum Master");
@@ -118,6 +138,11 @@ public class ContactoProduct_Owner extends javax.swing.JFrame {
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jBInicioMouseExited(evt);
+            }
+        });
+        jBInicio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBInicioActionPerformed(evt);
             }
         });
 
@@ -367,18 +392,200 @@ public class ContactoProduct_Owner extends javax.swing.JFrame {
 
         jPanel1.add(jPDesplegableContacto, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 0, 160, 90));
 
-        javax.swing.GroupLayout jPInformacionProduct_OwnerLayout = new javax.swing.GroupLayout(jPInformacionProduct_Owner);
-        jPInformacionProduct_Owner.setLayout(jPInformacionProduct_OwnerLayout);
-        jPInformacionProduct_OwnerLayout.setHorizontalGroup(
-            jPInformacionProduct_OwnerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1200, Short.MAX_VALUE)
+        jPInformacionProduct_Owner.setBackground(new java.awt.Color(17, 134, 198));
+        jPInformacionProduct_Owner.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPInformacionProduct_Owner.add(jLHeader, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1200, 250));
+
+        jLMiembro_Equipo.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
+        jLMiembro_Equipo.setForeground(new java.awt.Color(255, 255, 255));
+        jLMiembro_Equipo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLMiembro_Equipo.setText("PRODUCT OWNER");
+        jPInformacionProduct_Owner.add(jLMiembro_Equipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, 1180, -1));
+
+        jPerfil.setBackground(new java.awt.Color(26, 82, 118));
+
+        jLabel1.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Martínez Palma Yovani");
+
+        jLabel2.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("No. de Cuenta: 309319036");
+
+        jLabel3.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("Email: yovanisan1.ico.is1@gmail.com");
+
+        jLabel4.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("Semestre: 6° Semestre");
+
+        javax.swing.GroupLayout jPerfilLayout = new javax.swing.GroupLayout(jPerfil);
+        jPerfil.setLayout(jPerfilLayout);
+        jPerfilLayout.setHorizontalGroup(
+            jPerfilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPerfilLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPerfilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPerfilLayout.createSequentialGroup()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPerfilLayout.createSequentialGroup()
+                        .addGap(0, 35, Short.MAX_VALUE)
+                        .addComponent(jLFoto, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(45, 45, 45))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPerfilLayout.createSequentialGroup()
+                        .addGroup(jPerfilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addContainerGap())))
         );
-        jPInformacionProduct_OwnerLayout.setVerticalGroup(
-            jPInformacionProduct_OwnerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 510, Short.MAX_VALUE)
+        jPerfilLayout.setVerticalGroup(
+            jPerfilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPerfilLayout.createSequentialGroup()
+                .addGap(35, 35, 35)
+                .addComponent(jLFoto, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2)
+                .addGap(25, 25, 25)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel4)
+                .addContainerGap(75, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPInformacionProduct_Owner, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 1200, 510));
+        jPInformacionProduct_Owner.add(jPerfil, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 365, 350, 500));
+
+        jPInformacion.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel5.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setText("Redes Sociales");
+
+        jLabel6.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setText("Adoro hacer carnita asada en compañía de mis amigos, en");
+
+        jLabel7.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setText("encanta viajar a la playa, me gusta leer libros de horror y ver");
+
+        jLabel8.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(59, 59, 59));
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel8.setText("películas de acción o de terror y me encanta comer chocolates.");
+
+        jLabel9.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
+        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel9.setText("Hobbies");
+
+        jLFacebook.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLFacebook.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLFacebookMouseClicked(evt);
+            }
+        });
+
+        jLTwitter.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLTwitter.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLTwitterMouseClicked(evt);
+            }
+        });
+
+        jLInstagram.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLInstagram.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLInstagramMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPInformacionLayout = new javax.swing.GroupLayout(jPInformacion);
+        jPInformacion.setLayout(jPInformacionLayout);
+        jPInformacionLayout.setHorizontalGroup(
+            jPInformacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPInformacionLayout.createSequentialGroup()
+                .addGroup(jPInformacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPInformacionLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPInformacionLayout.createSequentialGroup()
+                        .addGroup(jPInformacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPInformacionLayout.createSequentialGroup()
+                                .addGap(40, 40, 40)
+                                .addGroup(jPInformacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(jPInformacionLayout.createSequentialGroup()
+                                        .addComponent(jLAsada, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(24, 24, 24)
+                                        .addComponent(jLPlaya, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(24, 24, 24)
+                                        .addComponent(jLLibros, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jLPeliculas, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(24, 24, 24)
+                                        .addComponent(jLChocolate, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 471, Short.MAX_VALUE)
+                                    .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, 471, Short.MAX_VALUE)))
+                            .addGroup(jPInformacionLayout.createSequentialGroup()
+                                .addGap(113, 113, 113)
+                                .addComponent(jLFacebook, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(50, 50, 50)
+                                .addComponent(jLTwitter, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(50, 50, 50)
+                                .addComponent(jLInstagram, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 29, Short.MAX_VALUE)))
+                .addContainerGap())
+            .addGroup(jPInformacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPInformacionLayout.createSequentialGroup()
+                    .addGap(50, 50, 50)
+                    .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGap(29, 29, 29)))
+        );
+        jPInformacionLayout.setVerticalGroup(
+            jPInformacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPInformacionLayout.createSequentialGroup()
+                .addContainerGap(81, Short.MAX_VALUE)
+                .addComponent(jLabel6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel8)
+                .addGap(18, 18, 18)
+                .addGroup(jPInformacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPInformacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLAsada, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLPlaya, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLLibros, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLChocolate, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLPeliculas, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(56, 56, 56)
+                .addComponent(jLabel5)
+                .addGap(18, 18, 18)
+                .addGroup(jPInformacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(jLTwitter, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLFacebook, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLInstagram, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(73, 73, 73))
+            .addGroup(jPInformacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPInformacionLayout.createSequentialGroup()
+                    .addGap(36, 36, 36)
+                    .addComponent(jLabel9)
+                    .addContainerGap(435, Short.MAX_VALUE)))
+        );
+
+        jPInformacionProduct_Owner.add(jPInformacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 365, 550, 500));
+
+        jPanel1.add(jPInformacionProduct_Owner, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 1200, 910));
 
         jScrollPane1.setViewportView(jPanel1);
 
@@ -462,7 +669,11 @@ public class ContactoProduct_Owner extends javax.swing.JFrame {
     }//GEN-LAST:event_jBSalirMouseExited
 
     private void jBSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBSalirActionPerformed
-        // TODO add your handling code here:
+        Salida salir = new Salida();
+        this.setVisible(false);
+        salir.setVisible(true);
+        timerControl.cancel();
+        dispose();
     }//GEN-LAST:event_jBSalirActionPerformed
 
     private void jBDAgilMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBDAgilMouseEntered
@@ -525,6 +736,53 @@ public class ContactoProduct_Owner extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jBScrum_TeamMouseExited
 
+    private void jLFacebookMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLFacebookMouseClicked
+        try {
+            if (Desktop.isDesktopSupported()) {
+                Desktop desktop = Desktop.getDesktop();
+                if (desktop.isSupported(Desktop.Action.BROWSE)) {
+                    desktop.browse(new URI("https://www.facebook.com/profile.php?id=100026337679342"));
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }//GEN-LAST:event_jLFacebookMouseClicked
+
+    private void jLTwitterMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLTwitterMouseClicked
+        try {
+            if (Desktop.isDesktopSupported()) {
+                Desktop desktop = Desktop.getDesktop();
+                if (desktop.isSupported(Desktop.Action.BROWSE)) {
+                    desktop.browse(new URI("https://twitter.com/yovani_palma"));
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }//GEN-LAST:event_jLTwitterMouseClicked
+
+    private void jLInstagramMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLInstagramMouseClicked
+        try {
+            if (Desktop.isDesktopSupported()) {
+                Desktop desktop = Desktop.getDesktop();
+                if (desktop.isSupported(Desktop.Action.BROWSE)) {
+                    desktop.browse(new URI("https://www.instagram.com/yovanisan1.ico.is1/"));
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }//GEN-LAST:event_jLInstagramMouseClicked
+
+    private void jBInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBInicioActionPerformed
+        Inicio inicio = new Inicio();
+        timerControl.cancel();
+        this.setVisible(false);
+        inicio.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jBInicioActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -572,15 +830,100 @@ public class ContactoProduct_Owner extends javax.swing.JFrame {
     private javax.swing.JButton jBScrum;
     private javax.swing.JButton jBScrum_Master;
     private javax.swing.JButton jBScrum_Team;
+    private javax.swing.JLabel jLAsada;
+    private javax.swing.JLabel jLChocolate;
+    private javax.swing.JLabel jLFacebook;
+    private javax.swing.JLabel jLFoto;
+    private javax.swing.JLabel jLHeader;
+    private javax.swing.JLabel jLInstagram;
+    private javax.swing.JLabel jLLibros;
     private javax.swing.JLabel jLLogoICO;
+    private javax.swing.JLabel jLMiembro_Equipo;
+    private javax.swing.JLabel jLPeliculas;
+    private javax.swing.JLabel jLPlaya;
+    private javax.swing.JLabel jLTwitter;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPBarraMenu;
     private javax.swing.JPanel jPDesplegableContacto;
     private javax.swing.JPanel jPDesplegableDAScrum;
+    private javax.swing.JPanel jPInformacion;
     private javax.swing.JPanel jPInformacionProduct_Owner;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPerfil;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 
+    public void ponerImagenes(){
+        // Logo de ICO
+        ImageIcon iconoICO = new ImageIcon(System.getProperty("user.dir") + "/src/aragon/ico/imagenes/inicio/ICO.png");
+        Icon logoICO = new ImageIcon(iconoICO.getImage().getScaledInstance(jLLogoICO.getWidth(), jLLogoICO.getHeight(), Image.SCALE_AREA_AVERAGING));
+        jLLogoICO.setIcon(logoICO);
+        
+        // Imagen para el Header
+        ImageIcon ImageTitulo = new ImageIcon(System.getProperty("user.dir") + "/src/aragon/ico/imagenes/contacto/equipo.jpg");
+        Icon iconTitulo = new ImageIcon(ImageTitulo.getImage().getScaledInstance(jLHeader.getWidth(), jLHeader.getHeight(), Image.SCALE_AREA_AVERAGING));
+        jLHeader.setIcon(iconTitulo);
+        
+        // Iniciar el Timer
+        controlDesplegable();
+        
+        // Imagen para el Header
+        ImageIcon ImageYovani = new ImageIcon(System.getProperty("user.dir") + "/src/aragon/ico/imagenes/contacto/Yovani.jpg");
+        Icon iconYovanni = new ImageIcon(ImageYovani.getImage().getScaledInstance(jLFoto.getWidth(), jLFoto.getHeight(), Image.SCALE_AREA_AVERAGING));
+        jLFoto.setIcon(iconYovanni);
+        
+        /***** Imagenes hobibes *****/
+        // Asada
+        ImageIcon ImageAsada = new ImageIcon(System.getProperty("user.dir") + "/src/aragon/ico/imagenes/contacto/Grill.png");
+        Icon iconAsada = new ImageIcon(ImageAsada.getImage().getScaledInstance(jLAsada.getWidth(), jLAsada.getHeight(), Image.SCALE_AREA_AVERAGING));
+        jLAsada.setIcon(iconAsada);
+        
+        // Playa
+        ImageIcon ImagePlaya = new ImageIcon(System.getProperty("user.dir") + "/src/aragon/ico/imagenes/contacto/Beach.png");
+        Icon iconPlaya = new ImageIcon(ImagePlaya.getImage().getScaledInstance(jLPlaya.getWidth(), jLPlaya.getHeight(), Image.SCALE_AREA_AVERAGING));
+        jLPlaya.setIcon(iconPlaya);
+        
+        // Libros
+        ImageIcon ImageLibros = new ImageIcon(System.getProperty("user.dir") + "/src/aragon/ico/imagenes/contacto/book.png");
+        Icon iconLibros = new ImageIcon(ImageLibros.getImage().getScaledInstance(jLLibros.getWidth(), jLLibros.getHeight(), Image.SCALE_AREA_AVERAGING));
+        jLLibros.setIcon(iconLibros);
+    
+        // Peliculas
+        ImageIcon ImagePeliculas = new ImageIcon(System.getProperty("user.dir") + "/src/aragon/ico/imagenes/contacto/cine.png");
+        Icon iconPeliculas = new ImageIcon(ImagePeliculas.getImage().getScaledInstance(jLPeliculas.getWidth(), jLPeliculas.getHeight(), Image.SCALE_AREA_AVERAGING));
+        jLPeliculas.setIcon(iconPeliculas);
+        
+        // Chocolate
+        ImageIcon ImageChocolate = new ImageIcon(System.getProperty("user.dir") + "/src/aragon/ico/imagenes/contacto/Chocolate.png");
+        Icon iconChocolate = new ImageIcon(ImageChocolate.getImage().getScaledInstance(jLChocolate.getWidth(), jLChocolate.getHeight(), Image.SCALE_AREA_AVERAGING));
+        jLChocolate.setIcon(iconChocolate);
+        
+        /***** Redes Sociales *****/
+        // 
+        ImageIcon ImageFacebook = new ImageIcon(System.getProperty("user.dir") + "/src/aragon/ico/imagenes/contacto/facebook.jpg");
+        Icon iconFacebook = new ImageIcon(ImageFacebook.getImage().getScaledInstance(jLFacebook.getWidth(), jLFacebook.getHeight(), Image.SCALE_AREA_AVERAGING));
+        jLFacebook.setIcon(iconFacebook);
+        
+        // Twitter
+        ImageIcon ImageTwitter = new ImageIcon(System.getProperty("user.dir") + "/src/aragon/ico/imagenes/contacto/Twitter.png");
+        Icon iconTwitter = new ImageIcon(ImageTwitter.getImage().getScaledInstance(jLTwitter.getWidth(), jLTwitter.getHeight(), Image.SCALE_AREA_AVERAGING));
+        jLTwitter.setIcon(iconTwitter);
+        
+        // Instagram
+        ImageIcon ImageInstagram = new ImageIcon(System.getProperty("user.dir") + "/src/aragon/ico/imagenes/contacto/Instagram.png");
+        Icon iconInstagram = new ImageIcon(ImageInstagram.getImage().getScaledInstance(jLInstagram.getWidth(), jLInstagram.getHeight(), Image.SCALE_AREA_AVERAGING));
+        jLInstagram.setIcon(iconInstagram);
+    
+    }
+    
     public void controlDesplegable(){
         int lapso = 1000;
         

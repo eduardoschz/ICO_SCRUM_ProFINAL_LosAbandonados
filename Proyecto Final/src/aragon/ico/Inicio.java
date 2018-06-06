@@ -12,6 +12,7 @@ import java.util.TimerTask;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import Animacion.Animacion;
+import aragon.ico.contacto.ContactoProduct_Owner;
 
 /**
  *
@@ -359,6 +360,11 @@ public class Inicio extends javax.swing.JFrame {
                 jBProduct_OwnerMouseExited(evt);
             }
         });
+        jBProduct_Owner.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBProduct_OwnerActionPerformed(evt);
+            }
+        });
 
         jBScrum_Master.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jBScrum_Master.setForeground(java.awt.Color.gray);
@@ -674,6 +680,8 @@ public class Inicio extends javax.swing.JFrame {
 
     private void jBSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBSalirActionPerformed
         Salida salir = new Salida();
+        timerControl.cancel();
+        timerImagenes.cancel();
         this.setVisible(false);
         salir.setVisible(true);
         dispose();
@@ -682,6 +690,18 @@ public class Inicio extends javax.swing.JFrame {
     private void jBIngenieriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBIngenieriaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jBIngenieriaActionPerformed
+
+    private void jBProduct_OwnerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBProduct_OwnerActionPerformed
+        if (jPDesplegableContacto.isVisible()) {
+            ContactoProduct_Owner po = new ContactoProduct_Owner();
+            timerImagenes.cancel();
+            timerControl.cancel();
+            this.setVisible(false);
+            po.setVisible(true);
+            dispose();
+        }
+            
+    }//GEN-LAST:event_jBProduct_OwnerActionPerformed
 
     /**
      * @param args the command line arguments
