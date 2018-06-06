@@ -2,6 +2,9 @@ package aragon.ico.scrum;
 
 import aragon.ico.Salida;
 import aragon.ico.Inicio;
+import aragon.ico.contacto.ContactoProduct_Owner;
+import aragon.ico.contacto.ContactoScrum_Master;
+import aragon.ico.ingSoft.IngSoftConceptos;
 import java.awt.Color;
 import java.awt.Image;
 import javax.swing.Icon;
@@ -220,6 +223,7 @@ public class Scrum extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
+        setUndecorated(true);
         setPreferredSize(new java.awt.Dimension(1200, 720));
 
         jPanel1.setBackground(new java.awt.Color(245, 245, 245));
@@ -265,6 +269,9 @@ public class Scrum extends javax.swing.JFrame {
         jLabel3.setText("Ingeniería de Software");
         jLabel3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel3MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jLabel3MouseEntered(evt);
             }
@@ -374,7 +381,7 @@ public class Scrum extends javax.swing.JFrame {
         jScrollPane2.setBackground(new java.awt.Color(255, 255, 255));
         jScrollPane2.setBorder(null);
         jScrollPane2.setForeground(new java.awt.Color(255, 255, 255));
-        jScrollPane2.setAutoscrolls(true);
+        jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
         jPanel4.setAutoscrolls(true);
@@ -1312,6 +1319,9 @@ public class Scrum extends javax.swing.JFrame {
         lblContYo.setText("Product Owner");
         lblContYo.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblContYo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblContYoMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 lblContYoMouseEntered(evt);
             }
@@ -1340,6 +1350,9 @@ public class Scrum extends javax.swing.JFrame {
         lblConEdu.setText("Scrum Master");
         lblConEdu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblConEdu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblConEduMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 lblConEduMouseEntered(evt);
             }
@@ -1719,9 +1732,9 @@ public class Scrum extends javax.swing.JFrame {
     }//GEN-LAST:event_lblBotonIzqMouseClicked
 
     private void lblDesAgMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblDesAgMouseClicked
-        Agil cambioAgil = new Agil(); 
-        cambioAgil.setVisible(true); 
-        dispose(); 
+        Agil cambioAgil = new Agil();
+        cambioAgil.setVisible(true);
+        dispose();
     }//GEN-LAST:event_lblDesAgMouseClicked
 
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
@@ -1729,6 +1742,24 @@ public class Scrum extends javax.swing.JFrame {
         cambioInicio.setVisible(true);
         dispose();
     }//GEN-LAST:event_jLabel1MouseClicked
+
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+        IngSoftConceptos cambioIngSoft = new IngSoftConceptos();
+        cambioIngSoft.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jLabel3MouseClicked
+
+    private void lblContYoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblContYoMouseClicked
+        ContactoProduct_Owner cambioProductOwner = new ContactoProduct_Owner();
+        cambioProductOwner.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_lblContYoMouseClicked
+
+    private void lblConEduMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblConEduMouseClicked
+        ContactoScrum_Master cambioScrumMaster = new ContactoScrum_Master();
+        cambioScrumMaster.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_lblConEduMouseClicked
 
     /**
      * @param args the command line arguments
