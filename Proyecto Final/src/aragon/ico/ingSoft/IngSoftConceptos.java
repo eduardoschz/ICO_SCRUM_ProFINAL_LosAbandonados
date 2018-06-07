@@ -408,7 +408,7 @@ public class IngSoftConceptos extends javax.swing.JFrame {
         jPInformacionIS.setPreferredSize(new java.awt.Dimension(1190, 3400));
 
         lblTitulo.setBackground(Color.WHITE);
-        lblTitulo.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
+        lblTitulo.setFont(new java.awt.Font("Arial Black", 0, 36)); // NOI18N
         lblTitulo.setForeground(new java.awt.Color(17, 134, 198));
         lblTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitulo.setText("<html><b> Ingeniería de Software </b> </html>");
@@ -454,7 +454,7 @@ public class IngSoftConceptos extends javax.swing.JFrame {
         jPInformacionISLayout.setVerticalGroup(
             jPInformacionISLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPInformacionISLayout.createSequentialGroup()
-                .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblPortada, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
