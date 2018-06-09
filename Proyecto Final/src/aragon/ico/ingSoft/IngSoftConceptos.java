@@ -11,6 +11,9 @@ import java.awt.Image;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import Animacion.Animacion;
+import aragon.ico.Inicio;
+import aragon.ico.Salida;
+import aragon.ico.scrum.*;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -34,6 +37,8 @@ public class IngSoftConceptos extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         getContentPane().setBackground(Color.white);
         this.lblInfo.setBackground(Color.white);
+        
+        setIconImage(new ImageIcon(System.getProperty("user.dir") + "/src/aragon/ico/imagenes/inicio/ICO.png").getImage());
 
         // Los menus desplegables iniciaran ocultos
         jPDesplegableDAScrum.setVisible(false);
@@ -90,7 +95,6 @@ public class IngSoftConceptos extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Scrum Master");
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        setMaximumSize(new java.awt.Dimension(1200, 720));
         setMinimumSize(new java.awt.Dimension(1200, 720));
         setUndecorated(true);
         setResizable(false);
@@ -146,6 +150,11 @@ public class IngSoftConceptos extends javax.swing.JFrame {
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jBInicioMouseExited(evt);
+            }
+        });
+        jBInicio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBInicioActionPerformed(evt);
             }
         });
 
@@ -277,6 +286,11 @@ public class IngSoftConceptos extends javax.swing.JFrame {
                 jBDAgilMouseExited(evt);
             }
         });
+        jBDAgil.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBDAgilActionPerformed(evt);
+            }
+        });
 
         jBScrum.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jBScrum.setForeground(java.awt.Color.gray);
@@ -295,6 +309,11 @@ public class IngSoftConceptos extends javax.swing.JFrame {
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jBScrumMouseExited(evt);
+            }
+        });
+        jBScrum.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBScrumActionPerformed(evt);
             }
         });
 
@@ -319,7 +338,7 @@ public class IngSoftConceptos extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelContenedor.add(jPDesplegableDAScrum, new org.netbeans.lib.awtextra.AbsoluteConstraints(604, 20, 240, 70));
+        panelContenedor.add(jPDesplegableDAScrum, new org.netbeans.lib.awtextra.AbsoluteConstraints(584, 20, 260, 70));
 
         jPDesplegableContacto.setBackground(new java.awt.Color(245, 245, 245));
 
@@ -340,6 +359,11 @@ public class IngSoftConceptos extends javax.swing.JFrame {
                 jBProduct_OwnerMouseExited(evt);
             }
         });
+        jBProduct_Owner.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBProduct_OwnerActionPerformed(evt);
+            }
+        });
 
         jBScrum_Master.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jBScrum_Master.setForeground(java.awt.Color.gray);
@@ -358,6 +382,11 @@ public class IngSoftConceptos extends javax.swing.JFrame {
                 jBScrum_MasterMouseExited(evt);
             }
         });
+        jBScrum_Master.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBScrum_MasterActionPerformed(evt);
+            }
+        });
 
         jBScrum_Team.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jBScrum_Team.setForeground(java.awt.Color.gray);
@@ -374,6 +403,11 @@ public class IngSoftConceptos extends javax.swing.JFrame {
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jBScrum_TeamMouseExited(evt);
+            }
+        });
+        jBScrum_Team.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBScrum_TeamActionPerformed(evt);
             }
         });
 
@@ -401,7 +435,7 @@ public class IngSoftConceptos extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelContenedor.add(jPDesplegableContacto, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 0, 160, 90));
+        panelContenedor.add(jPDesplegableContacto, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 0, 170, 90));
 
         jPInformacionIS.setBackground(new java.awt.Color(255, 255, 255));
         jPInformacionIS.setMaximumSize(new java.awt.Dimension(1200, 3400));
@@ -546,7 +580,11 @@ public class IngSoftConceptos extends javax.swing.JFrame {
     }//GEN-LAST:event_jBSalirMouseExited
 
     private void jBSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBSalirActionPerformed
-        this.dispose();
+        Salida salir = new Salida();
+        timerControl.cancel();
+        this.setVisible(false);
+        salir.setVisible(true);
+        dispose();
     }//GEN-LAST:event_jBSalirActionPerformed
 
     private void jBDAgilMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBDAgilMouseEntered
@@ -608,6 +646,64 @@ public class IngSoftConceptos extends javax.swing.JFrame {
             jBScrum_Team.setForeground(Color.GRAY);
         }
     }//GEN-LAST:event_jBScrum_TeamMouseExited
+
+    private void jBInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBInicioActionPerformed
+        Inicio inicio = new Inicio();
+        timerControl.cancel();
+        this.setVisible(false);
+        inicio.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jBInicioActionPerformed
+
+    private void jBDAgilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBDAgilActionPerformed
+        if (jPDesplegableDAScrum.isVisible()) {
+            Agil agil = new Agil();
+            timerControl.cancel();
+            this.setVisible(false);
+            agil.setVisible(true);
+            dispose();
+        }
+    }//GEN-LAST:event_jBDAgilActionPerformed
+
+    private void jBScrumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBScrumActionPerformed
+        if (jPDesplegableDAScrum.isVisible()) {
+            Scrum scrum = new Scrum();
+            timerControl.cancel();
+            this.setVisible(false);
+            scrum.setVisible(true);
+            dispose();
+        }
+    }//GEN-LAST:event_jBScrumActionPerformed
+
+    private void jBProduct_OwnerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBProduct_OwnerActionPerformed
+        if (jPDesplegableContacto.isVisible()) {
+            ContactoProduct_Owner cpo = new ContactoProduct_Owner();
+            timerControl.cancel();
+            this.setVisible(false);
+            cpo.setVisible(true);
+            dispose();
+        }
+    }//GEN-LAST:event_jBProduct_OwnerActionPerformed
+
+    private void jBScrum_MasterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBScrum_MasterActionPerformed
+        if (jPDesplegableContacto.isVisible()) {
+            ContactoScrum_Master csm = new ContactoScrum_Master();
+            timerControl.cancel();
+            this.setVisible(false);
+            csm.setVisible(true);
+            dispose();
+        }
+    }//GEN-LAST:event_jBScrum_MasterActionPerformed
+
+    private void jBScrum_TeamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBScrum_TeamActionPerformed
+        if (jPDesplegableContacto.isVisible()) {
+            ContactoScrum_Team cst = new ContactoScrum_Team();
+            timerControl.cancel();
+            this.setVisible(false);
+            cst.setVisible(true);
+            dispose();
+        }
+    }//GEN-LAST:event_jBScrum_TeamActionPerformed
 
     /**
      * @param args the command line arguments

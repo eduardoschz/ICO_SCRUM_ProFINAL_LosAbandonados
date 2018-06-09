@@ -4,6 +4,7 @@ import aragon.ico.Salida;
 import aragon.ico.Inicio;
 import aragon.ico.contacto.ContactoProduct_Owner;
 import aragon.ico.contacto.ContactoScrum_Master;
+import aragon.ico.contacto.ContactoScrum_Team;
 import aragon.ico.ingSoft.IngSoftConceptos;
 import java.awt.Color;
 import java.awt.Image;
@@ -689,6 +690,9 @@ public class Agil extends javax.swing.JFrame {
         lblDesAg.setText("Desarrollo Ágil");
         lblDesAg.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblDesAg.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblDesAgMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 lblDesAgMouseEntered(evt);
             }
@@ -754,6 +758,9 @@ public class Agil extends javax.swing.JFrame {
         lblConMar.setText("Scrum Team");
         lblConMar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblConMar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblConMarMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 lblConMarMouseEntered(evt);
             }
@@ -1138,9 +1145,11 @@ public class Agil extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel28MouseClicked
 
     private void lblScruMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblScruMouseClicked
-        Scrum cambioScrum = new Scrum();
-        cambioScrum.setVisible(true);
-        dispose();
+        if (jPanel15.isVisible()) {
+            Scrum cambioScrum = new Scrum();
+            cambioScrum.setVisible(true);
+            dispose();
+        }
     }//GEN-LAST:event_lblScruMouseClicked
 
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
@@ -1156,16 +1165,32 @@ public class Agil extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel3MouseClicked
 
     private void lblContYoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblContYoMouseClicked
-        ContactoProduct_Owner cambioProductOwner = new ContactoProduct_Owner();
-        cambioProductOwner.setVisible(true);
-        dispose();
+        if (jPanel16.isVisible()) {
+            ContactoProduct_Owner cambioProductOwner = new ContactoProduct_Owner();
+            cambioProductOwner.setVisible(true);
+            dispose();
+        }
     }//GEN-LAST:event_lblContYoMouseClicked
 
     private void lblConEduMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblConEduMouseClicked
-        ContactoScrum_Master cambioScrumMaster = new ContactoScrum_Master();
-        cambioScrumMaster.setVisible(true);
-        dispose();
+        if (jPanel16.isVisible()) {
+            ContactoScrum_Master cambioScrumMaster = new ContactoScrum_Master();
+            cambioScrumMaster.setVisible(true);
+            dispose();
+        }
     }//GEN-LAST:event_lblConEduMouseClicked
+
+    private void lblDesAgMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblDesAgMouseClicked
+        
+    }//GEN-LAST:event_lblDesAgMouseClicked
+
+    private void lblConMarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblConMarMouseClicked
+       if (jPanel16.isVisible()) {
+            ContactoScrum_Team cst = new ContactoScrum_Team();
+            cst.setVisible(true);
+            dispose();
+        }
+    }//GEN-LAST:event_lblConMarMouseClicked
 
     /**
      * @param args the command line arguments
@@ -1178,7 +1203,7 @@ public class Agil extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
